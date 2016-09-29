@@ -12,6 +12,20 @@
     <script>scripts\drawTextInput.gml</script>
     <script>scripts\initTextInput.gml</script>
     <script>scripts\updateTextInput.gml</script>
+    <script>scripts\clearUserInput.gml</script>
+    <script>scripts\runCommand.gml</script>
+    <scripts name="Event_Handler">
+      <script>scripts\add.gml</script>
+      <script>scripts\clear.gml</script>
+    </scripts>
+    <scripts name="Event_Execute">
+      <script>scripts\addExecute.gml</script>
+      <script>scripts\clearExecute.gml</script>
+    </scripts>
+    <scripts name="Event_Execute_Duplicate">
+      <script>scripts\sumExecute.gml</script>
+    </scripts>
+    <script>scripts\stringSplit.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontCourierNew</font>

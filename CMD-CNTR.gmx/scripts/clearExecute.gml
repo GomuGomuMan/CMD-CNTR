@@ -1,0 +1,5 @@
+// clearExecute(array)
+{
+    clear();
+    return "";
+}

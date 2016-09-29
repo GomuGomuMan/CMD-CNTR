@@ -1,0 +1,6 @@
+// clear()
+{
+    clearUserInput();
+    commandString = "";
+    commandResult = "";
+}

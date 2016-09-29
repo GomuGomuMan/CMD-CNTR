@@ -1,8 +1,11 @@
 // updateTextInput()
 {
+    userInput = string_replace_all(keyboard_string, "#", "\#");
+    
     if (keyboard_check_pressed(vk_enter))
     {
-        keyboard_string += chr(13);
+        commandString = userInput;
+        runCommand(userInput);
+        clearUserInput();
     }
-    userInput = string_replace_all(keyboard_string, "#", "\#");
 }
