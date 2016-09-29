@@ -10,6 +10,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\drawTextInput.gml</script>
+    <script>scripts\initTextInput.gml</script>
+    <script>scripts\updateTextInput.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontCourierNew</font>
