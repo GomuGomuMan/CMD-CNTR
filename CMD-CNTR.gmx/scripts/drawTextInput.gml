@@ -1,4 +1,5 @@
 // drawTextInput()
+// Draw 3 lines of CLI
 {
     draw_set_colour(c_lime);
     draw_set_font(fontCourierNew);
