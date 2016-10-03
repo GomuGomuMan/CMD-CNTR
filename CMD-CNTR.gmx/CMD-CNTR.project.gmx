@@ -5,15 +5,14 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_solid</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\bg_solid</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\drawTextInput.gml</script>
-    <script>scripts\initTextInput.gml</script>
-    <script>scripts\updateTextInput.gml</script>
-    <script>scripts\clearUserInput.gml</script>
-    <script>scripts\runCommand.gml</script>
     <scripts name="Event_Handler">
       <script>scripts\add.gml</script>
       <script>scripts\clear.gml</script>
@@ -25,13 +24,30 @@
     <scripts name="Event_Execute_Duplicate">
       <script>scripts\sumExecute.gml</script>
     </scripts>
-    <script>scripts\stringSplit.gml</script>
+    <scripts name="CLI_Functions">
+      <scripts name="blink">
+        <script>scripts\blink_controller.gml</script>
+        <script>scripts\blink_stopWhenInput.gml</script>
+      </scripts>
+      <scripts name="text_input">
+        <script>scripts\drawTextInput.gml</script>
+        <script>scripts\initTextInput.gml</script>
+        <script>scripts\updateTextInput.gml</script>
+        <script>scripts\clearUserInput.gml</script>
+      </scripts>
+      <script>scripts\stringSplit.gml</script>
+      <script>scripts\runCommand.gml</script>
+      <scripts name="tile">
+        <script>scripts\tile_fill_obj.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontCourierNew</font>
   </fonts>
   <objects name="objects">
     <object>objects\objTextInput</object>
+    <object>objects\obj_solid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
