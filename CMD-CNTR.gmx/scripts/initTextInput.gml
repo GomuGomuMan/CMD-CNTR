@@ -16,7 +16,7 @@
     alarm[0] = blink_speed;
     
     // Drawing Position for textinput
-    startX = 768; // 10
+    startX = 800; // 10
     startY = 704; // 10
     
     // Drawing Position for History
