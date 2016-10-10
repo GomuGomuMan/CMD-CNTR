@@ -2,6 +2,7 @@
 {  
     array[0] = "";
     counter = 0;
+    textlimit = 10;
 
     userInput = "";
     commandString = "";

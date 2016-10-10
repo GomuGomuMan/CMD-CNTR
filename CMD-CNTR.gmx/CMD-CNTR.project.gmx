@@ -7,9 +7,11 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_solid</sprite>
+    <sprite>sprites\spr_cli_corner</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_solid</background>
+    <background>background\bg_cli_vertical</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -39,6 +41,9 @@
       <script>scripts\runCommand.gml</script>
       <scripts name="tile">
         <script>scripts\tile_fill_obj.gml</script>
+        <script>scripts\scr_tile_drawHorizontal.gml</script>
+        <script>scripts\scr_tile_drawCorner.gml</script>
+        <script>scripts\src_tile_drawVertical.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -48,6 +53,7 @@
   <objects name="objects">
     <object>objects\objTextInput</object>
     <object>objects\obj_solid</object>
+    <object>objects\obj_cli_verticalLine</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
