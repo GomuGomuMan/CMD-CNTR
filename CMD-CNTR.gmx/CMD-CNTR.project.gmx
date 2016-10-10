@@ -45,6 +45,11 @@
         <script>scripts\scr_tile_drawCorner.gml</script>
         <script>scripts\src_tile_drawVertical.gml</script>
       </scripts>
+      <scripts name="textbox">
+        <script>scripts\scr_textbox_init.gml</script>
+        <script>scripts\scr_textbox_destructor.gml</script>
+        <script>scripts\src_textbox_draw.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -54,6 +59,7 @@
     <object>objects\objTextInput</object>
     <object>objects\obj_solid</object>
     <object>objects\obj_cli_verticalLine</object>
+    <object>objects\obj_cli_textbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
