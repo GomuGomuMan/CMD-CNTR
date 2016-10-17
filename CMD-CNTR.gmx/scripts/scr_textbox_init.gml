@@ -1,6 +1,6 @@
 // Create some variables
-width = 240;
-height = 240;
+width = 100;
+height = 100;
 padding = 8;
 
 // Keep track of the starting line
@@ -13,6 +13,10 @@ last_space = 0;
 line = 0;
 
 // Set the message
-message = "This is a very long long long long long long long long long long long string";
+message = "This is a very long long long long long long long long long long long string and this is to check if the long long long long long long long string actually works";
 str = "";
+
+// Set color and font
+draw_set_colour(c_lime);
+draw_set_font(fontCourierNew);
 

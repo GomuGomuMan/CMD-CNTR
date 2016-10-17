@@ -25,4 +25,27 @@
     
     
     lineHeight = string_height(">");
+    
+    
+    
+    /// TextBox
+    // Create some variables
+    textHistory_width = 416;
+    textHistory_height = 640;
+    textHistory_X = 800;
+    textHistory_Y = 32;
+    padding = 8;
+    
+    // Keep track of the starting line
+    start = ds_list_create();
+    ds_list_add(start, 0);
+    
+    // Keep track of the last space and current position
+    count = 0;
+    last_space = 0;
+    line = 0;
+    
+    // Set the current message
+    message = "Hello World!";
+    str = "";
 }

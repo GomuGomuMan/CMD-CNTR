@@ -8,6 +8,8 @@
         array[counter] = userInput;
         ++counter;
         
+        message = message + "#" + userInput;
+        
         commandString = userInput;
         runCommand(userInput);
         clearUserInput();

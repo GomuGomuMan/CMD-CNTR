@@ -1,10 +1,10 @@
 /// Draw the string and the box
 draw_set_alpha(.5);
-draw_roundrect_colour(x, y, x + width, y + height, c_black, c_black, false);
+draw_roundrect_colour(x, y, x + width, y + height, c_white, c_white, false); // c_black, c_black
 draw_set_alpha(1);
 
 // Set color to white
-draw_set_color(c_white);
+//draw_set_color(c_white);
 
 // Past width?
 // Insert line break
