@@ -31,7 +31,7 @@
     /// TextBox
     // Create some variables
     textHistory_width = 416;
-    textHistory_height = 100; // 640
+    textHistory_height = 640; // 640 // Testing = 30
     textHistory_X = 800;
     textHistory_Y = 32;
     padding = 8;
@@ -44,6 +44,7 @@
     count = 0;
     last_space = 0;
     line = 0;
+    prev_msg_len = 0;
     
     // Set the current message
     message = "";
