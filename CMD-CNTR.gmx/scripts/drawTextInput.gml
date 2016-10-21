@@ -29,16 +29,6 @@
     draw_set_alpha(.5);
     draw_roundrect_colour(textHistory_X, textHistory_Y, textHistory_X + textHistory_width, textHistory_Y + textHistory_height, c_black, c_black, false); // c_black, c_black
     draw_set_alpha(1);
-
-    /*if (string_width(str) > textHistory_width - padding - padding)
-    {
-        // Remove the space & replace it with line break
-        message = string_delete(message, last_space, 1);
-        message = string_insert("#", message, last_space);
-        ds_list_add(start, last_space + 1);
-    }*/
-    
-    ds_list_add(start, string_length(message));
     
     
     // Make sure we have not reached the end of the message
@@ -47,25 +37,42 @@
         // Are we at a space? Set the last space var
         if (string_char_at(message, count) == " ")
         {
+            
             last_space = count;
         }
         
         // Increment the count
         ++count;
     }
+
+    if (string_width(str) > textHistory_width - padding - padding)
+    {
+        // Remove the space & replace it with line break
+        message = string_delete(message, last_space, 1);
+        message = string_insert("#", message, last_space);
+        ds_list_add(start, last_space + 1);
+    }
+    else
+    {
+        //message = string_insert("#", message, count - 1);
+        draw_text(0, 135, "Haha");
+        ds_list_add(start, count);
+    }
+
+    
     
     // Did we go past the bottom? Move up a line
-    if (string_height(str) > textHistory_height - padding - 32)
+    if (string_height(str) > textHistory_height - padding)
     {
         draw_text(0, 45, "This works!!");
         ++line;
     }
     
     // Testing
-    draw_text(0, 15, "Line: " + string(line));
+    draw_text(0, 15, "Line: " + string(line) + " and current string height: " + string(string_height(str)));
 
     // Grab the string
-    str = string_copy(message, ds_list_find_value(start, line), count-ds_list_find_value(start, line));
+    str = string_copy(message, ds_list_find_value(start, line), count - ds_list_find_value(start, line));
     
     // Draw the text
     draw_text(textHistory_X + padding, textHistory_Y + padding, str);
@@ -74,5 +81,9 @@
     draw_text(0, 0, "Current String Height: " + string(string_height(str)));
     draw_text(0, 30, "Limit: " + string(textHistory_height - padding));
     draw_text(0, 60, "First pos: " + string(ds_list_find_value(start, line)));
-    draw_text(0, 75, "Last pos: " + string(count-ds_list_find_value(start, line)));
+    draw_text(0, 75, "Width string: " + string(count-ds_list_find_value(start, line)));
+    draw_text(0, 90, "Current word count: " + string(count));
+    draw_text(0, 105, "String length: " + string(string_length(str)));
+    draw_text(0, 120, "Static length on pos 1: " + string(ds_list_find_value(start, 1)));
+    draw_text(0, 150, "TextHistory Line: " + string(line));
 }

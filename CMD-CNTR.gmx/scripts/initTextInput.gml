@@ -31,7 +31,7 @@
     /// TextBox
     // Create some variables
     textHistory_width = 416;
-    textHistory_height = 640;
+    textHistory_height = 100; // 640
     textHistory_X = 800;
     textHistory_Y = 32;
     padding = 8;
@@ -46,6 +46,6 @@
     line = 0;
     
     // Set the current message
-    message = "Hello World!";
+    message = "";
     str = "";
 }
