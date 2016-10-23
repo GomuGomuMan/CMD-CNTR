@@ -55,7 +55,7 @@
     else if (string_length(str) > 0 && prev_msg_len < string_length(message))
     {
         //message = string_insert("#", message, count - 1);
-        draw_text(0, 135, "String_length" + string(string_length(str)));
+        //draw_text(0, 135, "String_length" + string(string_length(str)));
         
         ds_list_add(start, count);
     }
@@ -65,13 +65,13 @@
     // Did we go past the bottom? Move up a line
     if (string_height(str) > textHistory_height - padding)
     {
-        draw_text(0, 170, str);
-        draw_text(0, 45, "This works!!");
+        //draw_text(0, 170, str);
+        //draw_text(0, 45, "This works!!");
         ++line;
     }
     
     // Testing
-    draw_text(0, 15, "Line: " + string(line) + " and current string height: " + string(string_height(str)));
+    //draw_text(0, 15, "Line: " + string(line) + " and current string height: " + string(string_height(str)));
 
     // Grab the string
     str = string_copy(message, ds_list_find_value(start, line), count - ds_list_find_value(start, line));
@@ -80,14 +80,14 @@
     draw_text(textHistory_X + padding, textHistory_Y + padding, str);
     
     // Testing
-    draw_text(0, 0, "Current String Height: " + string(string_height(str)));
+    /*draw_text(0, 0, "Current String Height: " + string(string_height(str)));
     draw_text(0, 30, "Limit: " + string(textHistory_height - padding));
     draw_text(0, 60, "First pos: " + string(ds_list_find_value(start, line)));
     draw_text(0, 75, "Width string: " + string(count - ds_list_find_value(start, line)));
     draw_text(0, 90, "Current word count: " + string(count));
     draw_text(0, 105, "String length: " + string(string_length(str)));
     draw_text(0, 120, "size of ds_list: " + string(ds_list_size(start)));
-    draw_text(0, 150, "TextHistory Line: " + string(line));
+    draw_text(0, 150, "TextHistory Line: " + string(line));*/
     
     //str = "";
     prev_msg_len = string_length(message);

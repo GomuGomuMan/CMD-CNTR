@@ -45,6 +45,6 @@ str = string_copy(message, ds_list_find_value(start, line), count-ds_list_find_v
 draw_text(x + padding, y + padding, str);
 
 // Testing
-draw_text(200, 0, "Textbox Length: " + string(line));
+//draw_text(200, 0, "Textbox Length: " + string(line));
 
 

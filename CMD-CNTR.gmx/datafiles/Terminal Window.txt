@@ -1,0 +1,4 @@
+Hello?
+Huh. So there is someone on the other side of this connection. What's your name?
+PLAYER_NAME, you say? Is that your real name? This comprehensive profile of you says something different...
+Ha ha, just joking. The only information I have about you is the name you just gave me, your IP address, and your dimensional code.

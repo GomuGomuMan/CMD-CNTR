@@ -1,15 +1,22 @@
 // updateTextInput()
 {
-    
+    // Check if CLI is at beginning state or beginnning of different state
+    // If true print head of queue
+
     //userInput = string_replace_all(keyboard_string, "#", "\#");
     userInput = keyboard_string;
     
     if (keyboard_check_pressed(vk_enter))
     {
-        array[counter] = userInput;
-        ++counter;
+        message += userInput + "#";
+    
+        if (ds_queue_size(cli_ds_line) > 0)
+        {
+            message += ds_queue_head(cli_ds_line);
+            ds_queue_dequeue(cli_ds_line);
+        } 
         
-        message = message + userInput + "#";
+        
         
         commandString = userInput;
         runCommand(userInput);

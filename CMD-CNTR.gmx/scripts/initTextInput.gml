@@ -49,4 +49,26 @@
     // Set the current message
     message = "";
     str = "";
+    
+    
+    // Create a queue
+    cli_ds_line = ds_queue_create();
+    
+    // Read from text files
+    // Store in data structure
+    var file = file_text_open_read(working_directory + "Terminal Window.txt")
+    
+    while(!file_text_eof(file))
+    {
+        ds_queue_enqueue(cli_ds_line, file_text_read_string(file) + "#");
+        //show_message(file_text_read_string(file));
+        file_text_readln(file)
+    }
+    show_message(ds_queue_head(cli_ds_line));
+    //show_message(string(ds_queue_size(cli_ds_line)));
+    file_text_close(file);
+    
+    message += ds_queue_head(cli_ds_line);
+    ds_queue_dequeue(cli_ds_line);
+    
 }
