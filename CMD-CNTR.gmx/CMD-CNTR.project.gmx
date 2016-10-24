@@ -25,8 +25,40 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_solid</sprite>
-    <sprite>sprites\spr_cli_corner</sprite>
+    <sprites name="cli">
+      <sprite>sprites\spr_solid</sprite>
+      <sprite>sprites\spr_cli_corner</sprite>
+    </sprites>
+    <sprites name="puzzle1">
+      <sprite>sprites\spr_A</sprite>
+      <sprite>sprites\spr_allPieces</sprite>
+      <sprite>sprites\spr_B</sprite>
+      <sprite>sprites\spr_Blank</sprite>
+      <sprite>sprites\spr_Border</sprite>
+      <sprite>sprites\spr_C</sprite>
+      <sprite>sprites\spr_D</sprite>
+      <sprite>sprites\spr_E</sprite>
+      <sprite>sprites\spr_F</sprite>
+      <sprite>sprites\spr_G</sprite>
+      <sprite>sprites\spr_H</sprite>
+      <sprite>sprites\spr_I</sprite>
+      <sprite>sprites\spr_J</sprite>
+      <sprite>sprites\spr_K</sprite>
+      <sprite>sprites\spr_L</sprite>
+      <sprite>sprites\spr_M</sprite>
+      <sprite>sprites\spr_N</sprite>
+      <sprite>sprites\spr_O</sprite>
+      <sprite>sprites\spr_piece</sprite>
+    </sprites>
+    <sprites name="puzzle3">
+      <sprite>sprites\spr_command1</sprite>
+      <sprite>sprites\spr_command2</sprite>
+      <sprite>sprites\spr_command3</sprite>
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_terminalLeftSide</sprite>
+      <sprite>sprites\spr_terminalRightSide</sprite>
+      <sprite>sprites\spr_textBox</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_solid</background>
@@ -74,6 +106,9 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontCourierNew</font>
+    <fonts name="puzzle3">
+      <font>fonts\fnt_textBoxFont</font>
+    </fonts>
   </fonts>
   <objects name="objects">
     <objects name="cli_obj">
@@ -82,9 +117,41 @@
       <object>objects\obj_cli_verticalLine</object>
       <object>objects\obj_cli_textbox</object>
     </objects>
+    <objects name="puzzle1">
+      <object>objects\obj_Border</object>
+      <object>objects\obj_piece1</object>
+      <object>objects\obj_piece2</object>
+      <object>objects\obj_piece3</object>
+      <object>objects\obj_piece4</object>
+      <object>objects\obj_piece5</object>
+      <object>objects\obj_piece6</object>
+      <object>objects\obj_piece7</object>
+      <object>objects\obj_piece8</object>
+      <object>objects\obj_piece9</object>
+      <object>objects\obj_piece10</object>
+      <object>objects\obj_piece11</object>
+      <object>objects\obj_piece12</object>
+      <object>objects\obj_piece13</object>
+      <object>objects\obj_piece14</object>
+      <object>objects\obj_piece15</object>
+      <object>objects\obj_PieceBaseclass</object>
+    </objects>
+    <objects name="puzzle3">
+      <object>objects\obj_badDropper</object>
+      <object>objects\obj_command1</object>
+      <object>objects\obj_command2</object>
+      <object>objects\obj_command3</object>
+      <object>objects\obj_commandDropper</object>
+      <object>objects\obj_player</object>
+      <object>objects\obj_termialRightSide</object>
+      <object>objects\obj_terminalLeftSide</object>
+      <object>objects\obj_textBoxLevelMaster</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
+    <room>rooms\room_puzzle1</room>
+    <room>rooms\room_puzzle3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

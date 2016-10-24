@@ -64,7 +64,7 @@
         //show_message(file_text_read_string(file));
         file_text_readln(file)
     }
-    show_message(ds_queue_head(cli_ds_line));
+    //show_message(ds_queue_head(cli_ds_line));
     //show_message(string(ds_queue_size(cli_ds_line)));
     file_text_close(file);
     
