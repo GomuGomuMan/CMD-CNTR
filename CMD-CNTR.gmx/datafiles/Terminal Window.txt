@@ -2,3 +2,6 @@ Hello?
 Huh. So there is someone on the other side of this connection. What's your name?
 PLAYER_NAME, you say? Is that your real name? This comprehensive profile of you says something different...
 Ha ha, just joking. The only information I have about you is the name you just gave me, your IP address, and your dimensional code.
+I'll give you one more chance to type your real name. And if you joke with me, you'll just have to live with it, because I'm calling you that forever.
+Nice to meet you, PLAYER_NAME. I'm Jun-Seong. I am contacting you from a place called Ztelara. I know you've never heard of it, because no one from your dimension has ever discovered it. Plenty of other dimensions have, but yours is primitive. Don't take that the wrong way.
+The thing is, we here at Ztelara don't have a lot of time. We've got a problem that only someone on the outside can solve. I've been scanning dimensional codes for hours, searching for a solid connection, and here you are. We need your help, PLAYER_NAME. Are you willing to give it?

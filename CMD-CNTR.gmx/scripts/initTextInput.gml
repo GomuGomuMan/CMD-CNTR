@@ -50,6 +50,11 @@
     message = "";
     str = "";
     
+    // Save player_name
+    player_name = "";
+    
+    // Var to check if player is joking
+    isJoking = true;
     
     // Create a queue
     cli_ds_line = ds_queue_create();
@@ -67,6 +72,8 @@
     //show_message(ds_queue_head(cli_ds_line));
     //show_message(string(ds_queue_size(cli_ds_line)));
     file_text_close(file);
+    
+    cli_ds_line_size = ds_queue_size(cli_ds_line); 
     
     message += ds_queue_head(cli_ds_line);
     ds_queue_dequeue(cli_ds_line);
