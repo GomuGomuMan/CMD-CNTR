@@ -1,0 +1,8 @@
+ZTELARA MAINFRAME ACCESS INSTRUCTION
+
+To access the mainframe, the user must undergo a biological scan to confirm that they have not been integrated into the Ztelara system. This process is simple and harmless, and works to prevent any tampering of the world by its internal residents. To conduct your application to the mainframe, please type the following lines into your terminal: 
+1) ztel access mainframe 
+2) asdf jkl; 
+3) ztel login (access ID) (access key)
+
+Assuming your fingerprint scan and your access credentials are accepted, you will be logged in to the Ztelara Mainframe file system. Once logged in, type 'ztel logout' to return to your home directory.

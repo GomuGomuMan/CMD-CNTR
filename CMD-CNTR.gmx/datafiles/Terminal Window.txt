@@ -1,7 +1,21 @@
 Hello?
+--User Input
 Huh. So there is someone on the other side of this connection. What's your name?
+--User Input
 PLAYER_NAME, you say? Is that your real name? This comprehensive profile of you says something different...
+--User Input
 Ha ha, just joking. The only information I have about you is the name you just gave me, your IP address, and your dimensional code.
+--User Input
 I'll give you one more chance to type your real name. And if you joke with me, you'll just have to live with it, because I'm calling you that forever.
+--User Input
 Nice to meet you, PLAYER_NAME. I'm Jun-Seong. I am contacting you from a place called Ztelara. I know you've never heard of it, because no one from your dimension has ever discovered it. Plenty of other dimensions have, but yours is primitive. Don't take that the wrong way.
 The thing is, we here at Ztelara don't have a lot of time. We've got a problem that only someone on the outside can solve. I've been scanning dimensional codes for hours, searching for a solid connection, and here you are. We need your help, PLAYER_NAME. Are you willing to give it?
+--User Input
+I know we just met. I know it's weird. People in your dimension probably still warn each other about strangers on the Internet. Which is why I'll promise not to ask you anything personal. I just need you to type in a few simple lines of code. Do that, and you could save lives.
+You know what? I think I could hack up a visual representation of myself, and Ztelara, so it doesn't feel so weird for you. In the meantime, could you open up the file I'm about to send you and follow the instructions?
+File received: instructions.txt
+--User Input
+The command is 'open instructions.txt'. Sorry, I forget that not everyone knows how to do these things.
+--User Input
+open instructions.txt
+--User Input

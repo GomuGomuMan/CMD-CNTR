@@ -56,6 +56,9 @@
     // Var to check if player is joking
     isJoking = true;
     
+    // Var to check how many times player enter wrong command
+    numIncorrectCommand = 0;
+    
     // Create a queue
     cli_ds_line = ds_queue_create();
     
@@ -75,7 +78,7 @@
     
     cli_ds_line_size = ds_queue_size(cli_ds_line); 
     
-    message += ds_queue_head(cli_ds_line);
-    ds_queue_dequeue(cli_ds_line);
-    
+    /*message += ds_queue_head(cli_ds_line);
+    ds_queue_dequeue(cli_ds_line);*/
+    print_dialog();
 }
