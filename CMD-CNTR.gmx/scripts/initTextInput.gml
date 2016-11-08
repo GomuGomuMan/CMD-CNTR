@@ -16,6 +16,11 @@
     blink_speed = 15;
     alarm[0] = blink_speed;
     
+    // Dialog Pause Settings
+    pause = false;
+    pause_speed = 15;
+    alarm[1] = pause_speed;
+    
     // Drawing Position for textinput
     startX = 800; // 10
     startY = 704; // 10

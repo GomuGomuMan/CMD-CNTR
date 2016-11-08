@@ -121,6 +121,7 @@
       </scripts>
       <scripts name="script">
         <script>scripts\print_dialog.gml</script>
+        <script>scripts\src_pause_controller.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -170,6 +171,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
+    <room>rooms\room3</room>
     <room>rooms\room_puzzle1</room>
     <room>rooms\room_puzzle3</room>
   </rooms>

@@ -16,7 +16,7 @@
         room_goto(room_puzzle3);
     }
     
-    else if (keyboard_check_pressed(vk_enter))
+    else if (keyboard_check_pressed(vk_enter) && pause)
     {
         message += ">" + userInput + "#";
         
@@ -110,5 +110,6 @@
         commandString = userInput;
         runCommand(userInput);
         clearUserInput();
+        alarm[1] = pause_speed;
     }
 }
