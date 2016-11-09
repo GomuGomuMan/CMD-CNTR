@@ -18,7 +18,7 @@
     
     // Dialog Pause Settings
     pause = true;
-    pause_speed = room_speed * 5; // 5 seconds
+    pause_speed = room_speed * 1; // 1 seconds
     alarm[1] = pause_speed;
     
     // Drawing Position for textinput

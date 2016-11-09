@@ -17,5 +17,10 @@ File received: instructions.txt
 --User Input
 The command is 'open instructions.txt'. Sorry, I forget that not everyone knows how to do these things.
 --User Input
-open instructions.txt
+ATTEMPTING TO ACCESS ZTELARA MAINFRAME. REQUIRES BIOLOGICAL SCAN.
+--User Input
+.....
+BIOLOGICAL SCAN: ACCEPTED. REQUIRES LOGIN.
+--User Input
+Me again. I'm almost done here. Don't be alarmed if your terminal resets while I send you this hack.
 --User Input

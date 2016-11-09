@@ -55,26 +55,20 @@
                 ds_queue_dequeue(cli_ds_line); // Skip user input line
                 //print_dialog();
             }
-            
             break;
-        
+            
         case 19:
-            //show_message(string_length(userInput));
-            //show_message(string_length(ds_queue_head(cli_ds_line)));
-            /*if (userInput == "open instructions.txt")
-            {*/
-                //show_message("HERE");
-                /*var file = file_text_open_read(working_directory + "instructions.txt");
-                while(!file_text_eof(file))
-                {
-                    message += file_text_read_string(file) + "#";
-                    file_text_readln(file)
-                }
-                file_text_close(file);*/
-                   
-                //ds_queue_dequeue(cli_ds_line); // Skip this line
-                //ds_queue_dequeue(cli_ds_line); // Skip user input line
-            //}
+            if (userInput == "ztel access mainframe")
+            {
+                print_dialog();   
+            }
+            break;
+            
+        case 21:
+            if (userInput == "asdf jkl")
+            {
+                print_dialog();   
+            }
             break;
             
         default:
