@@ -86,10 +86,12 @@
     <scripts name="Event_Handler">
       <script>scripts\add.gml</script>
       <script>scripts\clear.gml</script>
+      <script>scripts\open.gml</script>
     </scripts>
     <scripts name="Event_Execute">
       <script>scripts\addExecute.gml</script>
       <script>scripts\clearExecute.gml</script>
+      <script>scripts\openExecute.gml</script>
     </scripts>
     <scripts name="Event_Execute_Duplicate">
       <script>scripts\sumExecute.gml</script>
@@ -122,6 +124,7 @@
       <scripts name="script">
         <script>scripts\print_dialog.gml</script>
         <script>scripts\src_pause_controller.gml</script>
+        <script>scripts\src_process_script.gml</script>
       </scripts>
     </scripts>
   </scripts>
