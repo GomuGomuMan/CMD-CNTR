@@ -43,8 +43,21 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="cli">
-      <sprite>sprites\spr_solid</sprite>
-      <sprite>sprites\spr_cli_corner</sprite>
+      <sprites name="cli">
+        <sprite>sprites\spr_cli_corner</sprite>
+        <sprite>sprites\spr_solid</sprite>
+      </sprites>
+      <sprites name="characters">
+        <sprite>sprites\char_jun_seong</sprite>
+      </sprites>
+      <sprites name="buildings">
+        <sprite>sprites\building_hq</sprite>
+        <sprite>sprites\building_dome</sprite>
+        <sprite>sprites\building_futuristic</sprite>
+        <sprite>sprites\building_pink</sprite>
+        <sprite>sprites\building_shop</sprite>
+        <sprite>sprites\building_weird</sprite>
+      </sprites>
     </sprites>
     <sprites name="puzzle1">
       <sprite>sprites\spr_A</sprite>
@@ -76,6 +89,7 @@
       <sprite>sprites\spr_terminalRightSide</sprite>
       <sprite>sprites\spr_textBox</sprite>
     </sprites>
+    <sprite>sprites\sprite36</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_solid</background>
@@ -136,10 +150,25 @@
   </fonts>
   <objects name="objects">
     <objects name="cli_obj">
-      <object>objects\objTextInput</object>
-      <object>objects\obj_solid</object>
-      <object>objects\obj_cli_verticalLine</object>
-      <object>objects\obj_cli_textbox</object>
+      <objects name="cli">
+        <object>objects\obj_cli_verticalLine</object>
+        <object>objects\objTextInput</object>
+        <object>objects\obj_solid</object>
+      </objects>
+      <objects name="textbox">
+        <object>objects\obj_cli_textbox</object>
+      </objects>
+      <objects name="characters">
+        <object>objects\obj_jun_seong</object>
+      </objects>
+      <objects name="buildings">
+        <object>objects\obj_building_hq</object>
+        <object>objects\obj_building_dome</object>
+        <object>objects\obj_building_futuristic</object>
+        <object>objects\obj_building_pink</object>
+        <object>objects\obj_building_shop</object>
+        <object>objects\obj_building_weird</object>
+      </objects>
     </objects>
     <objects name="puzzle1">
       <object>objects\obj_Border</object>

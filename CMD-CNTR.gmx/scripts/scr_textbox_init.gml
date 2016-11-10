@@ -1,6 +1,6 @@
 // Create some variables
-width = 100;
-height = 100;
+width = 736;
+height = 160;
 padding = 8;
 
 // Keep track of the starting line
