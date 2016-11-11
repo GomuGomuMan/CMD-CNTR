@@ -3,6 +3,9 @@ width = 672;
 height = 160;
 padding = 8;
 
+// Create a queue
+cli_ds_line = ds_queue_create();
+
 // Keep track of the starting line
 start = ds_list_create();
 ds_list_add(start, 0);
@@ -13,7 +16,8 @@ last_space = 0;
 line = 0;
 
 // Set the message
-message = "This is a very long long long long long long long long long long long string and this is to check if the long long long long long long long string actually works";
+//message = "This is a very long long long long long long long long long long long string and this is to check if the long long long long long long long string actually works";
+message = "";
 str = "";
 
 // Set color and font

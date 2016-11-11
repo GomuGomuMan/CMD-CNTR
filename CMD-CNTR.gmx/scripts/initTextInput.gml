@@ -10,9 +10,11 @@
     
     enabled_keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890";
     
+    // Is Finish Phrase 1
+    isFinishedPart1 = false;
     
-    // Show textbox?
-    global.showTextBox = false;
+    // Check if print is ok for textbox
+    print_ok = false;
     
     // Blink Settings
     blink = true;

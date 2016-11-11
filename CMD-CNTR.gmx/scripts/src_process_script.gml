@@ -1,6 +1,6 @@
 {
     // Trick: LINE_NUM + 1
-    switch (cli_ds_line_size - ds_queue_size(cli_ds_line))
+    switch (objTextInput.cli_ds_line_size - ds_queue_size(cli_ds_line))
     {
         // Save player_name and print changed queue head
         case 4:
@@ -73,8 +73,9 @@
         
         case 26:
             src_show_world();
+            print_dialog();       
             break;
-            
+                        
         default:
             //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));
             if (ds_queue_size(cli_ds_line) > 0)

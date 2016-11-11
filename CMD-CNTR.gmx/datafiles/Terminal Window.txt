@@ -24,3 +24,12 @@ BIOLOGICAL SCAN: ACCEPTED. REQUIRES LOGIN.
 --User Input
 Me again. I'm almost done here. Don't be alarmed if your terminal resets while I send you this hack.
 --User Input
+There we go. You can see me now, hanging out in the central hub of my neighborhood. This tower I'm standing next to is packed with computational power, so I have to stay here in order to continue communicating with you. Interdimensional messaging requires some heavy processing. Technically I shouldn't even be able to do it, but nobody is going to catch me. Or stop me.
+I'm sure you have questions. What's all this "interdimensional" mumbo-jumbo? Well, let me make it simple for you. I come from a world that's just like yours. And my world isn't the only one. There are an infinite number of Earths, each presiding in their own plane of existence, each following a slightly different timeline. In my dimension, Gandhi was a famous war general. In yours he might have done something different.
+Now, Ztelara is special. Ztelara exists in a place between dimensions, where people from different dimensions can convene and reside. Time doesn't exist here; not in the way that you understand it. And I really live here. The world around me looks as real to me as yours does to you. I chose to escape my world and live here instead.
+But my world will be torn apart if you don't help it. 
+There's a virus. It's taking apart the source code which allows Ztelara to function and exist. It could have only been created by an outsider. Someone like you, with potential access to the mainframe.
+The first thing I need you to do is log in. You don't have access creds, so here's your first task: to hack it.
+There's a program called Bouncer which can help you out with this. Think of hacking like trying to get into a high-profile club. Give Bouncer the right signals, and he'll let you in. Otherwise you're left standing on the sidewalk, listening to all the fun they're having inside.
+To run Bouncer just type his name in the terminal, and he'll introduce himself.
+--User Input

@@ -59,6 +59,15 @@
         <sprite>sprites\building_weird</sprite>
       </sprites>
     </sprites>
+    <sprites name="puzzle3">
+      <sprite>sprites\spr_command1</sprite>
+      <sprite>sprites\spr_command2</sprite>
+      <sprite>sprites\spr_command3</sprite>
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_terminalLeftSide</sprite>
+      <sprite>sprites\spr_terminalRightSide</sprite>
+      <sprite>sprites\spr_textBox</sprite>
+    </sprites>
     <sprites name="puzzle1">
       <sprite>sprites\spr_A</sprite>
       <sprite>sprites\spr_allPieces</sprite>
@@ -79,17 +88,8 @@
       <sprite>sprites\spr_N</sprite>
       <sprite>sprites\spr_O</sprite>
       <sprite>sprites\spr_piece</sprite>
+      <sprite>sprites\spr_psol1</sprite>
     </sprites>
-    <sprites name="puzzle3">
-      <sprite>sprites\spr_command1</sprite>
-      <sprite>sprites\spr_command2</sprite>
-      <sprite>sprites\spr_command3</sprite>
-      <sprite>sprites\spr_player</sprite>
-      <sprite>sprites\spr_terminalLeftSide</sprite>
-      <sprite>sprites\spr_terminalRightSide</sprite>
-      <sprite>sprites\spr_textBox</sprite>
-    </sprites>
-    <sprite>sprites\sprite36</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_solid</background>
@@ -134,6 +134,7 @@
         <script>scripts\scr_textbox_init.gml</script>
         <script>scripts\scr_textbox_destructor.gml</script>
         <script>scripts\src_textbox_draw.gml</script>
+        <script>scripts\src_textbox_update.gml</script>
       </scripts>
       <scripts name="script">
         <script>scripts\print_dialog.gml</script>
@@ -171,8 +172,20 @@
         <object>objects\obj_building_weird</object>
       </objects>
     </objects>
+    <objects name="puzzle3">
+      <object>objects\obj_badDropper</object>
+      <object>objects\obj_command1</object>
+      <object>objects\obj_command2</object>
+      <object>objects\obj_command3</object>
+      <object>objects\obj_commandDropper</object>
+      <object>objects\obj_player</object>
+      <object>objects\obj_termialRightSide</object>
+      <object>objects\obj_terminalLeftSide</object>
+      <object>objects\obj_textBoxLevelMaster</object>
+    </objects>
     <objects name="puzzle1">
       <object>objects\obj_Border</object>
+      <object>objects\obj_controller</object>
       <object>objects\obj_piece1</object>
       <object>objects\obj_piece2</object>
       <object>objects\obj_piece3</object>
@@ -189,24 +202,21 @@
       <object>objects\obj_piece14</object>
       <object>objects\obj_piece15</object>
       <object>objects\obj_PieceBaseclass</object>
-    </objects>
-    <objects name="puzzle3">
-      <object>objects\obj_badDropper</object>
-      <object>objects\obj_command1</object>
-      <object>objects\obj_command2</object>
-      <object>objects\obj_command3</object>
-      <object>objects\obj_commandDropper</object>
-      <object>objects\obj_player</object>
-      <object>objects\obj_termialRightSide</object>
-      <object>objects\obj_terminalLeftSide</object>
-      <object>objects\obj_textBoxLevelMaster</object>
+      <object>objects\obj_psol1</object>
+      <object>objects\obj_psol2</object>
+      <object>objects\obj_psol3</object>
+      <object>objects\obj_psol4</object>
+      <object>objects\obj_psol5</object>
+      <object>objects\obj_psol6</object>
+      <object>objects\obj_psol7</object>
+      <object>objects\obj_psol8</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
     <room>rooms\room3</room>
-    <room>rooms\room_puzzle1</room>
     <room>rooms\room_puzzle3</room>
+    <room>rooms\room_puzzle1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
