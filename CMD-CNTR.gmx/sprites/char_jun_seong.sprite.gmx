@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>9</bbox_left>
-  <bbox_right>29</bbox_right>
-  <bbox_top>1</bbox_top>
-  <bbox_bottom>57</bbox_bottom>
+  <bbox_left>31</bbox_left>
+  <bbox_right>104</bbox_right>
+  <bbox_top>4</bbox_top>
+  <bbox_bottom>203</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>40</width>
-  <height>60</height>
+  <width>140</width>
+  <height>210</height>
   <frames>
     <frame index="0">images\char_jun_seong_0.png</frame>
   </frames>
