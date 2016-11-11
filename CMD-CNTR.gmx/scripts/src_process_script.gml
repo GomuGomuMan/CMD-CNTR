@@ -70,6 +70,10 @@
                 print_dialog();   
             }
             break;
+        
+        case 26:
+            src_show_world();
+            break;
             
         default:
             //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));

@@ -139,6 +139,7 @@
         <script>scripts\print_dialog.gml</script>
         <script>scripts\src_pause_controller.gml</script>
         <script>scripts\src_process_script.gml</script>
+        <script>scripts\src_show_world.gml</script>
       </scripts>
     </scripts>
   </scripts>

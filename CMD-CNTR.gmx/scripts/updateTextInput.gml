@@ -26,6 +26,9 @@
         //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));
         src_process_script();
         
+        /*pause = false;
+        alarm[1] = pause_speed;*/
+        
         commandString = userInput;
         runCommand(userInput);
         clearUserInput();

@@ -11,6 +11,9 @@
     enabled_keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890";
     
     
+    // Show textbox?
+    global.showTextBox = false;
+    
     // Blink Settings
     blink = true;
     blink_speed = 15;

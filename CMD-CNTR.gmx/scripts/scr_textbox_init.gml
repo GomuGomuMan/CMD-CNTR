@@ -1,5 +1,5 @@
 // Create some variables
-width = 736;
+width = 672;
 height = 160;
 padding = 8;
 
