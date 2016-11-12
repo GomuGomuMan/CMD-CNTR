@@ -75,6 +75,15 @@
             src_show_world();
             print_dialog();       
             break;
+            
+        case 35:
+            show_message(objTextInput.tempInput);
+            if (objTextInput.tempInput == "bouncer")
+            {
+                show_message("if condition works");
+                room_goto(room_puzzle1);   
+            }
+            break;
                         
         default:
             //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));

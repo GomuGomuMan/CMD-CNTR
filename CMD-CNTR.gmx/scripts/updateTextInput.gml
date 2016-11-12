@@ -43,11 +43,9 @@
         }
         else 
         {
+            tempInput = userInput;
             print_ok = true;
         }
-        
-        
-        
         
         commandString = userInput;
         runCommand(userInput);

@@ -12,6 +12,7 @@
     
     // Is Finish Phrase 1
     isFinishedPart1 = false;
+    tempInput = "";
     
     // Check if print is ok for textbox
     print_ok = false;
