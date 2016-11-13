@@ -10,6 +10,9 @@
     
     enabled_keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890";
     
+    // Is Finish Puzzle 1
+    global.isFinishedPuzzle1 = false;
+    
     // Is Finish Phrase 1
     isFinishedPart1 = false;
     tempInput = "";

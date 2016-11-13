@@ -33,4 +33,5 @@ The first thing I need you to do is log in. You don't have access creds, so here
 There's a program called Bouncer which can help you out with this. Think of hacking like trying to get into a high-profile club. Give Bouncer the right signals, and he'll let you in. Otherwise you're left standing on the sidewalk, listening to all the fun they're having inside.
 To run Bouncer just type his name in the terminal, and he'll introduce himself.
 --User Input
-Login accepted.
+--CLI Login accepted.
+--User Input

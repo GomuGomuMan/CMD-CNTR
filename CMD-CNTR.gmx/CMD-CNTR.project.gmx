@@ -101,11 +101,13 @@
       <script>scripts\add.gml</script>
       <script>scripts\clear.gml</script>
       <script>scripts\open.gml</script>
+      <script>scripts\bouncer.gml</script>
     </scripts>
     <scripts name="Event_Execute">
       <script>scripts\addExecute.gml</script>
       <script>scripts\clearExecute.gml</script>
       <script>scripts\openExecute.gml</script>
+      <script>scripts\bouncerExecute.gml</script>
     </scripts>
     <scripts name="Event_Execute_Duplicate">
       <script>scripts\sumExecute.gml</script>
@@ -185,10 +187,10 @@
     </objects>
     <objects name="puzzle1">
       <object>objects\obj_Border</object>
-      <object>objects\obj_controller</object>
       <object>objects\obj_piece1</object>
       <object>objects\obj_piece2</object>
       <object>objects\obj_piece3</object>
+      <object>objects\obj_controller</object>
       <object>objects\obj_piece4</object>
       <object>objects\obj_piece5</object>
       <object>objects\obj_piece6</object>

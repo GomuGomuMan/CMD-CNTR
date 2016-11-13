@@ -78,10 +78,9 @@
             
         case 35:
             show_message(objTextInput.tempInput);
-            if (objTextInput.tempInput == "bouncer")
+            if (global.isFinishedPuzzle1)
             {
-                show_message("if condition works");
-                room_goto(room_puzzle1);   
+                print_dialog();
             }
             break;
                         

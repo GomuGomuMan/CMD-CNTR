@@ -34,7 +34,9 @@
     
     if (keyboard_check_pressed(vk_enter))
     {
+        
         room_goto(roomMain);
+        global.isFinishedPuzzle1 = true;
     }
 }
 </string>
