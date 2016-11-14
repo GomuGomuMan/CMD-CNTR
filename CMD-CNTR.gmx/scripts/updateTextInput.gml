@@ -27,6 +27,8 @@
         pause = false;
         alarm[1] = pause_speed;
         
+        runCommand(userInput);
+        
         //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));
         if (!isFinishedPart1)
             src_process_script();
@@ -48,7 +50,7 @@
         }
         
         commandString = userInput;
-        runCommand(userInput);
+        //runCommand(userInput);
         clearUserInput();
     }
 }

@@ -17,6 +17,17 @@
     isFinishedPart1 = false;
     tempInput = "";
     
+    // File System (in Temp directory)
+    file_sys = ds_list_create();
+    var file = file_text_open_read(working_directory + "file_system.txt")
+    while(!file_text_eof(file))
+    {
+        ds_list_add(file_sys, file_text_read_string(file));
+        file_text_readln(file);
+    }
+    current_dir = "HOME";
+    src_create_file_sys();
+    
     // Check if print is ok for textbox
     print_ok = false;
     
