@@ -13,7 +13,8 @@
     {
         room_goto(room_puzzle1);
     }
-    
+    else if (userInput == "puzzle2")
+        room_goto(room_puzzle2);
     else if (userInput = "puzzle3")
     {
         room_goto(room_puzzle3);
