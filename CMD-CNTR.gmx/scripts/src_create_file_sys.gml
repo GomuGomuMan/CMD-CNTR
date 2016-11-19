@@ -7,7 +7,7 @@
             if(!directory_exists(ds_list_find_value(file_sys, i)))
             {
                 directory_create(ds_list_find_value(file_sys, i));
-                show_message("Created dir");
+                //show_message("Created dir");
             }
         }
         //ds_list_destroy(file_sys);
