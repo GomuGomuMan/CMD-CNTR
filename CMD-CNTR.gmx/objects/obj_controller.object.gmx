@@ -25,20 +25,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(obj_psol1)
+            <string>if (place_meeting(obj_psol1.x,obj_psol1.y,obj_piece1)
+&amp;&amp; place_meeting(obj_psol2.x,obj_psol2.y,obj_piece2)
+&amp;&amp; place_meeting(obj_psol3.x,obj_psol3.y,obj_piece3)
+&amp;&amp; place_meeting(obj_psol4.x,obj_psol4.y,obj_piece4)
+&amp;&amp; place_meeting(obj_psol5.x,obj_psol5.y,obj_piece5)
+&amp;&amp; place_meeting(obj_psol6.x,obj_psol6.y,obj_piece6)
+&amp;&amp; place_meeting(obj_psol7.x,obj_psol7.y,obj_piece7)
+&amp;&amp; place_meeting(obj_psol8.x,obj_psol8.y,obj_piece8))
 {
-    if place_meeting(x,y,obj_piece1)
-    {
-        room_goto(roomMain); 
-    }
-    
-    if (keyboard_check_pressed(vk_enter))
-    {
-        
-        room_goto(roomMain);
-        global.isFinishedPuzzle1 = true;
-    }
+    room_goto(roomMain);
+    global.isFinishedPuzzle1 = true;
 }
+
+///Shortcut to bypass Puzzle///
+if(keyboard_check_pressed(vk_enter))
+{
+    room_goto(roomMain);
+    global.isFinishedPuzzle1 = true;
+}
+
 </string>
           </argument>
         </arguments>
