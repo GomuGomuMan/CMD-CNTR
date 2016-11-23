@@ -141,6 +141,7 @@
       <script>scripts\whoami.gml</script>
       <script>scripts\cd.gml</script>
       <script>scripts\ls.gml</script>
+      <script>scripts\cp.gml</script>
     </scripts>
     <scripts name="Event_Execute">
       <script>scripts\addExecute.gml</script>
@@ -150,6 +151,7 @@
       <script>scripts\whoamiExecute.gml</script>
       <script>scripts\cdExecute.gml</script>
       <script>scripts\lsExecute.gml</script>
+      <script>scripts\cpExecute.gml</script>
     </scripts>
     <scripts name="Event_Execute_Duplicate">
       <script>scripts\sumExecute.gml</script>
