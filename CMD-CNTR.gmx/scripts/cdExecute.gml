@@ -1,7 +1,7 @@
 {
     var params = argument[0];
-    show_message(params);
-    if (array_length_1d(params) == 2 || array_length_1d(params) == 3)
+    
+    if (array_length_1d(params) == 2)
     {
         return cd(params[1]);
     }
