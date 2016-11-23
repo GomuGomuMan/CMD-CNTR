@@ -142,6 +142,7 @@
       <script>scripts\cd.gml</script>
       <script>scripts\ls.gml</script>
       <script>scripts\cp.gml</script>
+      <script>scripts\pwd.gml</script>
     </scripts>
     <scripts name="Event_Execute">
       <script>scripts\addExecute.gml</script>
@@ -152,6 +153,7 @@
       <script>scripts\cdExecute.gml</script>
       <script>scripts\lsExecute.gml</script>
       <script>scripts\cpExecute.gml</script>
+      <script>scripts\pwdExecute.gml</script>
     </scripts>
     <scripts name="Event_Execute_Duplicate">
       <script>scripts\sumExecute.gml</script>
