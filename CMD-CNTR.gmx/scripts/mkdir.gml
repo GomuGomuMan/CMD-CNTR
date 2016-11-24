@@ -1,3 +1,4 @@
+///mkdir(dest)
 {
     var dest = argument[0];
     var dest_dir = current_dir + "\" + dest;

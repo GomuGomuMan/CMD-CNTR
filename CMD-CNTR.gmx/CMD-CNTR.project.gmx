@@ -145,6 +145,7 @@
       <script>scripts\pwd.gml</script>
       <script>scripts\mkdir.gml</script>
       <script>scripts\rm.gml</script>
+      <script>scripts\mv.gml</script>
     </scripts>
     <scripts name="Event_Execute">
       <script>scripts\addExecute.gml</script>
@@ -158,6 +159,7 @@
       <script>scripts\pwdExecute.gml</script>
       <script>scripts\mkdirExecute.gml</script>
       <script>scripts\rmExecute.gml</script>
+      <script>scripts\mvExecute.gml</script>
     </scripts>
     <scripts name="Event_Execute_Duplicate">
       <script>scripts\sumExecute.gml</script>
