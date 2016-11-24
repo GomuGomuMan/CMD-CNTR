@@ -17,15 +17,7 @@
         var file_name = src;
         if (string_pos("\", src) != 0)
         {
-            var i = string_length(src) - 1;
-            var isFound = false;
-            while (i >= 0  && !isFound)
-            {
-                if (string_char_at(src, i) == "\")
-                    isFound = true;
-                else
-                    --i;
-            }
+            var i = find_last_backSlash(src);
             file_name = string_copy(src, i + 1, string_length(src) - i + 1);
         }
         

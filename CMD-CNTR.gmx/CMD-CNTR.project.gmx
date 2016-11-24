@@ -143,6 +143,7 @@
       <script>scripts\ls.gml</script>
       <script>scripts\cp.gml</script>
       <script>scripts\pwd.gml</script>
+      <script>scripts\mkdir.gml</script>
     </scripts>
     <scripts name="Event_Execute">
       <script>scripts\addExecute.gml</script>
@@ -154,6 +155,7 @@
       <script>scripts\lsExecute.gml</script>
       <script>scripts\cpExecute.gml</script>
       <script>scripts\pwdExecute.gml</script>
+      <script>scripts\mkdirExecute.gml</script>
     </scripts>
     <scripts name="Event_Execute_Duplicate">
       <script>scripts\sumExecute.gml</script>
@@ -192,6 +194,7 @@
       <scripts name="utilities">
         <script>scripts\stringSplit.gml</script>
         <script>scripts\runCommand.gml</script>
+        <script>scripts\find_last_backSlash.gml</script>
       </scripts>
     </scripts>
   </scripts>
