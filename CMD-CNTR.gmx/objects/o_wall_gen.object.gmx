@@ -62,8 +62,8 @@ t6_avatar_speed = 10;
 
 time = 6.55;
 alarm[0] = time*room_speed;
-instance_create(-2, 800, o_leftwall);
-instance_create(241, 800, o_rightwall);
+instance_create(777, 800, o_leftwall);
+instance_create(1025, 800, o_rightwall);
 global.wall_count += 1;
 </string>
           </argument>
@@ -126,8 +126,8 @@ global.wall_count += 1;
         vspeed = global.wall_speed;
     }
     alarm[0] = time*room_speed;
-    instance_create(-2, 800, o_leftwall);
-    instance_create(241, 800, o_rightwall);
+    instance_create(777, 800, o_leftwall);
+    instance_create(1025, 800, o_rightwall);
     global.wall_count += 1;
 }
 </string>

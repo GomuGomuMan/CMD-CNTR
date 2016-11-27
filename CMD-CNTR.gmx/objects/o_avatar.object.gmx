@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>image_index = 0;
 image_speed = 0;
+
+destruct_1 = 2
+destruct_2 = 4
+destruct_3 = 6
+destruct_4 = 8
 </string>
           </argument>
         </arguments>
@@ -90,7 +95,47 @@ image_speed = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_cli_verticalLine">
+    <event eventtype="4" ename="o_rightwall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sprite_index = s_avatar_hit;
+global.hit_num += 1;
+if global.hit_num &lt; global.freeze_value x -= 50;
+hspeed = -(global.avatar_speed);
+alarm[0] = room_speed * 1;
+
+if global.hit_num == destruct_1 {
+    obj_building_hq.sprite_index = building_hq1;
+}
+else if global.hit_num == destruct_2 {
+    obj_building_hq.sprite_index = building_hq2;
+}
+else if global.hit_num == destruct_3 {
+    obj_building_hq.sprite_index = building_hq3;
+}
+else if global.hit_num == destruct_4 {
+    obj_building_hq.sprite_index = building_hq4;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="o_leftwall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -112,6 +157,19 @@ global.hit_num += 1;
 x += 50;
 if global.hit_num &lt; global.freeze_value hspeed = global.avatar_speed;
 alarm[0] = room_speed * 1;
+
+if global.hit_num == destruct_1 {
+    obj_building_hq.sprite_index = building_hq1;
+}
+else if global.hit_num == destruct_2 {
+    obj_building_hq.sprite_index = building_hq2;
+}
+else if global.hit_num == destruct_3 {
+    obj_building_hq.sprite_index = building_hq3;
+}
+else if global.hit_num == destruct_4 {
+    obj_building_hq.sprite_index = building_hq4;
+}
 </string>
           </argument>
         </arguments>

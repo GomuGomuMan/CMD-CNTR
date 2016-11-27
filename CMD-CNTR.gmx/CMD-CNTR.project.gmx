@@ -91,6 +91,10 @@
         <sprite>sprites\building_pink</sprite>
         <sprite>sprites\building_shop</sprite>
         <sprite>sprites\building_weird</sprite>
+        <sprite>sprites\building_hq1</sprite>
+        <sprite>sprites\building_hq2</sprite>
+        <sprite>sprites\building_hq3</sprite>
+        <sprite>sprites\building_hq4</sprite>
       </sprites>
     </sprites>
     <sprites name="puzzle3">
@@ -101,20 +105,6 @@
       <sprite>sprites\spr_terminalLeftSide</sprite>
       <sprite>sprites\spr_terminalRightSide</sprite>
       <sprite>sprites\spr_textBox</sprite>
-    </sprites>
-    <sprites name="puzzle2">
-      <sprite>sprites\s_avatar</sprite>
-      <sprite>sprites\s_avatar_hit</sprite>
-      <sprite>sprites\s_bird</sprite>
-      <sprite>sprites\s_leftwall</sprite>
-      <sprite>sprites\s_leftwall_hit</sprite>
-      <sprite>sprites\s_pipe</sprite>
-      <sprite>sprites\s_pipe2</sprite>
-      <sprite>sprites\s_rightwall</sprite>
-      <sprite>sprites\s_rightwall_hit</sprite>
-      <sprite>sprites\s_wall</sprite>
-      <sprite>sprites\s_wall_hit</sprite>
-      <sprite>sprites\sprite3</sprite>
     </sprites>
     <sprites name="puzzle1">
       <sprite>sprites\spr_A</sprite>
@@ -137,6 +127,17 @@
       <sprite>sprites\spr_O</sprite>
       <sprite>sprites\spr_piece</sprite>
       <sprite>sprites\spr_psol1</sprite>
+    </sprites>
+    <sprites name="puzzle2">
+      <sprite>sprites\s_avatar</sprite>
+      <sprite>sprites\s_avatar_hit</sprite>
+      <sprite>sprites\s_leftwall</sprite>
+      <sprite>sprites\s_leftwall_hit</sprite>
+      <sprite>sprites\s_right_cli</sprite>
+      <sprite>sprites\s_rightwall</sprite>
+      <sprite>sprites\s_rightwall_hit</sprite>
+      <sprite>sprites\s_wall</sprite>
+      <sprite>sprites\s_wall_hit</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -262,13 +263,6 @@
       <object>objects\obj_terminalLeftSide</object>
       <object>objects\obj_textBoxLevelMaster</object>
     </objects>
-    <objects name="puzzle2">
-      <object>objects\o_avatar</object>
-      <object>objects\o_freeze</object>
-      <object>objects\o_leftwall</object>
-      <object>objects\o_rightwall</object>
-      <object>objects\o_wall_gen</object>
-    </objects>
     <objects name="puzzle1">
       <object>objects\obj_Border</object>
       <object>objects\obj_controller</object>
@@ -297,12 +291,21 @@
       <object>objects\obj_psol7</object>
       <object>objects\obj_psol8</object>
     </objects>
+    <objects name="puzzle2">
+      <object>objects\o_avatar</object>
+      <object>objects\o_freeze</object>
+      <object>objects\o_leftwall</object>
+      <object>objects\o_rightcli</object>
+      <object>objects\o_rightwall</object>
+      <object>objects\o_wall_gen</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
-    <room>rooms\room_puzzle2</room>
     <room>rooms\room_puzzle3</room>
     <room>rooms\room_puzzle1</room>
+    <room>rooms\room_puzzle2</room>
+    <room>rooms\room_puzzle2_start</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
