@@ -10,6 +10,9 @@
     
     enabled_keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890";
     
+    // Command Result
+    command_result = "";
+    
     // Is Finish Puzzle 1
     global.isFinishedPuzzle1 = false;
     
@@ -38,6 +41,9 @@
         file_text_readln(file);
     }
     file_text_close(file);
+    
+    // Check if done printing
+    ifDonePrinting = false;
     
     // Check if print is ok for textbox
     print_ok = false;
@@ -88,9 +94,6 @@
     
     // Save player_name
     player_name = "";
-    
-    // Var to check if player is joking
-    isJoking = true;
     
     // Var to check how many times player enter wrong command
     numIncorrectCommand = 0;

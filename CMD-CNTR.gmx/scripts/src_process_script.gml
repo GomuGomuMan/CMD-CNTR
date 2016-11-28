@@ -4,43 +4,16 @@
     {
         // Save player_name and print changed queue head
         case 4:
-            //show_message("HERE");
             player_name = userInput;
             print_dialog();
             break;
         
-        // Check to see if player is joking
-        case 6:
-            //TODO: does it need regex?
-            var tempStr = string_lower(userInput);
-            if (string_pos('y', tempStr) != 0 || string_pos('yes', tempStr) != 0)
-                isJoking = false;
-                
-            print_dialog();
-            break;
-        
-        // If joking, ask for name again
         case 8:
-            if (isJoking)
-            {
-                print_dialog();
-                break;
-            }
-            else
-            {
-                ds_queue_dequeue(cli_ds_line); // Skip this line
-                ds_queue_dequeue(cli_ds_line); // Skip user input line
-            }
-                
-            
-        case 10:
-            if (isJoking)
-                player_name = userInput;
-                
+            player_name = userInput;
             print_dialog();
             break;
             
-        case 17:
+        case 14:
             if (userInput != "open instructions.txt")
             {
                 ++numIncorrectCommand;
@@ -56,32 +29,45 @@
                 //print_dialog();
             }
             break;
-            
-        case 19:
-            if (userInput == "ztel access mainframe")
-            {
-                print_dialog();   
-            }
-            break;
-            
-        case 21:
-            if (userInput == "asdf jkl")
-            {
-                print_dialog();   
-            }
-            break;
         
-        case 26:
+        case 21:
             src_show_world();
             print_dialog();       
             break;
             
-        case 35:
-            show_message(objTextInput.tempInput);
-            if (global.isFinishedPuzzle1)
-            {
+        case 36:
+            if (objTextInput.command_result == "ls Executed")
                 print_dialog();
-            }
+            break;
+            
+        case 38:
+            if (objTextInput.current_dir = "HOME\LOCATION_DATABASE" && 
+                objTextInput.command_result == "ls Executed")
+                print_dialog();
+            break;
+        
+        case 40:
+            if (objTextInput.current_dir = "HOME\LOCATION_DATABASE\NEVULA" && 
+                objTextInput.command_result == "ls Executed")
+                print_dialog();
+            break;
+            
+        case 42:
+            if (objTextInput.current_dir = "HOME\LOCATION_DATABASE\NEVULA\INFRASTRUCTURE" && 
+                objTextInput.command_result == "ls Executed")
+                print_dialog();
+            break;
+            
+        case 44:
+            if (directory_exists("HOME\LOCATION_DATABASE
+                \NEVULA\INFRASTRUCTURE\NetworkTower"))
+                print_dialog();
+            break;
+            
+        case 46:
+            if (directory_exists("HOME\LOCATION_DATABASE
+                \NEVULA\INFRASTRUCTURE\NetworkTower"))
+                print_dialog();
             break;
                         
         default:

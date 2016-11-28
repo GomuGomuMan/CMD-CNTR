@@ -19,4 +19,6 @@
         else
             commandResult = "Unknown command.";
     }
+    
+    return commandResult;
 }

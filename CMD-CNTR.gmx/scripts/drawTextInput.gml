@@ -58,9 +58,13 @@
         
         // Increment the count
         ++count;
+        
+        ifDonePrinting = false;
     }
-
-    
+    else
+    {
+        ifDonePrinting = true;
+    }
     
     // Did we go past the bottom? Move up a line
     if (string_height(str) > textHistory_height - padding)

@@ -18,6 +18,7 @@ ATTEMPTING TO ACCESS ZTELARA MAINFRAME.
 .....
 BIOLOGICAL SCAN: ACCEPTED. REQUIRES LOGIN.
 Hey, Jun-Seong again. I'm almost done here. Don't be alarmed if your terminal resets while I send you this hack.
+--User Input
 You can see me now, hanging out in the central hub of my neighborhood. This tower I'm standing next to is packed with computational power, so I have to stay here in order to continue communicating with you. Interdimensional messaging requires some heavy processing. Technically I shouldn't even be able to do it, but nobody is going to catch me. Or stop me.
 I'm sure you have questions. Well, I have answers. I come from a world that's just like yours. And my world isn't the only one. There are an infinite number of Earths, each presiding in their own plane of existence, each following a slightly different timeline. In my dimension, Gandhi was a famous war general. In yours he might have done something different.
 Now, Ztelara is special. Ztelara exists in a place between dimensions, where people from different dimensions can convene and reside. Time doesn't exist here; not in the way that you understand it. And I really live here. The world around me looks as real to me as yours does to you. I chose to escape my world and live here instead.
@@ -27,7 +28,7 @@ The first thing I need you to do is log in. You don't have access creds, so here
 There's a program called Bouncer which can help you out with this. Think of hacking like trying to get into a high-profile club. Give Bouncer the right signals, and he'll let you in. Otherwise you're left standing on the sidewalk, listening to all the fun they're having inside.
 To run Bouncer just type his name in the terminal, and he'll introduce himself.
 --User Input
-Login accepted.
+--CLI Login accepted.
 If you've ever wanted to say "I'm in" like a true 1990s cinema hacker, now's your chance.
 Next step is to repair some critical damage that the virus has already done. I don't know if you noticed, but things are starting to fall apart around here. Damage to the network tower has dropped my connection speed to a dangerous level, and if I lose my connection to you I may not be able to get it back.
 I'm going to send you a list of commands that you can use to navigate the file system. Open the file using 'open cmd1.txt'. Then see if you can use those commands to navigate to the folder containing the files for my city, Nevula.
@@ -35,15 +36,14 @@ Right now you're in the Ztelara home directory. Type 'ls' to see a list of all t
 --User Input
 All cities have their own directory in the LOCATION_DATABASE. Use 'cd LOCATION_DATABASE' to move into that directory, and then type 'ls' again.
 --User Input
---User Input
 See what I mean? Now, to view the files for my city, type 'cd NEVULA' and 'ls' again.
---User Input
 --User Input
 You'll have to figure out which directory the NetworkTower files are in by 'ls'ing each of them. Try 'ls INFRASTRUCTURE' first.
 --User Input
 Thought so. Now replace that file with its backup using 'cp backups/NetworkTower INFRASTRUCTURE/NetworkTower'.
 --User Input
 Now I need you to do the same thing for two more damaged files. The first is 'NEVULA/GOVERNMENT/CityHall'. The second is 'ATHENA/TRANSPORT/Line3'. Replace those with their backup files and we're good to go.
+--User Input
 VIRUS: HA HA HA. TRYING TO STOP ME?
 VIRUS: YOU CANNOT STOP ME.
 Oh boy.

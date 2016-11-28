@@ -3,8 +3,6 @@
     var result = argument[0]
     var length = string_length(result);
     
-    show_message(string_char_at(result, 0));
-    show_message(string_char_at(result, length));
     if ((string_char_at(result, 0) = "'" && string_char_at(result, length) = "'")
         || (string_char_at(result, 0) = '"' && string_char_at(result, length) = '"'))
     {
