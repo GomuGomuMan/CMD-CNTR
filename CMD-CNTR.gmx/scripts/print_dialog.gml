@@ -2,10 +2,16 @@
 {
     while(ds_queue_head(cli_ds_line) != "--User Input#")
     {
-        if (string_pos('--CLI ', ds_queue_head(cli_ds_line)) != 0)
+        show_message(ds_queue_head(cli_ds_line));
+        if (string_pos('--CLI ', string(ds_queue_head(cli_ds_line))) != 0)
         {
             var tempStr = string_replace(ds_queue_head(cli_ds_line), '--CLI ', '');
             objTextInput.message += tempStr;
+        }
+        else if (string_pos('VIRUS: ', ds_queue_head(cli_ds_line)) != 0)
+        {
+            var tempStr = string_replace(ds_queue_head(cli_ds_line), 'VIRUS: ', '');
+            obj_cli_virus.message = tempStr;
         }
         else if (string_pos('PLAYER_NAME', ds_queue_head(cli_ds_line)) != 0)
         {

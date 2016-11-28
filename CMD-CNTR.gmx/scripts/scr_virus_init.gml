@@ -3,12 +3,6 @@ width = 672;
 height = 160;
 padding = 8;
 
-// Test bool
-test = false;
-
-// Create a queue
-cli_ds_line = ds_queue_create();
-
 // Keep track of the starting line
 start = ds_list_create();
 ds_list_add(start, 0);

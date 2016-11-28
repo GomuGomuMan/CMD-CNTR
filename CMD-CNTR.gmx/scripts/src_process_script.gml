@@ -59,14 +59,13 @@
             break;
             
         case 44:
-            if (directory_exists("HOME\LOCATION_DATABASE
-                \NEVULA\INFRASTRUCTURE\NetworkTower"))
+            if (objTextInput.command_result == "cp Executed")
                 print_dialog();
             break;
             
         case 46:
-            if (directory_exists("HOME\LOCATION_DATABASE
-                \NEVULA\INFRASTRUCTURE\NetworkTower"))
+            test = true;
+            if (objTextInput.command_result == "cp Executed")
                 print_dialog();
             break;
                         

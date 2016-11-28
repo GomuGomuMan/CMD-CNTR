@@ -243,6 +243,11 @@
         <script>scripts\find_last_backSlash.gml</script>
         <script>scripts\str_extract.gml</script>
       </scripts>
+      <scripts name="virus">
+        <script>scripts\scr_virus_init.gml</script>
+        <script>scripts\src_virus_draw.gml</script>
+        <script>scripts\src_virus_update.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -257,6 +262,7 @@
         <object>objects\obj_cli_verticalLine</object>
         <object>objects\objTextInput</object>
         <object>objects\obj_solid</object>
+        <object>objects\obj_cli_virus</object>
       </objects>
       <objects name="textbox">
         <object>objects\obj_cli_textbox</object>
