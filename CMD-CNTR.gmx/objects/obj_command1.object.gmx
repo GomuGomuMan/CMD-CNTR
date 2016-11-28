@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// Destroy when off game area.
 
-if(y &gt; 450)
+if(y &gt; 650)
 {
     instance_destroy();
 }
@@ -36,7 +36,7 @@ if(y &gt; 450)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objTextInput">
+    <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -54,8 +54,14 @@ if(y &gt; 450)
           <argument>
             <kind>1</kind>
             <string>/// Destory when colliding with player obkect.
-
 instance_destroy();
+
+
+
+
+
+
+
 </string>
           </argument>
         </arguments>

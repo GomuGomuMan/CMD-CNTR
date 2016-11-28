@@ -25,10 +25,64 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Does nothing for now but may later.
+            <string>/// Creates and defines all object variables
 
+dropSpeed = 3;
+dropFrequency = 2;
 
-//alarm[0] = room_speed * 2;
+dropSpeedX2 = false;
+invertDirection = false;
+dropFrequencyX2 = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Sets invertDirection back to normal (false).
+
+invertDirection = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Sets the dropSpeed back to 3
+dropSpeed = 3;
+
 
 </string>
           </argument>
@@ -54,31 +108,52 @@
             <kind>1</kind>
             <string>///Drops a random command object everytime the alarm goes off.
 
-randomNumber=irandom_range(1,60);
-randomX=irandom_range(860,1100);
-
-//instanceChoices = ds_list_create();
+randomNumber=irandom_range(0,5);
+randomXPosition=irandom_range(860,1100);
 
 
-if(randomNumber&lt;=20)
+commandList[5] = obj_command6;
+commandList[0] = obj_command1;
+commandList[1] = obj_command2;
+commandList[2] = obj_command3;
+commandList[3] = obj_command4;
+commandList[4] = obj_command5;
+
+
+
+var command=instance_create(randomXPosition,0,commandList[randomNumber]);
+command.speed= dropSpeed;
+command.direction=270;
+
+
+
+/*
+if(randomNumber&lt;=30)
 {
-    command1=instance_create(randomX,0,obj_command1)
-    command1.speed=3
+    command1=instance_create(randomXPosition,0,commandList[0]);
+    command1.speed= dropSpeed;
     command1.direction=270;
 }
 
-else if(randomNumber&gt;20 &amp;&amp; randomNumber&lt;=40)
+else if(randomNumber&gt;30 &amp;&amp; randomNumber&lt;=40)
 {
-    command1=instance_create(randomX,0,obj_command2);
-    command1.speed=3
+    command1=instance_create(randomXPosition,0,commandList[1]);
+    command1.speed= dropSpeed;
     command1.direction=270;
 }
-else if(randomNumber&gt;40 &amp;&amp; randomNumber&lt;=60)
+else if(randomNumber&gt;80&amp;&amp; randomNumber&lt;=100)
 {
-    command1=instance_create(randomX,0,obj_command3);
-    command1.speed=3
+    command1=instance_create(randomXPosition,0,commandList[2]);
+    command1.speed= dropSpeed;
     command1.direction=270;
 }
+else
+{
+    command1=instance_create(randomXPosition,0,obj_invertDirection);
+    command1.speed= dropSpeed;
+    command1.direction=270;
+}
+*/
 </string>
           </argument>
         </arguments>
@@ -104,16 +179,31 @@ else if(randomNumber&gt;40 &amp;&amp; randomNumber&lt;=60)
             <string>/// Checks if the alaram is not set. If not set then resets to 15 seconds.
 
 
-if(global.gameStart == true)
+if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 {
     if(alarm[0] == -1)
     {
-        alarm[0] =  room_speed * 2;
+        alarm[0] =  room_speed * dropFrequency;
     }
 }
 
 
 
+if(dropSpeedX2 == true)
+{
+    if(alarm[1] == -1)
+    {
+        alarm[1] = room_speed * 5;
+    }
+}
+
+if(invertDirection == true)
+{
+    if(alarm[2] == -1)
+    {
+        alarm[2] = room_speed * 10;
+    }
+}
 </string>
           </argument>
         </arguments>
