@@ -221,6 +221,7 @@
         <script>scripts\stringSplit.gml</script>
         <script>scripts\runCommand.gml</script>
         <script>scripts\find_last_backSlash.gml</script>
+        <script>scripts\str_extract.gml</script>
       </scripts>
     </scripts>
   </scripts>
