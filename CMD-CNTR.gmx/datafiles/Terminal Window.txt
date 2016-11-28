@@ -3,38 +3,91 @@ Hello?
 Huh. So there is someone on the other side of this connection. What's your name?
 --User Input
 PLAYER_NAME, you say? Is that your real name? This comprehensive profile of you says something different...
---User Input
 Ha ha, just joking. The only information I have about you is the name you just gave me, your IP address, and your dimensional code.
---User Input
 I'll give you one more chance to type your real name. And if you joke with me, you'll just have to live with it, because I'm calling you that forever.
 --User Input
-Nice to meet you, PLAYER_NAME. I'm Jun-Seong. I am contacting you from a place called Ztelara. I know you've never heard of it, because no one from your dimension has ever discovered it. Plenty of other dimensions have, but yours is primitive. Don't take that the wrong way.
-The thing is, we here at Ztelara don't have a lot of time. We've got a problem that only someone on the outside can solve. I've been scanning dimensional codes for hours, searching for a solid connection, and here you are. We need your help, PLAYER_NAME. Are you willing to give it?
---User Input
-I know we just met. I know it's weird. People in your dimension probably still warn each other about strangers on the Internet. Which is why I'll promise not to ask you anything personal. I just need you to type in a few simple lines of code. Do that, and you could save lives.
+Nice to meet you, PLAYER_NAME. I'm Jun-Seong. I am contacting you from a place called Ztelara. And I need your help.
+Ztelara is under attack. We've got a problem that only someone on the outside can solve.
+I just need you to type in a few simple lines of code. Do that, and you could save thousands of lives.
 You know what? I think I could hack up a visual representation of myself, and Ztelara, so it doesn't feel so weird for you. In the meantime, could you open up the file I'm about to send you and follow the instructions?
 File received: instructions.txt
 --User Input
 The command is 'open instructions.txt'. Sorry, I forget that not everyone knows how to do these things.
 --User Input
-ATTEMPTING TO ACCESS ZTELARA MAINFRAME. REQUIRES BIOLOGICAL SCAN.
---User Input
+ATTEMPTING TO ACCESS ZTELARA MAINFRAME.
 .....
 BIOLOGICAL SCAN: ACCEPTED. REQUIRES LOGIN.
---User Input
-Me again. I'm almost done here. Don't be alarmed if your terminal resets while I send you this hack.
---User Input
-There we go. You can see me now, hanging out in the central hub of my neighborhood. This tower I'm standing next to is packed with computational power, so I have to stay here in order to continue communicating with you. Interdimensional messaging requires some heavy processing. Technically I shouldn't even be able to do it, but nobody is going to catch me. Or stop me.
-I'm sure you have questions. What's all this "interdimensional" mumbo-jumbo? Well, let me make it simple for you. I come from a world that's just like yours. And my world isn't the only one. There are an infinite number of Earths, each presiding in their own plane of existence, each following a slightly different timeline. In my dimension, Gandhi was a famous war general. In yours he might have done something different.
+Hey, Jun-Seong again. I'm almost done here. Don't be alarmed if your terminal resets while I send you this hack.
+You can see me now, hanging out in the central hub of my neighborhood. This tower I'm standing next to is packed with computational power, so I have to stay here in order to continue communicating with you. Interdimensional messaging requires some heavy processing. Technically I shouldn't even be able to do it, but nobody is going to catch me. Or stop me.
+I'm sure you have questions. Well, I have answers. I come from a world that's just like yours. And my world isn't the only one. There are an infinite number of Earths, each presiding in their own plane of existence, each following a slightly different timeline. In my dimension, Gandhi was a famous war general. In yours he might have done something different.
 Now, Ztelara is special. Ztelara exists in a place between dimensions, where people from different dimensions can convene and reside. Time doesn't exist here; not in the way that you understand it. And I really live here. The world around me looks as real to me as yours does to you. I chose to escape my world and live here instead.
-But my world will be torn apart if you don't help it. 
-There's a virus. It's taking apart the source code which allows Ztelara to function and exist. It could have only been created by an outsider. Someone like you, with potential access to the mainframe.
+But my world will be torn apart if you don't help it.
+There's a virus. It's taking apart the source code which allows Ztelara to exist. It could have only been created by an outsider. Someone like you, with potential access to the mainframe.
 The first thing I need you to do is log in. You don't have access creds, so here's your first task: to hack it.
 There's a program called Bouncer which can help you out with this. Think of hacking like trying to get into a high-profile club. Give Bouncer the right signals, and he'll let you in. Otherwise you're left standing on the sidewalk, listening to all the fun they're having inside.
 To run Bouncer just type his name in the terminal, and he'll introduce himself.
 --User Input
---CLI Login accepted.
+Login accepted.
 If you've ever wanted to say "I'm in" like a true 1990s cinema hacker, now's your chance.
 Next step is to repair some critical damage that the virus has already done. I don't know if you noticed, but things are starting to fall apart around here. Damage to the network tower has dropped my connection speed to a dangerous level, and if I lose my connection to you I may not be able to get it back.
 I'm going to send you a list of commands that you can use to navigate the file system. Open the file using 'open cmd1.txt'. Then see if you can use those commands to navigate to the folder containing the files for my city, Nevula.
 --User Input
+All cities have their own directory in the LOCATION_DATABASE. Use 'cd LOCATION_DATABASE' to move into that directory, and then type 'ls' again.
+--User Input
+--User Input
+See what I mean? Now, to view the files for my city, type 'cd NEVULA' and 'ls' again.
+--User Input
+--User Input
+You'll have to figure out which directory the NetworkTower files are in by 'ls'ing each of them. Try 'ls INFRASTRUCTURE' first.
+--User Input
+Thought so. Now replace that file with its backup using 'cp backups/NetworkTower INFRASTRUCTURE/NetworkTower'.
+--User Input
+Now I need you to do the same thing for two more damaged files. The first is 'NEVULA/GOVERNMENT/CityHall'. The second is 'ATHENA/TRANSPORT/Line3'. Replace those with their backup files and we're good to go.
+VIRUS: HA HA HA. TRYING TO STOP ME?
+VIRUS: YOU CANNOT STOP ME.
+Oh boy.
+We've got a sentient virus on our hands.
+Nevermind that for now. I have good news. While you were repairing files, I was browsing through them for some kind of keyword that could indicate the presence of the virus. A 'trademark', if you will. This one's trademark is 'FUN_'. It will be prefixed on every file the virus is using to mess things up around here. If you delete all those files, then bye bye virus.
+Type 'open cmd2.txt' to view a new list of commands you'll need to use. Here's your task list:
+I wish it were possible to delete each file directly, but the virus has it rigged so that deleting one will only spawn a new one in the same place. You have to delete them all at once to disable this.
+VIRUS: HA HA. YOU THOUGHT THIS WOULD BE EASY? TRY AGAIN.
+Heh... This is what I was afraid of. Sentient viruses like to play games. Keep calm and learn how to beat it.
+You should be able to use the same commands as before, just not by typing. Try to catch the right commands using your arrow keys.
+Good riddance.
+Huh? Ztelara is still deteriorating?
+VIRUS: HA HA. YOU THOUGHT I WAS GONE? THINK AGAIN. I CAN'T BE KILLED I CAN'T BE KILLED I CAN'T BE KILLED
+Oh no.
+Okay, well. I found the problem. Even though we deleted the virus files, some leftover processes are still running.
+Type 'open cmd3.txt' to view the last couple of commands I need you to use.
+The virus prefixes its processes with 'FUN_' as well. Find out the process IDs and kill them. Hurry. Ztelara is running out of time.
+VIRUS: HA HA HA. YOU ACTIVATED MY TRAP CARD.
+VIRUS: GOOD LUCK TRYING TO KILL ME NOW.
+This is bad.
+Use your arrow keys. Don't touch the walls. More of Ztelara will be deleted every time you do.
+I have to find a way to kill those processes. You focus on not touching the walls.
+VIRUS: HA HA HA. IT'S A GAS. WATCHING YOUR FRIEND SCRAMBLE WHILE YOU TRY NOT TO KILL THEM.
+VIRUS: ONE WRONG MOVE AND YOUR FRIEND IS DEAD.
+VIRUS: ONE WRONG MOVE AND AN ENTIRE WORLD IS DELETED FROM EXISTENCE. THOUSANDS OF PEOPLE.
+VIRUS: HA HA HA HA HA HA HA HA HA HA HA
+I got it!
+I didn't think it was possible for me to access those processes from inside, let alone kill them.
+Technically it shouldn't have been possible. They say people gain superhuman strength when faced with a desperate situation. I wonder if it applies to coding, too?
+Your presence in the system gave me an entrypoint. So y'know... I couldn't have done it without you. All that sappy stuff.
+Thank you. If I hadn't found you, or if you hadn't been willing to help... I would probably be nonexistent right now.
+There's still a lot of questions to be answered. For one thing, I'm going to track down whoever created that virus. Someone willing to wipe out thousands of people doesn't deserve freedom in any dimension.
+I know you probably have business to take care of in your home dimension. Just, y'know... stay in touch. I'll make improvements to this interface for you. Maybe someday you can put on a VR headset and approach me face-to-face.
+The creators of Ztelara would thank you too.
+Alyssa Tan
+Duy Nguyen
+John Yu
+Chris Sandoval
+Hugo Torres
+Alex Panganiban
+Each one of them had a vision for this world, and you allowed that vision to continue existing. 
+Anyways... I hate to say it, but I have some responsibilities to take care of at City Hall. They'll scold me for being late again. Little do they know that we just saved all their hides.
+Gotta run.
+Connection lost.
+I almost forgot to tell you -- check back soon! The interface will be back better than ever, just for you. CMD-CNTR 2.0, VIP edition, with ULTRA graphics.
+...
+Thank you for everything, PLAYER_NAME.
+See ya. :)  --JS
