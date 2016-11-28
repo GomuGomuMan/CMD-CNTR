@@ -31,6 +31,7 @@ Login accepted.
 If you've ever wanted to say "I'm in" like a true 1990s cinema hacker, now's your chance.
 Next step is to repair some critical damage that the virus has already done. I don't know if you noticed, but things are starting to fall apart around here. Damage to the network tower has dropped my connection speed to a dangerous level, and if I lose my connection to you I may not be able to get it back.
 I'm going to send you a list of commands that you can use to navigate the file system. Open the file using 'open cmd1.txt'. Then see if you can use those commands to navigate to the folder containing the files for my city, Nevula.
+Right now you're in the Ztelara home directory. Type 'ls' to see a list of all the folders in that directory.
 --User Input
 All cities have their own directory in the LOCATION_DATABASE. Use 'cd LOCATION_DATABASE' to move into that directory, and then type 'ls' again.
 --User Input
