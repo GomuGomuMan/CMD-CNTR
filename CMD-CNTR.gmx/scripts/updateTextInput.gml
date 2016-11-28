@@ -13,13 +13,14 @@
     {
         room_goto(room_puzzle1);
     }
-    
+    else if (userInput == "puzzle2")
+        room_goto(room_puzzle2);
     else if (userInput = "puzzle3")
     {
         room_goto(room_puzzle3);
     }
     
-    else if (keyboard_check_pressed(vk_enter) && pause)
+    else if (keyboard_check_pressed(vk_enter) && userInput != "" && pause)
     {
     
         message += ">" + userInput + "#";

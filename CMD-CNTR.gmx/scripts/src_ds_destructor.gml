@@ -8,4 +8,4 @@ ds_list_destroy(start);
 ds_list_destroy(file_sys);
 
 // Destroy dir
-
+directory_destroy("HOME");

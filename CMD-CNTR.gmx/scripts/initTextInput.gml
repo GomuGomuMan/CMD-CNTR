@@ -25,8 +25,19 @@
         ds_list_add(file_sys, file_text_read_string(file));
         file_text_readln(file);
     }
+    file_text_close(file);
     current_dir = "HOME";
     src_create_file_sys();
+    
+    // Load processes
+    process_list = ds_list_create();
+    file = file_text_open_read(working_directory + "processes.txt");
+    while(!file_text_eof(process_list))
+    {
+        ds_list_add(process_list, file_text_read_string(file));
+        file_text_readln(file);
+    }
+    file_text_close(file);
     
     // Check if print is ok for textbox
     print_ok = false;

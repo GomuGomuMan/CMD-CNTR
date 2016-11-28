@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="4" name="datafiles">
+  <datafiles number="6" name="datafiles">
     <datafile>
       <name>Terminal Window.txt</name>
       <exists>-1</exists>
@@ -55,6 +55,23 @@
       </ConfigOptions>
       <filename>file_system.txt</filename>
     </datafile>
+    <datafile>
+      <name>processes.txt</name>
+      <exists>-1</exists>
+      <size>1167</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>processes.txt</filename>
+    </datafile>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
@@ -71,9 +88,28 @@
         <sprite>sprites\building_hq</sprite>
         <sprite>sprites\building_dome</sprite>
         <sprite>sprites\building_futuristic</sprite>
-        <sprite>sprites\building_pink</sprite>
         <sprite>sprites\building_shop</sprite>
-        <sprite>sprites\building_weird</sprite>
+        <sprite>sprites\weirdbuilding</sprite>
+        <sprite>sprites\building_hq1</sprite>
+        <sprite>sprites\building_hq2</sprite>
+        <sprite>sprites\building_hq3</sprite>
+        <sprite>sprites\building_hq4</sprite>
+        <sprite>sprites\building_dome1</sprite>
+        <sprite>sprites\building_dome2</sprite>
+        <sprite>sprites\building_dome3</sprite>
+        <sprite>sprites\building_dome4</sprite>
+        <sprite>sprites\building_futuristic1</sprite>
+        <sprite>sprites\building_futuristic2</sprite>
+        <sprite>sprites\building_futuristic3</sprite>
+        <sprite>sprites\building_futuristic4</sprite>
+        <sprite>sprites\building_shop_1</sprite>
+        <sprite>sprites\building_shop_2</sprite>
+        <sprite>sprites\building_shop_3</sprite>
+        <sprite>sprites\building_shop_4</sprite>
+        <sprite>sprites\weirdbuilding1</sprite>
+        <sprite>sprites\weirdbuilding2</sprite>
+        <sprite>sprites\weirdbuilding3</sprite>
+        <sprite>sprites\weirdbuilding4</sprite>
       </sprites>
     </sprites>
     <sprites name="puzzle3">
@@ -112,10 +148,26 @@
       <sprite>sprites\spr_piece</sprite>
       <sprite>sprites\spr_psol1</sprite>
     </sprites>
+    <sprites name="puzzle2">
+      <sprite>sprites\s_avatar</sprite>
+      <sprite>sprites\s_avatar_hit</sprite>
+      <sprite>sprites\s_leftwall</sprite>
+      <sprite>sprites\s_leftwall_hit</sprite>
+      <sprite>sprites\s_right_cli</sprite>
+      <sprite>sprites\s_rightwall</sprite>
+      <sprite>sprites\s_rightwall_hit</sprite>
+      <sprite>sprites\s_wall</sprite>
+      <sprite>sprites\s_wall_hit</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_solid</background>
-    <background>background\bg_cli_vertical</background>
+    <backgrounds name="puzzle2">
+      <background>background\background1</background>
+    </backgrounds>
+    <backgrounds name="cli">
+      <background>background\bg_solid</background>
+      <background>background\bg_cli_vertical</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -126,6 +178,14 @@
       <script>scripts\bouncer.gml</script>
       <script>scripts\whoami.gml</script>
       <script>scripts\cd.gml</script>
+      <script>scripts\ls.gml</script>
+      <script>scripts\cp.gml</script>
+      <script>scripts\pwd.gml</script>
+      <script>scripts\mkdir.gml</script>
+      <script>scripts\rm.gml</script>
+      <script>scripts\mv.gml</script>
+      <script>scripts\ps.gml</script>
+      <script>scripts\kill.gml</script>
     </scripts>
     <scripts name="Event_Execute">
       <script>scripts\addExecute.gml</script>
@@ -134,6 +194,14 @@
       <script>scripts\bouncerExecute.gml</script>
       <script>scripts\whoamiExecute.gml</script>
       <script>scripts\cdExecute.gml</script>
+      <script>scripts\lsExecute.gml</script>
+      <script>scripts\cpExecute.gml</script>
+      <script>scripts\pwdExecute.gml</script>
+      <script>scripts\mkdirExecute.gml</script>
+      <script>scripts\rmExecute.gml</script>
+      <script>scripts\mvExecute.gml</script>
+      <script>scripts\psExecute.gml</script>
+      <script>scripts\killExecute.gml</script>
     </scripts>
     <scripts name="Event_Execute_Duplicate">
       <script>scripts\sumExecute.gml</script>
@@ -150,8 +218,6 @@
         <script>scripts\clearUserInput.gml</script>
         <script>scripts\src_ds_destructor.gml</script>
       </scripts>
-      <script>scripts\stringSplit.gml</script>
-      <script>scripts\runCommand.gml</script>
       <scripts name="tile">
         <script>scripts\tile_fill_obj.gml</script>
         <script>scripts\scr_tile_drawHorizontal.gml</script>
@@ -170,6 +236,11 @@
         <script>scripts\src_process_script.gml</script>
         <script>scripts\src_show_world.gml</script>
         <script>scripts\src_create_file_sys.gml</script>
+      </scripts>
+      <scripts name="utilities">
+        <script>scripts\stringSplit.gml</script>
+        <script>scripts\runCommand.gml</script>
+        <script>scripts\find_last_backSlash.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -219,10 +290,10 @@
     </objects>
     <objects name="puzzle1">
       <object>objects\obj_Border</object>
+      <object>objects\obj_controller</object>
       <object>objects\obj_piece1</object>
       <object>objects\obj_piece2</object>
       <object>objects\obj_piece3</object>
-      <object>objects\obj_controller</object>
       <object>objects\obj_piece4</object>
       <object>objects\obj_piece5</object>
       <object>objects\obj_piece6</object>
@@ -245,11 +316,21 @@
       <object>objects\obj_psol7</object>
       <object>objects\obj_psol8</object>
     </objects>
+    <objects name="puzzle2">
+      <object>objects\o_avatar</object>
+      <object>objects\o_freeze</object>
+      <object>objects\o_leftwall</object>
+      <object>objects\o_rightcli</object>
+      <object>objects\o_rightwall</object>
+      <object>objects\o_wall_gen</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
-    <room>rooms\room_puzzle1</room>
     <room>rooms\room_puzzle3</room>
+    <room>rooms\room_puzzle1</room>
+    <room>rooms\room_puzzle2</room>
+    <room>rooms\room_puzzle2_start</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
