@@ -88,19 +88,39 @@
         <sprite>sprites\building_hq</sprite>
         <sprite>sprites\building_dome</sprite>
         <sprite>sprites\building_futuristic</sprite>
-        <sprite>sprites\building_pink</sprite>
         <sprite>sprites\building_shop</sprite>
-        <sprite>sprites\building_weird</sprite>
+        <sprite>sprites\weirdbuilding</sprite>
         <sprite>sprites\building_hq1</sprite>
         <sprite>sprites\building_hq2</sprite>
         <sprite>sprites\building_hq3</sprite>
         <sprite>sprites\building_hq4</sprite>
+        <sprite>sprites\building_dome1</sprite>
+        <sprite>sprites\building_dome2</sprite>
+        <sprite>sprites\building_dome3</sprite>
+        <sprite>sprites\building_dome4</sprite>
+        <sprite>sprites\building_futuristic1</sprite>
+        <sprite>sprites\building_futuristic2</sprite>
+        <sprite>sprites\building_futuristic3</sprite>
+        <sprite>sprites\building_futuristic4</sprite>
+        <sprite>sprites\building_shop_1</sprite>
+        <sprite>sprites\building_shop_2</sprite>
+        <sprite>sprites\building_shop_3</sprite>
+        <sprite>sprites\building_shop_4</sprite>
+        <sprite>sprites\weirdbuilding1</sprite>
+        <sprite>sprites\weirdbuilding2</sprite>
+        <sprite>sprites\weirdbuilding3</sprite>
+        <sprite>sprites\weirdbuilding4</sprite>
       </sprites>
     </sprites>
     <sprites name="puzzle3">
-      <sprite>sprites\spr_command1</sprite>
       <sprite>sprites\spr_command2</sprite>
       <sprite>sprites\spr_command3</sprite>
+      <sprite>sprites\spr_command4</sprite>
+      <sprite>sprites\sprr_puzzle3_x2</sprite>
+      <sprite>sprites\spr_command5</sprite>
+      <sprite>sprites\spr_command6</sprite>
+      <sprite>sprites\spr_invertDirection</sprite>
+      <sprite>sprites\spr_command1</sprite>
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_terminalLeftSide</sprite>
       <sprite>sprites\spr_terminalRightSide</sprite>
@@ -254,15 +274,20 @@
       </objects>
     </objects>
     <objects name="puzzle3">
+      <object>objects\obj_termialRightSide</object>
+      <object>objects\obj_terminalLeftSide</object>
+      <object>objects\obj_command4</object>
+      <object>objects\obj_commandDropper</object>
+      <object>objects\obj_command5</object>
+      <object>objects\obj_command6</object>
+      <object>objects\obj_invertDirection</object>
+      <object>objects\obj_textBoxLevelMaster</object>
       <object>objects\obj_badDropper</object>
+      <object>objects\obj_x2</object>
+      <object>objects\obj_player</object>
       <object>objects\obj_command1</object>
       <object>objects\obj_command2</object>
       <object>objects\obj_command3</object>
-      <object>objects\obj_commandDropper</object>
-      <object>objects\obj_player</object>
-      <object>objects\obj_termialRightSide</object>
-      <object>objects\obj_terminalLeftSide</object>
-      <object>objects\obj_textBoxLevelMaster</object>
     </objects>
     <objects name="puzzle1">
       <object>objects\obj_Border</object>
