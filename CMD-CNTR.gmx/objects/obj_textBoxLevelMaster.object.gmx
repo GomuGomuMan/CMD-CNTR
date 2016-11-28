@@ -25,11 +25,40 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets dropping game global level variable to 0 and global gameStart variable to false.
+            <string>puzzle3Level = 0;
+puzzle3GameStart = false;
+levelOver = false;
+currentCommand = "";
 
-global.level = 0;
-global.gameStart = false;
+/*textString = "Level 1 code  " + currentCommand + "  snippet";*/
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Sets the string back to normal.
+/*
+currentCommand = "";
+textString = "Level 1 code  " + currentCommand + "  snippet";
+*/
 </string>
           </argument>
         </arguments>
@@ -54,25 +83,28 @@ global.gameStart = false;
             <kind>1</kind>
             <string>draw_self();
 
-if(global.level == 0)
+
+
+if(puzzle3Level == 0)
 {
-    draw_text_ext(x + 4,y,"Catch the correct falling command to complete the process. Press 'Enter' to receive the first code snippe...",25,400);
+    draw_text_ext(x + 4,y,"Press 'Enter' to receive the first code snippet...",25,400);
 } 
-else if(global.level == 1)
+else if(puzzle3Level == 1)
 {
-    draw_text_ext(x + 4,y,"Level 1 code snippet",25,400);
+    draw_text_ext(x + 4,y,"Level 1 code  " + currentCommand + "  snippet",25,400);
 }
-else if(global.level== 2)
+else if(puzzle3Level == 2)
 {
-    draw_text_ext(x + 4,y,"Level 2 code snippet",25,400);
+    draw_text_ext(x + 4,y,"Level 2 code  " + currentCommand + "  snippet",25,400);
 }
-else if(global.level== 3)
+else if(puzzle3Level == 3)
 {
-    draw_text_ext(x + 4,y,"Level 3 code snippet",25,400);
+    draw_text_ext(x + 4,y,"Level 3 code  " + currentCommand + "  snippet",25,400);
 }
-else if(global.level==4)
+else if(puzzle3Level ==4)
 {
-    draw_text_ext(x + 4,y,"Game Over",25,400);
+    draw_text_ext(x + 4,y,"Well Done",25,400);
+    room_goto(roomMain);
 }
 
 
@@ -116,7 +148,7 @@ else if(global.level==4)
         <arguments>
           <argument>
             <kind>12</kind>
-            <font>fnt_textBoxFont</font>
+            <font>fontCourierNew</font>
           </argument>
           <argument>
             <kind>4</kind>
@@ -142,11 +174,35 @@ else if(global.level==4)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.gameStart == false)
+            <string>if(puzzle3GameStart == false)
 {
-    global.level = 1;
-    global.gameStart = true;
+    puzzle3Level = 1;
+    puzzle3GameStart = true;
 }
+
+else if(puzzle3GameStart == true)
+{
+    if(currentCommand == "Command 1" &amp;&amp; puzzle3Level == 1)
+    {
+        puzzle3Level = 2;
+        currentCommand = "";
+    }   
+    else if(currentCommand == "Command 2" &amp;&amp; puzzle3Level == 2)
+    {
+        puzzle3Level = 3;
+        currentCommand = "";
+    }
+    else if(currentCommand == "Command 3" &amp;&amp; puzzle3Level == 3)
+    {
+        puzzle3Level = 4;
+        currentCommand = "";
+    }
+    else
+    {
+        currentCommand = "";
+    }
+}
+
 
 </string>
           </argument>
