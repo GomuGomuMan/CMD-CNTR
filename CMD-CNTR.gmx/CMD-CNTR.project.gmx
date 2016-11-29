@@ -110,6 +110,11 @@
         <sprite>sprites\weirdbuilding2</sprite>
         <sprite>sprites\weirdbuilding3</sprite>
         <sprite>sprites\weirdbuilding4</sprite>
+        <sprite>sprites\building_cube</sprite>
+        <sprite>sprites\building_cube1</sprite>
+        <sprite>sprites\building_cube2</sprite>
+        <sprite>sprites\building_cube3</sprite>
+        <sprite>sprites\building_cube4</sprite>
       </sprites>
     </sprites>
     <sprites name="puzzle3">
@@ -274,9 +279,12 @@
         <object>objects\obj_building_hq</object>
         <object>objects\obj_building_dome</object>
         <object>objects\obj_building_futuristic</object>
-        <object>objects\obj_building_pink</object>
         <object>objects\obj_building_shop</object>
         <object>objects\obj_building_weird</object>
+        <object>objects\obj_building_cube</object>
+        <object>objects\obj_building_cube_2</object>
+        <object>objects\obj_building_cube_3</object>
+        <object>objects\obj_building_cube_4</object>
       </objects>
     </objects>
     <objects name="puzzle3">
