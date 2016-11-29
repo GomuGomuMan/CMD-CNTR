@@ -8,9 +8,9 @@
             var tempStr = string_replace(ds_queue_head(cli_ds_line), '--CLI ', '');
             objTextInput.message += tempStr;
         }
-        else if (string_pos('--VIRUS', string(ds_queue_head(cli_ds_line))) != 0)
+        else if (string_pos('--VIRUS ', string(ds_queue_head(cli_ds_line))) != 0)
         {
-            var tempStr = string_replace(ds_queue_head(cli_ds_line), 'VIRUS: ', '');
+            var tempStr = string_replace(ds_queue_head(cli_ds_line), '--VIRUS ', '');
             obj_cli_virus.message = tempStr;
         }
         else if (string_pos('PLAYER_NAME', string(ds_queue_head(cli_ds_line))) != 0)

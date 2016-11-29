@@ -4,7 +4,7 @@ height = 160;
 padding = 8;
 
 // Test bool
-test = false;
+ok_first_print = false;
 
 // Create a queue
 cli_ds_line = ds_queue_create();

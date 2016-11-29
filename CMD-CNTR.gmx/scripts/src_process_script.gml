@@ -31,9 +31,22 @@
             break;
         
         case 21:
-            src_show_world();
-            print_dialog();       
+            // Test
+            if (objTextInput.ifDonePrinting)
+            {
+                if_cli_done = true;
+                src_show_world();
+                //print_dialog();
+            }
+            
+            if (obj_cli_textbox.ok_first_print)
+                print_dialog();
+            
+            
             break;
+            /*src_show_world();
+            print_dialog();
+            break;*/
             
         case 36:
             if (objTextInput.command_result == "ls Executed")
@@ -41,9 +54,13 @@
             break;
             
         case 38:
-            if (objTextInput.current_dir = "HOME\LOCATION_DATABASE" && 
-                objTextInput.command_result == "ls Executed")
+            if (objTextInput.current_dir = "HOME\LOCATION_DATABASE")
+            {
+                // Comment out for test
+                //&& objTextInput.command_result == "ls Executed")
                 print_dialog();
+            }
+                
             break;
         
         case 40:

@@ -59,12 +59,19 @@
         // Increment the count
         ++count;
         
-        ifDonePrinting = false;
+        //ifDonePrinting = false;
     }
-    else
+    /*else
+    {
+        ifDonePrinting = true;
+    }*/
+    
+    if (count == count_temp)
     {
         ifDonePrinting = true;
     }
+    else
+        ifDonePrinting = false;
     
     // Did we go past the bottom? Move up a line
     if (string_height(str) > textHistory_height - padding)
@@ -83,11 +90,15 @@
     // Draw the text
     draw_text(textHistory_X + padding, textHistory_Y + padding, str);
     
+    // Test Draw
+    count_temp = count;
+    
+    
     // Testing
     /*draw_text(0, 0, "Current String Height: " + string(string_height(str)));
     draw_text(0, 30, "Limit: " + string(textHistory_height - padding)); */
-    draw_text(0, 60, "First pos: " + string(ds_list_find_value(start, line)));
-    draw_text(0, 75, "Width string: " + string(count - ds_list_find_value(start, line)));
+    //draw_text(0, 60, "First pos: " + string(ds_list_find_value(start, line)));
+    //draw_text(0, 75, "Width string: " + string(count - ds_list_find_value(start, line)));
     /*draw_text(0, 90, "Current word count: " + string(count));
     draw_text(0, 105, "String length: " + string(string_length(str)));
     draw_text(0, 120, "size of ds_list: " + string(ds_list_size(start)));

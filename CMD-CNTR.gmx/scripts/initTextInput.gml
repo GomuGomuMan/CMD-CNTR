@@ -10,6 +10,10 @@
     
     enabled_keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890";
     
+    // Test draw
+    count_temp = 0;
+    if_cli_done = false;
+    
     // Command Result
     command_result = "";
     

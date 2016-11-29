@@ -22,6 +22,7 @@
         room_goto(room_puzzle3);
     }
     
+    //else if (keyboard_check_pressed(vk_enter) && userInput != "" && pause && ifDonePrinting)
     else if (keyboard_check_pressed(vk_enter) && userInput != "" && pause)
     {
         message += ">" + userInput + "#";
@@ -35,28 +36,31 @@
         command_result = runCommand(userInput);
         
         //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));
+        
         if (!isFinishedPart1)
             src_process_script();
-        
             
-        if (ds_exists(cli_ds_line, ds_type_queue))
+        if (ds_exists(cli_ds_line, ds_type_queue)
+            && cli_ds_line_size - ds_queue_size(cli_ds_line) >= 21
+            && if_cli_done)
         {
-            if (cli_ds_line_size - ds_queue_size(cli_ds_line) >= 21)
-            {
-                show_message("HERE");
-                isFinishedPart1 = true;
-                
-                ds_queue_copy(obj_cli_textbox.cli_ds_line, cli_ds_line);
-                ds_queue_destroy(cli_ds_line);
-                print_ok = true;
-                //ifDonePrinting = false;
-            }
+            show_message("HERE");
+            isFinishedPart1 = true;
+            
+            ds_queue_copy(obj_cli_textbox.cli_ds_line, cli_ds_line);
+            ds_queue_destroy(cli_ds_line);
+            print_ok = true;
+            //ifDonePrinting = false;
+            obj_cli_textbox.ok_first_print = true;
         }
-        else 
+        
+        else
         {
             tempInput = userInput;
             print_ok = true;
         }
+        
+        
         
         commandString = userInput;
         //runCommand(userInput);
