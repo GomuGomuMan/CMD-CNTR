@@ -63,14 +63,6 @@ Type 'open cmd3.txt' to view the last couple of commands I need you to use.
 The virus prefixes its processes with 'FUN_' as well. Find out the process IDs and kill them. Hurry. Ztelara is running out of time.
 --VIRUS HA HA HA. YOU ACTIVATED MY TRAP CARD.
 --VIRUS GOOD LUCK TRYING TO KILL ME NOW.
-This is bad.
-Use your arrow keys. Don't touch the walls. More of Ztelara will be deleted every time you do.
-I have to find a way to kill those processes. You focus on not touching the walls.
---VIRUS HA HA HA. IT'S A GAS. WATCHING YOUR FRIEND SCRAMBLE WHILE YOU TRY NOT TO KILL THEM.
---VIRUS ONE WRONG MOVE AND YOUR FRIEND IS DEAD.
---VIRUS ONE WRONG MOVE AND AN ENTIRE WORLD IS DELETED FROM EXISTENCE. THOUSANDS OF PEOPLE.
---VIRUS HA HA HA HA HA HA HA HA HA HA HA
-I got it!
 I didn't think it was possible for me to access those processes from inside, let alone kill them.
 Technically it shouldn't have been possible. They say people gain superhuman strength when faced with a desperate situation. I wonder if it applies to coding, too?
 Your presence in the system gave me an entrypoint. So y'know... I couldn't have done it without you. All that sappy stuff.

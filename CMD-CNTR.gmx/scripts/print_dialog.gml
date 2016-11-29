@@ -2,7 +2,7 @@
 {
     while(ds_queue_head(cli_ds_line) != "--User Input#")
     {
-        show_message(ds_queue_head(cli_ds_line));
+        //show_message(ds_queue_head(cli_ds_line));
         if (string_pos('--CLI ', string(ds_queue_head(cli_ds_line))) != 0)
         {
             var tempStr = string_replace(ds_queue_head(cli_ds_line), '--CLI ', '');
