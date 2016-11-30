@@ -15,7 +15,13 @@ if (string_width(str) > width - padding - padding)
     message = string_delete(message, last_space, 1);
     message = string_insert("#", message, last_space);
     ds_list_add(start, last_space + 1);
+}
+else if (string_length(str) > 0 && prev_msg_len < string_length(message))
+{
+    //message = string_insert("#", message, count - 1);
+    //draw_text(0, 135, "String_length" + string(string_length(str)));
     
+    ds_list_add(start, count);
 }
 
 // Make sure we have not reached the end of the message
@@ -37,8 +43,14 @@ if (string_height(str) > height - padding)
     ++line;
 }
 
+// Test
+draw_text(0, 30, "line: " + string(line));
+draw_text(0, 45, "ds_list size: " + string(ds_list_size(start)));
+draw_text(0, 60, "ds_val string: " + string(ds_list_find_value(start, line)));
+draw_text(0, 75, "Width string: " + string(count - ds_list_find_value(start, line)));
+
 // Grab the string
-str = string_copy(message, ds_list_find_value(start, line), count-ds_list_find_value(start, line));
+str = string_copy(message, ds_list_find_value(start, line), count - ds_list_find_value(start, line));
 
 
 // Draw the text
@@ -47,4 +59,5 @@ draw_text(x + padding, y + padding, str);
 // Testing
 //draw_text(200, 0, "Textbox Length: " + string(line));
 
+prev_msg_len = string_length(message);
 

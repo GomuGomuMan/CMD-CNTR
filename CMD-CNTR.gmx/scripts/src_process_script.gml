@@ -92,9 +92,9 @@
             break;*/
         
         // Start puzzle2
-        case 71:
+        /*case 71:
             room_goto(room_puzzle2);
-            break;
+            break;*/
                         
         default:
             //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));
