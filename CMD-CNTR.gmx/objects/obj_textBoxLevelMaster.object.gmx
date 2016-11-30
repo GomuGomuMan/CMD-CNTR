@@ -46,7 +46,7 @@ puzzle3Level = 0;
 puzzle3GameStart = false;
 levelOver = false;
 // Current command variable.
-currentCommand = "rm ARCHITECTURE/s390/FUN_Kconfig";
+currentCommand = "";
 // Current command lenghth variable.
 currentCommandLength = 0;
 // Current command too long flag.
