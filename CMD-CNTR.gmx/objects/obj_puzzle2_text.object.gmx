@@ -48,10 +48,6 @@ line = 0;
 message = "";
 str = "";
 
-// Set color and font
-draw_set_colour(c_lime);
-draw_set_font(fontCourierNew);
-
 </string>
           </argument>
         </arguments>
@@ -74,7 +70,11 @@ draw_set_font(fontCourierNew);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Draw the string and the box
+            <string>// Set color and font
+draw_set_colour(c_maroon);
+draw_set_font(fontCourierNew);
+
+/// Draw the string and the box
 draw_set_alpha(.5);
 draw_roundrect_colour(x, y, x + width, y + height, c_black, c_black, false); // c_white, c_white
 draw_set_alpha(1);
