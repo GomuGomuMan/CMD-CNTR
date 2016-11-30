@@ -28,10 +28,19 @@
             <string>image_index = 0;
 image_speed = 0;
 
-destruct_1 = 2
-destruct_2 = 4
-destruct_3 = 6
-destruct_4 = 8
+destruct_1 = 4
+destruct_2 = 8
+destruct_3 = 12
+destruct_4 = 15
+
+jen_text2 = 15
+virus_text1 = 2
+virus_text2 = 5
+virus_text3 = 8
+virus_text4 = 11
+
+jen = instance_create(50, 580, obj_puzzle2_text);
+jen.message = "This is bad.#Use your arrow keys. Don't touch the walls. More of Ztelara will be deleted every time you do.#I have to find a way to kill those processes. You focus on not touching the walls.";
 </string>
           </argument>
         </arguments>
@@ -119,16 +128,54 @@ hspeed = -(global.avatar_speed);
 alarm[0] = room_speed * 1;
 
 if global.hit_num == destruct_1 {
+    obj_building_dome.sprite_index = building_dome1;
     obj_building_hq.sprite_index = building_hq1;
+    obj_building_futuristic.sprite_index = building_futuristic1;
+    obj_building_shop.sprite_index = building_shop1;
+    obj_building_weird.sprite_index = building_weird1;
+    obj_building_cube.sprite_index = building_cube1;
 }
 else if global.hit_num == destruct_2 {
     obj_building_hq.sprite_index = building_hq2;
+    obj_building_dome.sprite_index = building_dome2;
+    obj_building_futuristic.sprite_index = building_futuristic2;
+    obj_building_shop.sprite_index = building_shop2;
+    obj_building_weird.sprite_index = building_weird2;
+    obj_building_cube.sprite_index = building_cube2;
 }
 else if global.hit_num == destruct_3 {
     obj_building_hq.sprite_index = building_hq3;
+    obj_building_dome.sprite_index = building_dome3;
+    obj_building_futuristic.sprite_index = building_futuristic3;
+    obj_building_shop.sprite_index = building_shop3;
+    obj_building_weird.sprite_index = building_weird3;
+    obj_building_cube.sprite_index = building_cube3;
 }
 else if global.hit_num == destruct_4 {
     obj_building_hq.sprite_index = building_hq4;
+    obj_building_dome.sprite_index = building_dome4;
+    obj_building_futuristic.sprite_index = building_futuristic4;
+    obj_building_shop.sprite_index = building_shop4;
+    obj_building_weird.sprite_index = building_weird4;
+    obj_building_cube.sprite_index = building_cube4;
+}
+
+if global.hit_num == jen_text2 {
+    jen.message = "I got it!"
+}
+
+if global.hit_num == virus_text1 {
+    virus = instance_create(50, 80, obj_puzzle2_text);
+    virus.message = "HA HA HA. IT'S A GAS. WATCHING YOUR FRIEND SCRAMBLE WHILE YOU TRY NOT TO KILL THEM."
+}
+else if global.hit_num == virus_text2 {
+    virus.message = "ONE WRONG MOVE AND YOUR FRIEND IS DEAD."
+}
+else if global.hit_num == virus_text3 {
+    virus.message = "ONE WRONG MOVE AND AN ENTIRE WORLD IS DELETED FROM EXISTENCE. THOUSANDS OF PEOPLE."
+}
+else if global.hit_num == virus_text4 {
+    virus.message = "HA HA HA HA HA HA HA HA HA HA HA!"
 }
 </string>
           </argument>
@@ -159,16 +206,54 @@ if global.hit_num &lt; global.freeze_value hspeed = global.avatar_speed;
 alarm[0] = room_speed * 1;
 
 if global.hit_num == destruct_1 {
+    obj_building_dome.sprite_index = building_dome1;
     obj_building_hq.sprite_index = building_hq1;
+    obj_building_futuristic.sprite_index = building_futuristic1;
+    obj_building_shop.sprite_index = building_shop1;
+    obj_building_weird.sprite_index = building_weird1;
+    obj_building_cube.sprite_index = building_cube1;
 }
 else if global.hit_num == destruct_2 {
     obj_building_hq.sprite_index = building_hq2;
+    obj_building_dome.sprite_index = building_dome2;
+    obj_building_futuristic.sprite_index = building_futuristic2;
+    obj_building_shop.sprite_index = building_shop2;
+    obj_building_weird.sprite_index = building_weird2;
+    obj_building_cube.sprite_index = building_cube2;
 }
 else if global.hit_num == destruct_3 {
     obj_building_hq.sprite_index = building_hq3;
+    obj_building_dome.sprite_index = building_dome3;
+    obj_building_futuristic.sprite_index = building_futuristic3;
+    obj_building_shop.sprite_index = building_shop3;
+    obj_building_weird.sprite_index = building_weird3;
+    obj_building_cube.sprite_index = building_cube3;
 }
 else if global.hit_num == destruct_4 {
     obj_building_hq.sprite_index = building_hq4;
+    obj_building_dome.sprite_index = building_dome4;
+    obj_building_futuristic.sprite_index = building_futuristic4;
+    obj_building_shop.sprite_index = building_shop4;
+    obj_building_weird.sprite_index = building_weird4;
+    obj_building_cube.sprite_index = building_cube4;
+}
+
+if global.hit_num == jen_text2 {
+    jen.message = "I got it!"
+}
+
+if global.hit_num == virus_text1 {
+    virus = instance_create(50, 80, obj_puzzle2_text);
+    virus.message = "HA HA HA. IT'S A GAS.#WATCHING YOUR FRIEND SCRAMBLE WHILE YOU TRY NOT TO KILL THEM."
+}
+else if global.hit_num == virus_text2 {
+    virus.message = "ONE WRONG MOVE AND YOUR FRIEND IS DEAD."
+}
+else if global.hit_num == virus_text3 {
+    virus.message = "ONE WRONG MOVE AND AN ENTIRE WORLD IS DELETED FROM EXISTENCE.#THOUSANDS OF PEOPLE."
+}
+else if global.hit_num == virus_text4 {
+    virus.message = "HA HA HA HA HA HA HA HA HA HA HA!"
 }
 </string>
           </argument>

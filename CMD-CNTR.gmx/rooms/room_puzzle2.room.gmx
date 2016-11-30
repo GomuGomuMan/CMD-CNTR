@@ -14,7 +14,7 @@
 global.wall_count = 0;
 global.wall_speed = -4;
 global.avatar_speed = 2.5;
-global.freeze_value = 8;
+global.freeze_value = 15;
 global.freeze = false;
 room_goto(room_puzzle2_start);</code>
   <enableViews>0</enableViews>

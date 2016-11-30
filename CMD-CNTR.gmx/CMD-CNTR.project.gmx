@@ -106,7 +106,7 @@
         <sprite>sprites\building_dome</sprite>
         <sprite>sprites\building_futuristic</sprite>
         <sprite>sprites\building_shop</sprite>
-        <sprite>sprites\weirdbuilding</sprite>
+        <sprite>sprites\building_weird</sprite>
         <sprite>sprites\building_hq1</sprite>
         <sprite>sprites\building_hq2</sprite>
         <sprite>sprites\building_hq3</sprite>
@@ -119,14 +119,14 @@
         <sprite>sprites\building_futuristic2</sprite>
         <sprite>sprites\building_futuristic3</sprite>
         <sprite>sprites\building_futuristic4</sprite>
-        <sprite>sprites\building_shop_1</sprite>
-        <sprite>sprites\building_shop_2</sprite>
-        <sprite>sprites\building_shop_3</sprite>
-        <sprite>sprites\building_shop_4</sprite>
-        <sprite>sprites\weirdbuilding1</sprite>
-        <sprite>sprites\weirdbuilding2</sprite>
-        <sprite>sprites\weirdbuilding3</sprite>
-        <sprite>sprites\weirdbuilding4</sprite>
+        <sprite>sprites\building_shop1</sprite>
+        <sprite>sprites\building_shop2</sprite>
+        <sprite>sprites\building_shop3</sprite>
+        <sprite>sprites\building_shop4</sprite>
+        <sprite>sprites\building_weird1</sprite>
+        <sprite>sprites\building_weird2</sprite>
+        <sprite>sprites\building_weird3</sprite>
+        <sprite>sprites\building_weird4</sprite>
         <sprite>sprites\building_cube</sprite>
         <sprite>sprites\building_cube1</sprite>
         <sprite>sprites\building_cube2</sprite>
@@ -292,6 +292,7 @@
       </objects>
       <objects name="textbox">
         <object>objects\obj_cli_textbox</object>
+        <object>objects\obj_puzzle2_text</object>
       </objects>
       <objects name="characters">
         <object>objects\obj_jun_seong</object>
