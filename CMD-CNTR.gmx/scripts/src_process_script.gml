@@ -48,6 +48,13 @@
             print_dialog();
             break;*/
             
+        case 35:
+            if (userInput != "open cmd1.txt")
+            {
+                print_dialog();
+            }
+            break;
+            
         case 37:
             if (objTextInput.command_result == "ls Executed")
                 print_dialog();
@@ -81,7 +88,7 @@
             break;
             
         case 47:
-            test = true;
+            //test = true;
             if (objTextInput.command_result == "cp Executed")
                 print_dialog();
             break;
@@ -95,7 +102,21 @@
         /*case 71:
             room_goto(room_puzzle2);
             break;*/
-                        
+        
+        case 55:
+            if (userInput != "open cmd2.txt")
+            {
+                print_dialog();
+            }
+            break;
+        
+        case 67:
+            if (userInput != "open cmd3.txt")
+            {
+                print_dialog();
+            }
+            break;
+        
         default:
             //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));
             if (ds_queue_size(cli_ds_line) > 0)

@@ -1,24 +1,24 @@
-PID TTY           TIME CMD
-   1 ??         0:31.17 /sbin/launchd
-   51 ??         0:17.89 /usr/sbin/syslogd
-   53 ??         0:08.99 /usr/libexec/kextd
-   75 ??         0:00.06 /System/Library/CoreServices/iconservicesd
-   77 ??         0:01.84 /usr/libexec/FUN_diskarbitrationd
-   79 ??         0:09.32 /usr/libexec/FUN_coreduetd
-   90 ??         0:06.47 /usr/sbin/securityd -i
-   92 ??         0:09.29 /usr/libexec/locationd
-   96 ??         0:00.72 /usr/sbin/blued
-   97 ??         0:00.03 autofsd
-  107 ??         0:00.01 /usr/sbin/KernelEventAgent
-  110 ??         2:13.65 /usr/libexec/hidd
-  112 ??         0:04.95 /usr/sbin/notifyd
-  114 ??         0:00.55 /usr/libexec/FUN_taskgated -s
-  117 ??         0:00.54 /usr/sbin/distnoted daemon
-  145 ??         0:01.43 FUN_aslmanager
-  149 ??         0:01.00 /usr/libexec/sandboxd
-  150 ??         0:04.48 /usr/sbin/cfprefsd daemon
-  153 ??         0:01.48 /System/Library/CoreServices/coreservicesd
-  167 ??         0:00.03 /System/Library/Frameworks/CryptoTokenKit.framework/ctkd -s
-  168 ??         0:00.08 /usr/libexec/secinitd
- 2344 ttys000    0:00.40 -bash
- 2593 ttys000    0:00.01 ps
+PID   TTY       CMD
+ 1    ??        /sbin/launchd
+ 51   ??        /usr/sbin/syslogd
+ 53   ??        /usr/libexec/kextd
+ 75   ??        /System/Library/CoreServices
+ 77   ??        /usr/libexec/FUN_diskarbitrationd
+ 79   ??        /usr/libexec/FUN_coreduetd
+ 90   ??        /usr/sbin/securityd -i
+ 92   ??        /usr/libexec/locationd
+ 96   ??        /usr/sbin/blued
+ 97   ??        autofsd
+ 107  ??        /usr/sbin/KernelEventAgent
+ 110  ??        /usr/libexec/hidd
+ 112  ??        /usr/sbin/notifyd
+ 114  ??        /usr/libexec/FUN_taskgated -s
+ 117  ??        /usr/sbin/distnoted daemon
+ 145  ??        FUN_aslmanager
+ 149  ??        /usr/libexec/sandboxd
+ 150  ??        /usr/sbin/cfprefsd daemon
+ 153  ??        /System/Library/CoreServices
+ 167  ??        /System/Library/Frameworks
+ 168  ??        /usr/libexec/secinitd
+ 2344 ttys000   -bash
+ 2593 ttys000   ps

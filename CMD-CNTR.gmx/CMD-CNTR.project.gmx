@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="7" name="datafiles">
+  <datafiles number="9" name="datafiles">
     <datafile>
       <name>Terminal Window.txt</name>
       <exists>-1</exists>
@@ -88,6 +88,40 @@
         </Config>
       </ConfigOptions>
       <filename>cmd1.txt</filename>
+    </datafile>
+    <datafile>
+      <name>cmd2.txt</name>
+      <exists>-1</exists>
+      <size>142</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>cmd2.txt</filename>
+    </datafile>
+    <datafile>
+      <name>cmd3.txt</name>
+      <exists>-1</exists>
+      <size>243</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>cmd3.txt</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
