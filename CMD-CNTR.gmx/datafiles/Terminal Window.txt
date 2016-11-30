@@ -32,6 +32,7 @@ To run Bouncer just type his name in the terminal, and he'll introduce himself.
 If you've ever wanted to say "I'm in" like a true 1990s cinema hacker, now's your chance.
 Next step is to repair some critical damage that the virus has already done. I don't know if you noticed, but things are starting to fall apart around here. Damage to the network tower has dropped my connection speed to a dangerous level, and if I lose my connection to you I may not be able to get it back.
 I'm going to send you a list of commands that you can use to navigate the file system. Open the file using 'open cmd1.txt'. Then see if you can use those commands to navigate to the folder containing the files for my city, Nevula.
+--User Input
 Right now you're in the Ztelara home directory. Type 'ls' to see a list of all the folders in that directory.
 --User Input
 All cities have their own directory in the LOCATION_DATABASE. Use 'cd LOCATION_DATABASE' to move into that directory, and then type 'ls' again.
@@ -46,23 +47,28 @@ Now I need you to do the same thing for two more damaged files. The first is 'NE
 --User Input
 --VIRUS HA HA HA. TRYING TO STOP ME?
 --VIRUS YOU CANNOT STOP ME.
+--User Input
 Oh boy.
 We've got a sentient virus on our hands.
 Nevermind that for now. I have good news. While you were repairing files, I was browsing through them for some kind of keyword that could indicate the presence of the virus. A 'trademark', if you will. This one's trademark is 'FUN_'. It will be prefixed on every file the virus is using to mess things up around here. If you delete all those files, then bye bye virus.
 Type 'open cmd2.txt' to view a new list of commands you'll need to use. Here's your task list:
+--User Input
 I wish it were possible to delete each file directly, but the virus has it rigged so that deleting one will only spawn a new one in the same place. You have to delete them all at once to disable this.
 --VIRUS HA HA. YOU THOUGHT THIS WOULD BE EASY? TRY AGAIN.
 Heh... This is what I was afraid of. Sentient viruses like to play games. Keep calm and learn how to beat it.
 You should be able to use the same commands as before, just not by typing. Try to catch the right commands using your arrow keys.
+--User Input
 Good riddance.
 Huh? Ztelara is still deteriorating?
 --VIRUS HA HA. YOU THOUGHT I WAS GONE? THINK AGAIN. I CAN'T BE KILLED I CAN'T BE KILLED I CAN'T BE KILLED
 Oh no.
 Okay, well. I found the problem. Even though we deleted the virus files, some leftover processes are still running.
 Type 'open cmd3.txt' to view the last couple of commands I need you to use.
+--User Input
 The virus prefixes its processes with 'FUN_' as well. Find out the process IDs and kill them. Hurry. Ztelara is running out of time.
 --VIRUS HA HA HA. YOU ACTIVATED MY TRAP CARD.
 --VIRUS GOOD LUCK TRYING TO KILL ME NOW.
+--User Input
 I didn't think it was possible for me to access those processes from inside, let alone kill them.
 Technically it shouldn't have been possible. They say people gain superhuman strength when faced with a desperate situation. I wonder if it applies to coding, too?
 Your presence in the system gave me an entrypoint. So y'know... I couldn't have done it without you. All that sappy stuff.

@@ -1,6 +1,6 @@
 // Create some variables
-width = 672;
-height = 160;
+width = 300;
+height = 150;
 padding = 8;
 
 // Keep track of the starting line
@@ -17,7 +17,5 @@ line = 0;
 message = "";
 str = "";
 
-// Set color and font
-//draw_set_colour(c_maroon);
-//draw_set_font(fontCourierNew);
+
 

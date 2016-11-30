@@ -48,12 +48,12 @@
             print_dialog();
             break;*/
             
-        case 36:
+        case 37:
             if (objTextInput.command_result == "ls Executed")
                 print_dialog();
             break;
             
-        case 38:
+        case 39:
             if (objTextInput.current_dir = "HOME\LOCATION_DATABASE")
             {
                 // Comment out for test
@@ -63,27 +63,37 @@
                 
             break;
         
-        case 40:
+        case 41:
             if (objTextInput.current_dir = "HOME\LOCATION_DATABASE\NEVULA" && 
                 objTextInput.command_result == "ls Executed")
                 print_dialog();
             break;
             
-        case 42:
+        case 43:
             if (objTextInput.current_dir = "HOME\LOCATION_DATABASE\NEVULA\INFRASTRUCTURE" && 
                 objTextInput.command_result == "ls Executed")
                 print_dialog();
             break;
             
-        case 44:
+        case 45:
             if (objTextInput.command_result == "cp Executed")
                 print_dialog();
             break;
             
-        case 46:
+        case 47:
             test = true;
             if (objTextInput.command_result == "cp Executed")
                 print_dialog();
+            break;
+        
+        // Start puzzle3
+        /*case 60:
+            room_goto(room_puzzle3);
+            break;*/
+        
+        // Start puzzle2
+        case 71:
+            room_goto(room_puzzle2);
             break;
                         
         default:

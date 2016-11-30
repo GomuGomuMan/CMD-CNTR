@@ -1,7 +1,7 @@
 // drawTextInput()
 // Draw 3 lines of CLI
 {
-    draw_set_colour(c_lime);
+    draw_set_colour(c_lime); //c_lime
     draw_set_font(fontCourierNew);
     
     // Test
@@ -50,7 +50,8 @@
     if (count < string_length(message))
     {
         // Are we at a space? Set the last space var
-        if (string_char_at(message, count) == " ")
+        if (string_char_at(message, count) == " "
+            || string_char_at(message, count) == "\")
         {
             
             last_space = count;

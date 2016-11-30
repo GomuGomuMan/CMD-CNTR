@@ -1,4 +1,4 @@
-draw_set_colour(c_maroon);
+draw_set_colour(c_lime);
 draw_set_font(fontCourierNew);
 
 /// Draw the string and the box

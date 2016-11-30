@@ -1,0 +1,3 @@
+cd dest		Go to directory
+ls		List files
+cp src dest	copy file from src to dst
