@@ -181,6 +181,15 @@
       <sprite>sprites\spr_terminalLeftSide</sprite>
       <sprite>sprites\spr_terminalRightSide</sprite>
       <sprite>sprites\spr_textBox</sprite>
+      <sprite>sprites\spr_textBoxWrong</sprite>
+      <sprite>sprites\spr_path1</sprite>
+      <sprite>sprites\spr_path2</sprite>
+      <sprite>sprites\spr_path3</sprite>
+      <sprite>sprites\spr_path4</sprite>
+      <sprite>sprites\spr_badFile1</sprite>
+      <sprite>sprites\spr_badFile2</sprite>
+      <sprite>sprites\spr_badFile3</sprite>
+      <sprite>sprites\spr_badFile4</sprite>
     </sprites>
     <sprites name="puzzle1">
       <sprite>sprites\spr_A</sprite>
@@ -354,10 +363,19 @@
       <object>objects\obj_textBoxLevelMaster</object>
       <object>objects\obj_badDropper</object>
       <object>objects\obj_x2</object>
-      <object>objects\obj_player</object>
       <object>objects\obj_command1</object>
+      <object>objects\obj_player</object>
       <object>objects\obj_command2</object>
       <object>objects\obj_command3</object>
+      <object>objects\obj_path1</object>
+      <object>objects\obj_path2</object>
+      <object>objects\obj_path3</object>
+      <object>objects\obj_path4</object>
+      <object>objects\obj_badFile1</object>
+      <object>objects\obj_badFile2</object>
+      <object>objects\obj_badFile3</object>
+      <object>objects\obj_junSeongTextBox</object>
+      <object>objects\obj_badFile4</object>
     </objects>
     <objects name="puzzle1">
       <object>objects\obj_Border</object>

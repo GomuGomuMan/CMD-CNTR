@@ -25,12 +25,116 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>puzzle3Level = 0;
+            <string>//Delete this after
+
+file_sys =ds_list_create();
+var file = file_text_open_read(working_directory + "file_system.txt")
+while(!file_text_eof(file))
+{
+    ds_list_add(file_sys, file_text_read_string(file));
+    file_text_readln(file);
+}
+file_text_close(file);
+current_dir = "HOME"
+src_create_file_sys();
+
+/////////////////////////////////////////
+
+// Puzzle level variable
+puzzle3Level = 0;
+// Puzzle start flag 
 puzzle3GameStart = false;
 levelOver = false;
-currentCommand = "";
+// Current command variable.
+currentCommand = "rm ARCHITECTURE/s390/FUN_Kconfig";
+// Current command lenghth variable.
+currentCommandLength = 0;
+// Current command too long flag.
+longAnswer = false;
 
 /*textString = "Level 1 code  " + currentCommand + "  snippet";*/
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// When the game ends go to back to main Room.
+room_goto(roomMain);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Start the next level after the in between levels state.
+puzzle3GameStart = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Sets the message back to orignal message after telling user they're current command is too Long.
+
+//show_debug_message(tempMessage);
+
+// Changes JungSeong's message back to current level's instructions.
+obj_junSeongTextBox.message = tempMessage;
+// Resets the current Command length.
+currentCommandLength = 0;
+//show_debug_message("About to make it false");
+// Resets long Answer flag to false.
+longAnswer = false;
 
 </string>
           </argument>
@@ -54,11 +158,72 @@ currentCommand = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets the string back to normal.
+            <string>/// Sets the text Box sprite back back to normal after wrong answer.
 /*
 currentCommand = "";
 textString = "Level 1 code  " + currentCommand + "  snippet";
 */
+
+// Changes the text box's sprite from bright red to normal.
+obj_textBoxLevelMaster.sprite_index = spr_textBox;
+// Reactivates all objects to resume play after a wrong answer.
+instance_activate_all();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Checks if the length of the current command is too long to be valid.
+//show_debug_message(currentCommandLength);
+
+// If the current lenght of the command isn't already too long check this conditon.
+if(longAnswer == false)
+{
+    // If the current lenght of the command is greater than 3.
+    if(currentCommandLength &gt; 3)
+    {
+        // Keep track of JunSeong's current instruction in a temporary variable. 
+        tempMessage = obj_junSeongTextBox.message;
+        // Update JunSeong's message with a message telling the player that they're current command
+        // is too long to be valid.
+        obj_junSeongTextBox.message = "That command's way too long try again."
+        // Changes the long answer flag to true.
+        longAnswer = true;
+        // Clears current command.
+        currentCommand = "";
+        // Sets the alarm to display JunSeong's message to 1.5 seconds.
+        if(alarm[1] == -1)
+        {
+            alarm[1] = room_speed * 2;
+        }
+        // This stops the dropping to allow players a chance to read JunSeong's text.
+        puzzle3GameStart = false;
+        if(alarm[2] == -1)
+        {
+            alarm[2] = room_speed * 1.5;
+        }
+        
+        
+    }
+}
+
 </string>
           </argument>
         </arguments>
@@ -83,29 +248,35 @@ textString = "Level 1 code  " + currentCommand + "  snippet";
             <kind>1</kind>
             <string>draw_self();
 
-
-
 if(puzzle3Level == 0)
 {
-    draw_text_ext(x + 4,y,"Press 'Enter' to receive the first code snippet...",25,400);
+    draw_text_ext(x + 4,y,"Press 'Enter' to begin",25,400);
 } 
 else if(puzzle3Level == 1)
 {
-    draw_text_ext(x + 4,y,"Level 1 code  " + currentCommand + "  snippet",25,400);
+    draw_text_ext(x + 4,y,"&gt;" + currentCommand,25,400);
 }
 else if(puzzle3Level == 2)
 {
-    draw_text_ext(x + 4,y,"Level 2 code  " + currentCommand + "  snippet",25,400);
+    draw_text_ext(x + 4,y,"&gt;" + currentCommand,25,400);
 }
 else if(puzzle3Level == 3)
 {
-    draw_text_ext(x + 4,y,"Level 3 code  " + currentCommand + "  snippet",25,400);
+    draw_text_ext(x + 4,y,"&gt;" + currentCommand,25,400);
 }
-else if(puzzle3Level ==4)
+else if(puzzle3Level == 4)
 {
-    draw_text_ext(x + 4,y,"Well Done",25,400);
-    room_goto(roomMain);
+    draw_text_ext(x + 4,y,"&gt;" + currentCommand,25,400);
 }
+else if(puzzle3Level == 5)
+{
+    draw_text_ext(x + 4,y,"&gt;" + currentCommand,25,400);
+}
+/*
+else if(puzzle3Level ==6)
+{
+    room_goto(roomMain);
+}*/
 
 
 </string>
@@ -174,32 +345,125 @@ else if(puzzle3Level ==4)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(puzzle3GameStart == false)
+            <string>// Set puzzle level and game state when players peresses "Enter" the first time.
+if(puzzle3GameStart == false)
 {
     puzzle3Level = 1;
     puzzle3GameStart = true;
 }
-
+// If game has already started and player presses "Enter" then check if current command is correct
+// according to game level.
 else if(puzzle3GameStart == true)
 {
-    if(currentCommand == "Command 1" &amp;&amp; puzzle3Level == 1)
-    {
+    // Level 1 condition
+    if(currentCommand == "rm ARCHITECTURE/s390/FUN_Kconfig" &amp;&amp; puzzle3Level == 1)
+    { 
+        //execute command
+        runCommand("rm ARCHITECTURE\s390\FUN_Kconfig")
+        // Change puzzle level to 2
         puzzle3Level = 2;
+        // Clear current command for next level.
         currentCommand = "";
+        //Update JunSeong's text box with isntructions for next level.
+        obj_junSeongTextBox.message = "Good Job! #The command for the next file is: #rm ARCHITECTURE/unicore32/FUN_Makefile"
+        // Change state of game to "in between level"
+        // When in this state, akl commands that have dropped will be destroyed and no further 
+        // command will drop for the remainder if the rest time (2 seconds). 
+        // This allows players a chance to read the next command they will need to collect.
+        puzzle3GameStart = false;
+        if(alarm[2] == -1)
+        {
+            alarm[2] = room_speed * 2;
+        }
+        //currentCommand = "rm ARCHITECTURE/unicore32/FUN_Makefile";
+        
+        
     }   
-    else if(currentCommand == "Command 2" &amp;&amp; puzzle3Level == 2)
+    // Level 2 condition
+    else if(currentCommand == "rm ARCHITECTURE/unicore32/FUN_Makefile" &amp;&amp; puzzle3Level == 2)
     {
+        //execute command
+        runCommand("rm ARCHITECTURE\unicore32\FUN_Makefile")
+        // Change puzzle level to 3
         puzzle3Level = 3;
+        // Clear current command for next level.
         currentCommand = "";
+        //Update JunSeong's text box with isntructions for next level.
+        obj_junSeongTextBox.message = "Great! Keep going! #The command for the next file is: #rm SECURITY/keys/FUN_key"
+        // Change state of game to "in between level"
+        // When in this state, akl commands that have dropped will be destroyed and no further 
+        // command will drop for the remainder if the rest time (2 seconds). 
+        // This allows players a chance to read the next command they will need to collect.
+        puzzle3GameStart = false;
+        if(alarm[2] == -1)
+        {
+            alarm[2] = room_speed * 2;
+        }
+        
+        //currentCommand = "rm SECURITY/keys/FUN_key";
     }
-    else if(currentCommand == "Command 3" &amp;&amp; puzzle3Level == 3)
+    // Level 3 condition
+    else if(currentCommand == "rm SECURITY/keys/FUN_key" &amp;&amp; puzzle3Level == 3)
     {
+        //execute command
+        runCommand("rm SECURITY\keys\FUN_key")
+        // Change puzzle level to 4
         puzzle3Level = 4;
+        // Clear current command for next level.
         currentCommand = "";
+        //Update JunSeong's text box with isntructions for next level.
+        obj_junSeongTextBox.message = "You're getting good! Only 2 more! #The command for the next file is: #rm SECURITY/tomoyo/FUN_group"
+        // Change state of game to "in between level"
+        // When in this state, akl commands that have dropped will be destroyed and no further 
+        // command will drop for the remainder if the rest time (2 seconds). 
+        // This allows players a chance to read the next command they will need to collect.
+        puzzle3GameStart = false;
+        if(alarm[2] == -1)
+        {
+            alarm[2] = room_speed * 2;
+        }
+        
+        //currentCommand = "rm SECURITY/tomoyo/FUN_group";
     }
+    // Level 4 condition
+    else if(currentCommand == "rm SECURITY/tomoyo/FUN_group" &amp;&amp; puzzle3Level == 4)
+    {
+        //execute command
+        runCommand("rm SECURITY\tomoyo\FUN_group")
+        // Change puzzle level to 5
+        puzzle3Level = 5;
+        // Clear current command for next level.
+        currentCommand = "";
+        // Update JunSeong's text box with isntructions for next level.
+        obj_junSeongTextBox.message = "Nice! Ok the next path is....#Wait you're done!";
+        // Change state of game to "in between level"
+        // When in this state, akl commands that have dropped will be destroyed and no further 
+        // command will drop for the remainder if the rest time (2 seconds). 
+        // This allows players a chance to read the next command they will need to collect.
+        puzzle3GameStart = false;
+        if(alarm[3] == -1)
+        {
+            alarm[2] = room_speed * 3;
+        }
+    }
+    // If the current command is empty, if a player presses "Enter" it will have no effect.
+    else if (currentCommand = "")
+    {
+        
+    }
+    // Wrong command condition.
     else
     {
+        // Clear the current Command.
         currentCommand = "";
+        // Changes the text boy sprite to a bright red sprite to represent a wrong answer.
+        obj_textBoxLevelMaster.sprite_index = spr_textBoxWrong;
+        // Deactivates all objects for 0.5 seconds to represent wrong answer.
+        instance_deactivate_all(true);
+        if(alarm[0] == -1)
+        {
+            alarm[0] = room_speed * 0.5;
+        }
     }
 }
 

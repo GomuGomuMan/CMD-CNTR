@@ -6,5 +6,7 @@
     {
         ds_list_delete(file_sys, dest_pos);
         directory_destroy(dest_dir);
+        //show_message("test");
     }  
+    //show_message(dest_dir);
 }

@@ -27,11 +27,16 @@
             <kind>1</kind>
             <string>/// Creates and defines all object variables
 
+// Variable for the speed in which commands drop from the dropper.
 dropSpeed = 3;
+// Variable for the frequency in which commands drop from the dropper. (i.e. drop every 2 seconds).
 dropFrequency = 2;
 
+// Flag representing if the player has collided with a x2 drop speed command.
 dropSpeedX2 = false;
+// Flag representing if the player has collided with a invert direction command.
 invertDirection = false;
+// Flag representing if the player has collided with a drop Frequency command.
 dropFrequencyX2 = false;
 </string>
           </argument>
@@ -55,7 +60,7 @@ dropFrequencyX2 = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets invertDirection back to normal (false).
+            <string>/// Sets invertDirection back to normal (false) after the player has collided with an invertDirection command, and the duration of the penalty has ended.
 
 invertDirection = false;
 </string>
@@ -80,7 +85,7 @@ invertDirection = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets the dropSpeed back to 3
+            <string>/// Sets the dropSpeed back to 3 after a player has collided a x2 speed command and the duration of the penalty has ended.
 dropSpeed = 3;
 
 
@@ -108,21 +113,35 @@ dropSpeed = 3;
             <kind>1</kind>
             <string>///Drops a random command object everytime the alarm goes off.
 
-randomNumber=irandom_range(0,5);
+// Random number generator that creates an index for the list of commands.
+randomNumber=irandom_range(0,10);
+// Random number generator for the x position in which the command will drop.
 randomXPosition=irandom_range(860,1100);
 
+// Command List, contains all of the commands.
 
-commandList[5] = obj_command6;
-commandList[0] = obj_command1;
-commandList[1] = obj_command2;
-commandList[2] = obj_command3;
-commandList[3] = obj_command4;
-commandList[4] = obj_command5;
+//commandList[5] = obj_command6;
+//commandList[0] = obj_command1;
+commandList[0] = obj_command2;
+commandList[1] = obj_command3;
+//commandList[3] = obj_command4;
+//commandList[4] = obj_command5;
+commandList[2] = obj_path1;
+commandList[3] = obj_path2;
+commandList[4] = obj_path3;
+commandList[5] = obj_path4;
+commandList[6] = obj_badFile1;
+commandList[7] = obj_badFile2;
+commandList[8] = obj_badFile3;
+commandList[9] = obj_badFile4;
+commandList[10] = obj_badFile1;
 
-
-
+// Creates a command variable at the using the randomly generated x position, and
+// randomly genrated command list index.
 var command=instance_create(randomXPosition,0,commandList[randomNumber]);
+// Changes the drop speed of the command to the dropSpeed variable.
 command.speed= dropSpeed;
+// Chagnes the direction that the command will drop. (270 = down).
 command.direction=270;
 
 
@@ -176,11 +195,12 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Checks if the alaram is not set. If not set then resets to 15 seconds.
+            <string>/// Checks if the alarm is not set. If not set then resets to 15 seconds.
 
-
+// Checks if the game start flag is true.
 if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 {
+    //If game start is true, set the alarm that controls the frequency of the commands being dropped.
     if(alarm[0] == -1)
     {
         alarm[0] =  room_speed * dropFrequency;
@@ -188,20 +208,25 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 }
 
 
-
+// Checks if the dropSpeedX2 flag is true. (i.e. if a player has collided with x2 command).
 if(dropSpeedX2 == true)
 {
+    // If the dropSpeedX2 flag is true then sets the alarm that controls the duration of the penalty
+    // to 5 seconds.
     if(alarm[1] == -1)
     {
         alarm[1] = room_speed * 5;
     }
 }
 
+// Checks if the invertDirection flag is true (i.e. if a player has collided wtih an invertDirection command).
 if(invertDirection == true)
 {
+    // If the invertDirection flag is true then sets teh alarm that controls the duration of the penalty
+    // to 7 seconds.
     if(alarm[2] == -1)
     {
-        alarm[2] = room_speed * 10;
+        alarm[2] = room_speed * 7;
     }
 }
 </string>

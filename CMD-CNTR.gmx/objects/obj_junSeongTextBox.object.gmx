@@ -25,16 +25,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Creates and defines all object variables
-// Variable of the drop speed of commands if a user collides with x2 command.
-badDropSpeed = 4;
-badDropFrequency = 3;
+            <string>// Create some variables
+width = 672;
+height = 160;
+padding = 8;
+
+// Keep track of the starting line
+start = ds_list_create();
+ds_list_add(start, 0);
+
+// Keep track of the last space and current position
+count = 0;
+last_space = 0;
+line = 0;
+
+// Set the message
+//message = "This is a very long long long long long long long long long long long string and this is to check if the long long long long long long long string actually works";
+message = "The command for the first file you have to delete is: rm ARCHITECTURE/s390/FUN_Kconfig";
+str = "";
+
+// Set color and font
+draw_set_colour(c_lime);
+draw_set_font(fontCourierNew);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -51,78 +69,55 @@ badDropFrequency = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Drops a random bad command object everytime the alarm goes off.
+            <string>/// Draw the string and the box
+draw_set_alpha(.5);
+draw_roundrect_colour(x, y, x + width, y + height, c_black, c_black, false); // c_white, c_white
+draw_set_alpha(1);
 
-var randomNumber=irandom_range(0,1);
-var randomXPosition=irandom_range(860,1100);
+// Set color to white
+//draw_set_color(c_white);
 
-// badCommandList, contains all of the bad commands.
-badCommandList[0] = obj_invertDirection;
-badCommandList[1] = obj_x2;
-
-var badCommand=instance_create(randomXPosition,0,badCommandList[randomNumber]);
-badCommand.speed= badDropSpeed;
-badCommand.direction=270;
-
-/*
-if(randomNumber&lt;=30)
+// Past width?
+// Insert line break
+// This has to be before getting the last_space var or it won't work right
+if (string_width(str) &gt; width - padding - padding)
 {
-    command1=instance_create(randomXPosition,0,obj_command1);
-    command1.speed= dropSpeed;
-    command1.direction=270;
+    // Remove the space &amp; replace it with line break
+    message = string_delete(message, last_space, 1);
+    message = string_insert("#", message, last_space);
+    ds_list_add(start, last_space + 1);
+    
 }
 
-else if(randomNumber&gt;30 &amp;&amp; randomNumber&lt;=40)
+// Make sure we have not reached the end of the message
+if (count &lt; string_length(message))
 {
-    command1=instance_create(randomXPosition,0,obj_command2);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-else if(randomNumber&gt;80&amp;&amp; randomNumber&lt;=100)
-{
-    command1=instance_create(randomXPosition,0,obj_command3);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-else
-{
-    command1=instance_create(randomXPosition,0,obj_invertDirection);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-*/
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Checks if the alaram is not set. If not set then resets to 15 seconds.
-
-
-if(obj_textBoxLevelMaster.puzzle3GameStart == true)
-{
-    if(alarm[0] == -1)
+    // Are we at a space? Set the last space var
+    if (string_char_at(message, count) == " ")
     {
-        alarm[0] =  room_speed * badDropFrequency;
+        last_space = count;
     }
+    
+    // Increment the count
+    ++count;
 }
+
+// Did we go past the bottom? Move up a line
+if (string_height(str) &gt; height - padding)
+{
+    ++line;
+}
+
+// Grab the string
+str = string_copy(message, ds_list_find_value(start, line), count-ds_list_find_value(start, line));
+
+
+// Draw the text
+draw_text(x + padding, y + padding, str);
+
+// Testing
+//draw_text(200, 0, "Textbox Length: " + string(line));
+
 
 </string>
           </argument>

@@ -33,6 +33,214 @@ maxPlayerSpeed = 4;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_badFile4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with obj_command7 adds "FUN_group" command to input.
+
+obj_textBoxLevelMaster.currentCommand += "FUN_group";
+obj_textBoxLevelMaster.currentCommandLength +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_badFile3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with obj_command7 adds "FUN_key" command to input.
+
+obj_textBoxLevelMaster.currentCommand += "FUN_key";
+obj_textBoxLevelMaster.currentCommandLength +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_badFile2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with obj_command7 adds "FUN_Makefile" command to input.
+
+obj_textBoxLevelMaster.currentCommand += "FUN_Makefile";
+obj_textBoxLevelMaster.currentCommandLength +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_badFile1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with obj_command7 adds "FUN_Kconfig" command to input.
+
+obj_textBoxLevelMaster.currentCommand += "FUN_Kconfig";
+obj_textBoxLevelMaster.currentCommandLength +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_path4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with obj_command7 adds "/SECURITY/tomoyo/" command to input.
+
+obj_textBoxLevelMaster.currentCommand += "SECURITY/tomoyo/";
+obj_textBoxLevelMaster.currentCommandLength +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_path3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with obj_command7 adds "/SECURITY/keys/" command to input.
+
+obj_textBoxLevelMaster.currentCommand += "SECURITY/keys/";
+obj_textBoxLevelMaster.currentCommandLength +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_path2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with obj_command7 adds "/ARCHITECTURE/unicore32/" command to input.
+
+obj_textBoxLevelMaster.currentCommand += "ARCHITECTURE/unicore32/";
+obj_textBoxLevelMaster.currentCommandLength +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_path1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with obj_command7 adds "/ARCHITECTURE/s390/" command to input.
+
+obj_textBoxLevelMaster.currentCommand += "ARCHITECTURE/s390/";
+obj_textBoxLevelMaster.currentCommandLength +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_command3">
       <action>
         <libid>1</libid>
@@ -58,7 +266,8 @@ maxPlayerSpeed = 4;
     obj_textBoxLevelMaster.puzzle3Level = 4;
 }*/
 
-obj_textBoxLevelMaster.currentCommand += " rm ";
+obj_textBoxLevelMaster.currentCommand += "rm ";
+obj_textBoxLevelMaster.currentCommandLength +=1;
 </string>
           </argument>
         </arguments>
@@ -89,7 +298,8 @@ obj_textBoxLevelMaster.currentCommand += " rm ";
 }*/
 
 
-obj_textBoxLevelMaster.currentCommand += " mv ";
+obj_textBoxLevelMaster.currentCommand += "mv ";
+obj_textBoxLevelMaster.currentCommandLength +=1;
 </string>
           </argument>
         </arguments>
@@ -120,7 +330,8 @@ obj_textBoxLevelMaster.currentCommand += " mv ";
 }*/
 
 
-obj_textBoxLevelMaster.currentCommand += " ff ";
+obj_textBoxLevelMaster.currentCommand += "ff ";
+obj_textBoxLevelMaster.currentCommandLength +=1;
 
 </string>
           </argument>
@@ -209,7 +420,8 @@ obj_commandDropper.invertDirection = true;
     obj_textBoxLevelMaster.puzzle3Level = 4;
 }*/
 
-obj_textBoxLevelMaster.currentCommand += " -r ";
+obj_textBoxLevelMaster.currentCommand += "-r ";
+obj_textBoxLevelMaster.currentCommandLength +=1;
 </string>
           </argument>
         </arguments>
@@ -240,7 +452,8 @@ obj_textBoxLevelMaster.currentCommand += " -r ";
     obj_textBoxLevelMaster.puzzle3Level = 4;
 }*/
 
-obj_textBoxLevelMaster.currentCommand += " -f ";
+obj_textBoxLevelMaster.currentCommand += "-f ";
+obj_textBoxLevelMaster.currentCommandLength +=1;
 </string>
           </argument>
         </arguments>
@@ -271,7 +484,8 @@ obj_textBoxLevelMaster.currentCommand += " -f ";
     obj_textBoxLevelMaster.puzzle3Level = 4;
 }*/
 
-obj_textBoxLevelMaster.currentCommand += " -p ";
+obj_textBoxLevelMaster.currentCommand += "-p ";
+obj_textBoxLevelMaster.currentCommandLength +=1;
 </string>
           </argument>
         </arguments>
@@ -349,19 +563,24 @@ x -= 30;
             <kind>1</kind>
             <string>/// Changes speed and sets movememnt direction to right.
 
-if(speed &lt; maxPlayerSpeed)
+if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 {
-    speed +=0.15;
+    if(speed &lt; maxPlayerSpeed)
+    {
+        speed +=0.15;
+    }
+
+    if(obj_commandDropper.invertDirection == true)
+    {
+        direction = 180;
+    }
+    else
+    {
+        direction = 0;  
+    }
 }
 
-if(obj_commandDropper.invertDirection == true)
-{
-    direction = 180;
-}
-else
-{
-    direction = 0;  
-}
+
 
 </string>
           </argument>
@@ -386,26 +605,54 @@ else
           <argument>
             <kind>1</kind>
             <string>/// Changes speed and sets movememnt direction to left.
-
-if(speed &lt; maxPlayerSpeed)
+if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 {
-    speed += 0.15; 
+    if(speed &lt; maxPlayerSpeed)
+    {
+        speed += 0.15; 
+    }
+
+    if(obj_commandDropper.invertDirection == true)
+    {
+        direction = 0;
+    }
+    else
+    {
+        direction = 180;  
+    }
 }
 
-if(obj_commandDropper.invertDirection == true)
-{
-    direction = 0;
-}
-else
-{
-    direction = 180;  
-}
-
-
-show_debug_message(speed);
 
 
 
+
+//show_debug_message(speed);
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(roomMain);
 </string>
           </argument>
         </arguments>

@@ -31,6 +31,11 @@ if(y &gt; 650)
 {
     instance_destroy();
 }
+
+if(obj_textBoxLevelMaster.puzzle3GameStart == false)
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -54,6 +59,7 @@ if(y &gt; 650)
           <argument>
             <kind>1</kind>
             <string>/// Destory when colliding with player obkect.
+
 instance_destroy();
 
 
