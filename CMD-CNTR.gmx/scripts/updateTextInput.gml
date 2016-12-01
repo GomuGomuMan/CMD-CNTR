@@ -44,7 +44,7 @@
             && cli_ds_line_size - ds_queue_size(cli_ds_line) >= 21
             && if_cli_done)
         {
-            show_message("HERE");
+            //show_message("HERE");
             isFinishedPart1 = true;
             
             ds_queue_copy(obj_cli_textbox.cli_ds_line, cli_ds_line);

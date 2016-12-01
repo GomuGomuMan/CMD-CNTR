@@ -29,6 +29,13 @@
                 //print_dialog();
             }
             break;
+            
+        case 16:
+            if (userInput == "ztel access mainframe")
+            {
+                print_dialog();   
+            }
+            break;
         
         case 21:
             // Test
@@ -48,8 +55,15 @@
             print_dialog();
             break;*/
             
+        case 30:
+            if (global.isFinishedPuzzle1)
+            {
+                print_dialog();
+            }
+            break;
+            
         case 35:
-            if (userInput != "open cmd1.txt")
+            if (objTextInput.userInput != "open cmd1.txt")
             {
                 print_dialog();
             }
@@ -94,9 +108,12 @@
             break;
         
         // Start puzzle3
-        /*case 60:
-            room_goto(room_puzzle3);
-            break;*/
+        case 60:
+            if (global.isFinishedPuzzle3)
+                print_dialog();
+            else
+                room_goto(room_puzzle3);
+            break;
         
         // Start puzzle2
         /*case 71:
@@ -104,14 +121,14 @@
             break;*/
         
         case 55:
-            if (userInput != "open cmd2.txt")
+            if (objTextInput.userInput != "open cmd2.txt")
             {
                 print_dialog();
             }
             break;
         
         case 67:
-            if (userInput != "open cmd3.txt")
+            if (objTextInput.userInput != "open cmd3.txt")
             {
                 print_dialog();
             }

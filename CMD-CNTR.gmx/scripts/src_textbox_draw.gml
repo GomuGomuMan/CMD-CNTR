@@ -44,10 +44,10 @@ if (string_height(str) > height - padding)
 }
 
 // Test
-draw_text(0, 30, "line: " + string(line));
+/*draw_text(0, 30, "line: " + string(line));
 draw_text(0, 45, "ds_list size: " + string(ds_list_size(start)));
 draw_text(0, 60, "ds_val string: " + string(ds_list_find_value(start, line)));
-draw_text(0, 75, "Width string: " + string(count - ds_list_find_value(start, line)));
+draw_text(0, 75, "Width string: " + string(count - ds_list_find_value(start, line)));*/
 
 // Grab the string
 str = string_copy(message, ds_list_find_value(start, line), count - ds_list_find_value(start, line));

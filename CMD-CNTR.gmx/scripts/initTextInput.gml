@@ -19,6 +19,7 @@
     
     // Is Finish Puzzle 1
     global.isFinishedPuzzle1 = false;
+    global.isFinishedPuzzle3 = false;
     
     // Is Finish Phrase 1
     isFinishedPart1 = false;
