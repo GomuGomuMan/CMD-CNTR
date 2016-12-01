@@ -77,6 +77,7 @@ longAnswer = false;
           <argument>
             <kind>1</kind>
             <string>/// When the game ends go to back to main Room.
+global.isFinishedPuzzle3 = true;
 room_goto(roomMain);
 </string>
           </argument>
@@ -436,14 +437,19 @@ else if(puzzle3GameStart == true)
         currentCommand = "";
         // Update JunSeong's text box with isntructions for next level.
         obj_junSeongTextBox.message = "Nice! Ok the next path is....#Wait you're done!";
-        // Change state of game to "in between level"
-        // When in this state, akl commands that have dropped will be destroyed and no further 
-        // command will drop for the remainder if the rest time (2 seconds). 
-        // This allows players a chance to read the next command they will need to collect.
+        // Change state of game to "end game"
+        // When in this state, all commands that have dropped will be destroyed and no further 
+        // command will drop for the remainder of the puzzle (3 seconds). 
+        // This allows players a chance to read Jun Seong's text before returning to the main room.
         puzzle3GameStart = false;
+        if(alarm[2] == -1)
+        {
+            alarm[2] = room_speed * 2;
+        }
+        /// Sets the alarm before the returning to the main room to 2 seconds.
         if(alarm[3] == -1)
         {
-            alarm[2] = room_speed * 3;
+            alarm[3] = room_speed * 2;
         }
     }
     // If the current command is empty, if a player presses "Enter" it will have no effect.
