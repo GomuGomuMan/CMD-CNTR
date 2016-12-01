@@ -58,7 +58,6 @@
         case 30:
             if (global.isFinishedPuzzle1)
             {
-                global.cont = false;
                 print_dialog();
             }
             break;
@@ -118,7 +117,9 @@
         // Start puzzle3
         case 60:
             if (global.isFinishedPuzzle3)
+            {
                 print_dialog();
+            }   
             else
                 room_goto(room_puzzle3);
                 
@@ -156,4 +157,7 @@
             //show_message("");
             break;
     }
+    
+    if (global.cont)
+        global.cont = false;
 }

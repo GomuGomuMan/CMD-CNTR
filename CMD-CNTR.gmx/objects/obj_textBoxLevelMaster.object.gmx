@@ -78,6 +78,7 @@ longAnswer = false;
             <kind>1</kind>
             <string>/// When the game ends go to back to main Room.
 global.isFinishedPuzzle3 = true;
+global.cont = true;
 room_goto(roomMain);
 </string>
           </argument>
