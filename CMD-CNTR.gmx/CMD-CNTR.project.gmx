@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="9" name="datafiles">
+  <datafiles number="10" name="datafiles">
     <datafile>
       <name>Terminal Window.txt</name>
       <exists>-1</exists>
@@ -122,6 +122,23 @@
         </Config>
       </ConfigOptions>
       <filename>cmd3.txt</filename>
+    </datafile>
+    <datafile>
+      <name>puzzle1_instr.txt</name>
+      <exists>-1</exists>
+      <size>211</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>puzzle1_instr.txt</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
@@ -314,6 +331,7 @@
         <script>scripts\scr_virus_init.gml</script>
         <script>scripts\src_virus_draw.gml</script>
         <script>scripts\src_virus_update.gml</script>
+        <script>scripts\src_virus_destructor.gml</script>
       </scripts>
       <scripts name="instr_textbox">
         <script>scripts\src_instr_textbox_init.gml</script>
@@ -406,6 +424,7 @@
       <object>objects\obj_psol6</object>
       <object>objects\obj_psol7</object>
       <object>objects\obj_psol8</object>
+      <object>objects\obj_puzzle1_text</object>
     </objects>
     <objects name="puzzle2">
       <object>objects\o_avatar</object>

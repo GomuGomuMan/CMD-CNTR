@@ -84,6 +84,7 @@
     <instance objName="obj_building_hq" x="540" y="100" name="inst_4493B147" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_shop" x="580" y="320" name="inst_51C8E698" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_dome" x="520" y="440" name="inst_DAEF6235" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_puzzle1_text" x="800" y="445" name="inst_E91594D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
