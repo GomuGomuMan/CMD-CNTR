@@ -1,6 +1,6 @@
 /// Draw the string and the box
 draw_set_alpha(.5);
-draw_roundrect_colour(x, y, x + width, y + height, c_black, c_black, false); // c_white, c_white
+draw_roundrect_colour(x, y, x + width, y + height, c_dkgray, c_dkgray, false); // c_white, c_white
 draw_set_alpha(1);
 
 // Set color to white
@@ -54,6 +54,7 @@ str = string_copy(message, ds_list_find_value(start, line), count - ds_list_find
 
 
 // Draw the text
+draw_set_colour(c_aqua);
 draw_text(x + padding, y + padding, str);
 
 // Testing

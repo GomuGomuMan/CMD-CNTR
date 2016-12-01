@@ -62,7 +62,7 @@
     <instance objName="obj_building_hq" x="540" y="100" name="inst_40730388" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_shop" x="580" y="320" name="inst_5362D0F7" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_weird" x="520" y="220" name="inst_51613B0E" locked="0" code="" scaleX="-4.5" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_dome" x="520" y="440" name="inst_6528C089" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_dome" x="520" y="420" name="inst_6528C089" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_futuristic" x="220" y="60" name="inst_0AF24BDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cli_virus" x="100" y="0" name="inst_1586603B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_cube" x="100" y="140" name="inst_2F62F229" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
