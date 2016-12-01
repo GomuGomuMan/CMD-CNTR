@@ -39,9 +39,9 @@ All cities have their own directory in the LOCATION_DATABASE. Use 'cd LOCATION_D
 --User Input
 See what I mean? Now, to view the files for my city, type 'cd NEVULA' and 'ls' again.
 --User Input
-You'll have to figure out which directory the NetworkTower files are in by 'ls'ing each of them. Try 'ls INFRASTRUCTURE' first.
+You'll have to figure out which directory the NetworkTower files are in by 'ls'ing each of them. Try 'cd INFRASTRUCTURE' and 'ls' there first.
 --User Input
-Thought so. Now replace that file with its backup using 'cp backups/NetworkTower INFRASTRUCTURE/NetworkTower'.
+Thought so. Now replace that file with its backup by using 'cd ..' and 'cp backups/NetworkTower INFRASTRUCTURE/NetworkTower'. 
 --User Input
 Now I need you to do the same thing for two more damaged files. The first is 'NEVULA/GOVERNMENT/CityHall'. The second is 'ATHENA/TRANSPORT/Line3'. Replace those with their backup files and we're good to go.
 --User Input
