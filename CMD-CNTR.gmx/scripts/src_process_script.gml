@@ -109,10 +109,12 @@
         
         // Start puzzle3
         case 60:
-            if (global.isFinishedPuzzle3)
+            /*if (global.isFinishedPuzzle3)
                 print_dialog();
             else
-                room_goto(room_puzzle3);
+                room_goto(room_puzzle3);*/
+                
+            print_dialog();
             break;
         
         // Start puzzle2
