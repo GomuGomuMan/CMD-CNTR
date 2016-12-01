@@ -301,12 +301,14 @@
         <script>scripts\src_process_script.gml</script>
         <script>scripts\src_show_world.gml</script>
         <script>scripts\src_create_file_sys.gml</script>
+        <script>scripts\src_hide_world.gml</script>
       </scripts>
       <scripts name="utilities">
         <script>scripts\stringSplit.gml</script>
         <script>scripts\runCommand.gml</script>
         <script>scripts\find_last_backSlash.gml</script>
         <script>scripts\str_extract.gml</script>
+        <script>scripts\src_clear_cli.gml</script>
       </scripts>
       <scripts name="virus">
         <script>scripts\scr_virus_init.gml</script>

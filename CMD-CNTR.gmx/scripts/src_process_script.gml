@@ -106,27 +106,22 @@
             if (objTextInput.command_result == "cp Executed")
                 print_dialog();
             break;
-        
-        // Start puzzle3
-        case 60:
-            /*if (global.isFinishedPuzzle3)
-                print_dialog();
-            else
-                room_goto(room_puzzle3);*/
-                
-            print_dialog();
-            break;
-        
-        // Start puzzle2
-        /*case 71:
-            room_goto(room_puzzle2);
-            break;*/
-        
+
         case 55:
             if (objTextInput.userInput != "open cmd2.txt")
             {
                 print_dialog();
             }
+            break;
+        
+        // Start puzzle3
+        case 60:
+            if (global.isFinishedPuzzle3)
+                print_dialog();
+            else
+                room_goto(room_puzzle3);
+                
+            //print_dialog();
             break;
         
         case 67:
@@ -135,7 +130,24 @@
                 print_dialog();
             }
             break;
+            
+        case 69:
+            if(ds_list_size(objTextInput.process_list) < objTextInput.process_list_size)
+                print_dialog();
+            break;
         
+        // Start puzzle2
+        /*case 71:
+            room_goto(room_puzzle2);
+            break;*/
+            
+        case 87:
+            src_clear_cli();
+            src_hide_world();
+            
+            print_dialog();
+            break;
+            
         default:
             //show_message(cli_ds_line_size - ds_queue_size(cli_ds_line));
             if (ds_queue_size(cli_ds_line) > 0)

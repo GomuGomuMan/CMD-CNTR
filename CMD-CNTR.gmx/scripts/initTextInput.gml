@@ -46,6 +46,7 @@
         file_text_readln(file);
     }
     file_text_close(file);
+    process_list_size = ds_list_size(process_list);
     
     // Check if done printing
     ifDonePrinting = false;

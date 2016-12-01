@@ -66,6 +66,7 @@ Okay, well. I found the problem. Even though we deleted the virus files, some le
 Type 'open cmd3.txt' to view the last couple of commands I need you to use.
 --User Input
 The virus prefixes its processes with 'FUN_' as well. Find out the process IDs and kill them. Hurry. Ztelara is running out of time.
+--User Input
 --VIRUS HA HA HA. YOU ACTIVATED MY TRAP CARD.
 --VIRUS GOOD LUCK TRYING TO KILL ME NOW.
 --User Input
@@ -83,6 +84,7 @@ Each one of them had a vision for this world, and you allowed that vision to con
 Anyways... I hate to say it, but I have some responsibilities to take care of at City Hall. They'll scold me for being late again. Little do they know that we just saved all their hides.
 Gotta run.
 Connection lost.
+--User Input
 I almost forgot to tell you -- check back soon! The interface will be back better than ever, just for you. CMD-CNTR 2.0, VIP edition, with ULTRA graphics.
 ...
 Thank you for everything, PLAYER_NAME.
