@@ -652,7 +652,8 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(roomMain);
+            <string>global.isFinishedPuzzle3 = true;
+room_goto(roomMain);
 </string>
           </argument>
         </arguments>
