@@ -117,7 +117,7 @@ dropSpeed = 3;
 // Random number generator that creates an index for the list of commands.
 randomNumber=irandom_range(0,3);
 // Random number generator for the x position in which the command will drop.
-randomXPosition=irandom_range(860,1100);
+randomXPosition=irandom_range(870,1100);
 
 // Command List, contains all of the commands.
 
