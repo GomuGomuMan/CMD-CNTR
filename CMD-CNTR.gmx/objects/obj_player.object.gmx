@@ -572,6 +572,7 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 
     if(obj_commandDropper.invertDirection == true)
     {
+        show_debug_message(obj_commandDropper.invertDirection);
         direction = 180;
     }
     else
@@ -614,6 +615,7 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 
     if(obj_commandDropper.invertDirection == true)
     {
+        show_debug_message(obj_commandDropper.invertDirection);
         direction = 0;
     }
     else

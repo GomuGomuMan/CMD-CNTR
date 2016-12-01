@@ -28,7 +28,7 @@
             <string>/// Creates and defines all object variables
 // Variable of the drop speed of commands if a user collides with x2 command.
 badDropSpeed = 4;
-badDropFrequency = 3;
+badDropFrequency = 4;
 </string>
           </argument>
         </arguments>

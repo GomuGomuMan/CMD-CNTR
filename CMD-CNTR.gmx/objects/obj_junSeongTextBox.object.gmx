@@ -42,7 +42,7 @@ line = 0;
 
 // Set the message
 //message = "This is a very long long long long long long long long long long long string and this is to check if the long long long long long long long string actually works";
-message = "The command for the first file you have to delete is: rm ARCHITECTURE/s390/FUN_Kconfig";
+message = "The command for the first file you have to delete is: #rm ARCHITECTURE/s390/FUN_Kconfig";
 str = "";
 
 // Set color and font

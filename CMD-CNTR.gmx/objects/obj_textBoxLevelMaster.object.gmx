@@ -104,6 +104,7 @@ room_goto(roomMain);
             <kind>1</kind>
             <string>/// Start the next level after the in between levels state.
 puzzle3GameStart = true;
+currentCommandLength = 0;
 </string>
           </argument>
         </arguments>
@@ -126,7 +127,7 @@ puzzle3GameStart = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets the message back to orignal message after telling user they're current command is too Long.
+            <string>/// Sets the message back to orignal message after telling user their current command is too Long.
 
 //show_debug_message(tempMessage);
 
@@ -470,6 +471,12 @@ else if(puzzle3GameStart == true)
         if(alarm[0] == -1)
         {
             alarm[0] = room_speed * 0.5;
+        }
+        // Clears dropping commands and resets command length to 0.
+        puzzle3GameStart = false;
+        if(alarm[2] == -1)
+        {
+            alarm[2] = room_speed * 0.5;
         }
     }
 }

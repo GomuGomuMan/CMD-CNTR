@@ -38,6 +38,7 @@ dropSpeedX2 = false;
 invertDirection = false;
 // Flag representing if the player has collided with a drop Frequency command.
 dropFrequencyX2 = false;
+
 </string>
           </argument>
         </arguments>
@@ -114,35 +115,80 @@ dropSpeed = 3;
             <string>///Drops a random command object everytime the alarm goes off.
 
 // Random number generator that creates an index for the list of commands.
-randomNumber=irandom_range(0,10);
+randomNumber=irandom_range(0,3);
 // Random number generator for the x position in which the command will drop.
 randomXPosition=irandom_range(860,1100);
 
 // Command List, contains all of the commands.
 
+
+
+
+/*
 //commandList[5] = obj_command6;
 //commandList[0] = obj_command1;
-commandList[0] = obj_command2;
+//commandList[0] = obj_command2;
 commandList[1] = obj_command3;
+commandList[2] = obj_command3;
 //commandList[3] = obj_command4;
 //commandList[4] = obj_command5;
-commandList[2] = obj_path1;
-commandList[3] = obj_path2;
-commandList[4] = obj_path3;
-commandList[5] = obj_path4;
-commandList[6] = obj_badFile1;
-commandList[7] = obj_badFile2;
-commandList[8] = obj_badFile3;
-commandList[9] = obj_badFile4;
-commandList[10] = obj_badFile1;
+commandList[5] = obj_path1;
+commandList[6] = obj_path2;
+commandList[7] = obj_path3;
+commandList[8] = obj_path4;
+commandList[9] = obj_badFile1;
+commandList[10] = obj_badFile2;
+commandList[11] = obj_badFile3;
+commandList[12] = obj_badFile4;
+commandList[13] = obj_badFile1;
+*/
 
-// Creates a command variable at the using the randomly generated x position, and
-// randomly genrated command list index.
-var command=instance_create(randomXPosition,0,commandList[randomNumber]);
-// Changes the drop speed of the command to the dropSpeed variable.
-command.speed= dropSpeed;
-// Chagnes the direction that the command will drop. (270 = down).
-command.direction=270;
+commandList1[0] = obj_command3;
+commandList1[1] = obj_command3;
+commandList1[2] = obj_command2;
+commandList1[3] = obj_command3;
+
+pathList[0] = obj_path1;
+pathList[1] = obj_path2;
+pathList[2] = obj_path3;
+pathList[3] = obj_path4;
+
+fileList[0] = obj_badFile1
+fileList[1] = obj_badFile2
+fileList[2] = obj_badFile3
+fileList[3] = obj_badFile4
+
+if(obj_textBoxLevelMaster.currentCommandLength == 0)
+{
+    // Creates a command variable at the using the randomly generated x position, and
+    // randomly genrated command list index.
+    var command=instance_create(randomXPosition,0,commandList1[randomNumber]);
+    // Changes the drop speed of the command to the dropSpeed variable.
+    command.speed= dropSpeed;
+    // Chagnes the direction that the command will drop. (270 = down).
+    command.direction=270;
+}
+else if(obj_textBoxLevelMaster.currentCommandLength == 1)
+{
+    // Creates a command variable at the using the randomly generated x position, and
+    // randomly genrated command list index.
+    var command=instance_create(randomXPosition,0,pathList[randomNumber]);
+    // Changes the drop speed of the command to the dropSpeed variable.
+    command.speed= dropSpeed;
+    // Chagnes the direction that the command will drop. (270 = down).
+    command.direction=270;
+}
+else if(obj_textBoxLevelMaster.currentCommandLength == 2 || obj_textBoxLevelMaster.currentCommandLength == 3)
+{
+    // Creates a command variable at the using the randomly generated x position, and
+    // randomly genrated command list index.
+    var command=instance_create(randomXPosition,0,fileList[randomNumber]);
+    // Changes the drop speed of the command to the dropSpeed variable.
+    command.speed= dropSpeed;
+    // Chagnes the direction that the command will drop. (270 = down).
+    command.direction=270;
+}
+
 
 
 
@@ -222,7 +268,7 @@ if(dropSpeedX2 == true)
 // Checks if the invertDirection flag is true (i.e. if a player has collided wtih an invertDirection command).
 if(invertDirection == true)
 {
-    // If the invertDirection flag is true then sets teh alarm that controls the duration of the penalty
+    // If the invertDirection flag is true then sets the alarm that controls the duration of the penalty
     // to 7 seconds.
     if(alarm[2] == -1)
     {
