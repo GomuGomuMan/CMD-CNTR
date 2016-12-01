@@ -39,6 +39,9 @@
 }
 else if global.hit_num &gt;= global.freeze_value{
     global.freeze = true;
+    global.isFinishedPuzzle2 = true;
+    global.cont = true;
+    room_goto(roomMain);
 }
 </string>
           </argument>
