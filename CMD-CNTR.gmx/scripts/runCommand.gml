@@ -4,6 +4,15 @@
     
     // Split string to words
     var array = stringSplit(command, " ");
+    
+    var i = 0;
+    while (i < array_length_1d(array))
+    {
+        //show_message("HERE");
+        array[i] = string_replace_all(array[i], "/", "\");
+        ++i;
+    }
+    
     if (string_length(array[0]) > 0)
     {
         // Function specific operation
