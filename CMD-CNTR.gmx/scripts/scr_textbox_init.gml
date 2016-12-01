@@ -1,6 +1,6 @@
 // Create some variables
 width = 672;
-height = 160;
+height = 180;
 padding = 8;
 
 // Test bool
