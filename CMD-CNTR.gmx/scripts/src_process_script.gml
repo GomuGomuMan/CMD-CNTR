@@ -43,6 +43,7 @@
             {
                 if_cli_done = true;
                 src_show_world();
+                src_show_js_textbox();
                 //print_dialog();
             }
             
@@ -139,9 +140,14 @@
             break;
         
         // Start puzzle2
-        /*case 71:
-            room_goto(room_puzzle2);
-            break;*/
+        case 71:
+            if (global.isFinishedPuzzle2)
+            {
+                print_dialog();
+            }   
+            else
+                room_goto(room_puzzle2);
+            break;
             
         case 87:
             src_clear_cli();

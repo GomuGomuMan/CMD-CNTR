@@ -1,4 +1,4 @@
-draw_set_colour(c_maroon);
+draw_set_colour(c_red);
 draw_set_font(fontCourierNew);
 
 /// Draw the string and the box
@@ -20,7 +20,13 @@ if (string_width(str) > width - padding - padding)
     ds_list_add(start, last_space + 1);
     
 }
-
+else if (string_length(str) > 0 && prev_msg_len < string_length(message))
+{
+    //message = string_insert("#", message, count - 1);
+    //draw_text(0, 135, "String_length" + string(string_length(str)));
+    
+    ds_list_add(start, count);
+}
 // Make sure we have not reached the end of the message
 if (count < string_length(message))
 {
@@ -49,5 +55,5 @@ draw_text(x + padding, y + padding, str);
 
 // Testing
 //draw_text(200, 0, "Textbox Length: " + string(line));
-
+prev_msg_len = string_length(message);
 

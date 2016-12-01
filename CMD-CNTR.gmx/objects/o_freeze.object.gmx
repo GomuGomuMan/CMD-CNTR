@@ -36,12 +36,13 @@
         sprite_index = s_rightwall_hit;
     }
     o_avatar.sprite_index = s_avatar_hit;
-}
-else if global.hit_num &gt;= global.freeze_value{
-    global.freeze = true;
+    show_message("Test");
     global.isFinishedPuzzle2 = true;
     global.cont = true;
     room_goto(roomMain);
+}
+else if global.hit_num &gt;= global.freeze_value{
+    global.freeze = true;
 }
 </string>
           </argument>

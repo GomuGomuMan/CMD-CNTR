@@ -11,6 +11,7 @@ ds_list_add(start, 0);
 count = 0;
 last_space = 0;
 line = 0;
+prev_msg_len = 0;
 
 // Set the message
 //message = "This is a very long long long long long long long long long long long string and this is to check if the long long long long long long long string actually works";

@@ -1,7 +1,7 @@
 {
     // Enable character & buildings
     obj_jun_seong.visible = true;
-    obj_cli_textbox.visible = true;
+    //obj_cli_textbox.visible = true;
     obj_building_hq.visible = true;
     obj_building_dome.visible = true;
     obj_building_cube.visible = true;
@@ -13,5 +13,5 @@
     obj_building_futuristic.visible = true;
     
     // Set depth
-    obj_cli_textbox.depth = -10;
+    //obj_cli_textbox.depth = -10;
 }

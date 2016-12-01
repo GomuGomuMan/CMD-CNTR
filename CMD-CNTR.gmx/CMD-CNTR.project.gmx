@@ -319,6 +319,7 @@
         <script>scripts\src_show_world.gml</script>
         <script>scripts\src_create_file_sys.gml</script>
         <script>scripts\src_hide_world.gml</script>
+        <script>scripts\src_show_js_textbox.gml</script>
       </scripts>
       <scripts name="utilities">
         <script>scripts\stringSplit.gml</script>
@@ -415,7 +416,7 @@
       <object>objects\obj_piece13</object>
       <object>objects\obj_piece14</object>
       <object>objects\obj_piece15</object>
-      <object>objects\obj_PieceBaseclass</object>
+      <object>objects\obj_PieceMover</object>
       <object>objects\obj_psol1</object>
       <object>objects\obj_psol2</object>
       <object>objects\obj_psol3</object>
@@ -437,8 +438,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
-    <room>rooms\room_puzzle3</room>
     <room>rooms\room_puzzle1</room>
+    <room>rooms\room_puzzle3</room>
     <room>rooms\room_puzzle2</room>
     <room>rooms\room_puzzle2_start</room>
   </rooms>
