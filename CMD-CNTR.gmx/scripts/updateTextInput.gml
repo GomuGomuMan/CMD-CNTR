@@ -23,7 +23,8 @@
     }
     
     //else if (keyboard_check_pressed(vk_enter) && userInput != "" && pause && ifDonePrinting)
-    else if (keyboard_check_pressed(vk_enter) && userInput != "" && pause)
+    else if ((keyboard_check_pressed(vk_enter) && userInput != "" && pause)
+        || global.cont)
     {
         message += ">" + userInput + "#";
         

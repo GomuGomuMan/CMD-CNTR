@@ -34,15 +34,17 @@
 &amp;&amp; place_meeting(obj_psol7.x,obj_psol7.y,obj_piece7)
 &amp;&amp; place_meeting(obj_psol8.x,obj_psol8.y,obj_piece8))
 {
-    room_goto(roomMain);
     global.isFinishedPuzzle1 = true;
+    global.cont = true;
+    room_goto(roomMain);
 }
 
 ///Shortcut to bypass Puzzle///
 if(keyboard_check_pressed(vk_enter))
 {
-    room_goto(roomMain);
     global.isFinishedPuzzle1 = true;
+    global.cont = true;
+    room_goto(roomMain);
 }
 
 </string>

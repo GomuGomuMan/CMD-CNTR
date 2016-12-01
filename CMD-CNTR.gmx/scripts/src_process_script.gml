@@ -58,6 +58,7 @@
         case 30:
             if (global.isFinishedPuzzle1)
             {
+                global.cont = false;
                 print_dialog();
             }
             break;

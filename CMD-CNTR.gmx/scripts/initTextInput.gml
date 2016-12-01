@@ -10,6 +10,9 @@
     
     enabled_keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890";
     
+    // Continue through to process script
+    global.cont = false;
+    
     // Test draw
     count_temp = 0;
     if_cli_done = false;
@@ -20,6 +23,7 @@
     // Is Finish Puzzle 1
     global.isFinishedPuzzle1 = false;
     global.isFinishedPuzzle3 = false;
+    global.isFinishedPuzzle2 = false;
     
     // Is Finish Phrase 1
     isFinishedPart1 = false;
