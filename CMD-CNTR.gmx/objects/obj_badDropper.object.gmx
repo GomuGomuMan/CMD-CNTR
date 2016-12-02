@@ -113,7 +113,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Checks if the alaram is not set. If not set then resets to 15 seconds.
+            <string>/// Checks if the alarm is not set. If not set then resets to 15 seconds.
 
 
 if(obj_textBoxLevelMaster.puzzle3GameStart == true)
