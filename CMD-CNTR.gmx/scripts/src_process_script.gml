@@ -122,6 +122,7 @@
                 print_dialog();
             }   
             else
+                
                 room_goto(room_puzzle3);
                 
             //print_dialog();
