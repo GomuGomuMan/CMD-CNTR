@@ -2,8 +2,6 @@
     // Trick: LINE_NUM + 1
     switch (objTextInput.cli_ds_line_size - ds_queue_size(cli_ds_line))
     {
-        
-    
         // Save player_name and print changed queue head
         case 4:
             player_name = userInput;
@@ -153,9 +151,9 @@
             break;
             
         case 87:
-            src_clear_cli();
-            src_hide_world();
-            
+            //src_clear_cli();
+            //src_hide_world();
+            //instance_deactivate_object(obj_cli_virus);
             print_dialog();
             break;
             
