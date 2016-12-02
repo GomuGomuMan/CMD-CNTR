@@ -11,13 +11,13 @@
     //userInput = string_replace_all(keyboard_string, "#", "\#")
     userInput = keyboard_string;
     
-    if (userInput == "puzzle1")
+    if (userInput == "puzzle1" && keyboard_check_pressed(vk_enter))
     {
         room_goto(room_puzzle1);
     }
-    else if (userInput == "puzzle2")
+    else if (userInput == "puzzle2" && keyboard_check_pressed(vk_enter))
         room_goto(room_puzzle2);
-    else if (userInput = "puzzle3")
+    else if (userInput = "puzzle3" && keyboard_check_pressed(vk_enter))
     {
         room_goto(room_puzzle3);
     }
