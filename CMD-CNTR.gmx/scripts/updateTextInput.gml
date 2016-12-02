@@ -22,9 +22,10 @@
         room_goto(room_puzzle3);
     }
     
-    //else if (keyboard_check_pressed(vk_enter) && userInput != "" && pause && ifDonePrinting)
-    else if ((keyboard_check_pressed(vk_enter) && userInput != "" && pause)
-        || global.cont)
+    //else if ((keyboard_check_pressed(vk_enter) && userInput != "" && pause && ifDonePrinting) || global.cont)
+    //else if ((keyboard_check_pressed(vk_enter) && userInput != "" && pause)
+    //   || global.cont)
+    else if ((keyboard_check_pressed(vk_enter) && userInput != "" && pause && ifDonePrinting) || global.cont)
     {
         message += ">" + userInput + "#";
         

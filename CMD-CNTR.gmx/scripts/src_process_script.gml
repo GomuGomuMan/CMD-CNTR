@@ -141,7 +141,7 @@
             break;
         
         // Start puzzle2
-        case 71:
+        case 72:
             if (global.isFinishedPuzzle2)
             {
                 print_dialog();
