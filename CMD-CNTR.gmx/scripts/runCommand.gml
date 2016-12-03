@@ -5,11 +5,14 @@
     // Split string to words
     var array = stringSplit(command, " ");
     
-    var i = 0;
+    var i = 1;
+    // Lowercase for command
+    array[0] = string_lower(array[0]);
     while (i < array_length_1d(array))
     {
         //show_message("HERE");
         array[i] = string_replace_all(array[i], "/", "\");
+        //array[i] = string_upper(array[i]);
         ++i;
     }
     

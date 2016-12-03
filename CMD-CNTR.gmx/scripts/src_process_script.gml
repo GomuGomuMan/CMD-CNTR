@@ -76,7 +76,8 @@
             break;
             
         case 39:
-            if (objTextInput.current_dir = "HOME\LOCATION_DATABASE")
+            if (objTextInput.current_dir = "HOME\LOCATION_DATABASE"
+                && objTextInput.command_result == "ls Executed")
             {
                 // Comment out for test
                 //&& objTextInput.command_result == "ls Executed")
