@@ -46,12 +46,13 @@ puzzle3Level = 0;
 puzzle3GameStart = false;
 levelOver = false;
 // Current command variable.
-currentCommand = "rm ARCHITECTURE/s390/FUN_Kconfig";
+currentCommand = "";
 // Current command lenghth variable.
 currentCommandLength = 0;
 // Current command too long flag.
 longAnswer = false;
-
+// Temp counter to start the game
+enterCounter = 0;
 /*textString = "Level 1 code  " + currentCommand + "  snippet";*/
 
 </string>
@@ -351,13 +352,20 @@ else if(puzzle3Level ==6)
             <string>// Set puzzle level and game state when players peresses "Enter" the first time.
 if(puzzle3GameStart == false)
 {
-    puzzle3Level = 1;
-    puzzle3GameStart = true;
+    enterCounter+=1;
+    if(enterCounter == 2)
+    {
+        puzzle3Level = 1;
+        puzzle3GameStart = true;
+    }
+    
+    
 }
 // If game has already started and player presses "Enter" then check if current command is correct
 // according to game level.
 else if(puzzle3GameStart == true)
 {
+    show_debug_message(currentCommand);
     // Level 1 condition
     if(currentCommand == "rm ARCHITECTURE/s390/FUN_Kconfig" &amp;&amp; puzzle3Level == 1)
     { 
@@ -366,7 +374,7 @@ else if(puzzle3GameStart == true)
         // Change puzzle level to 2
         puzzle3Level = 2;
         // Clear current command for next level.
-        //currentCommand = "";
+        currentCommand = "";
         //Update JunSeong's text box with isntructions for next level.
         obj_junSeongTextBox.message = "Good Job! #The command for the next file is: #rm ARCHITECTURE/unicore32/FUN_Makefile"
         // Change state of game to "in between level"
@@ -378,7 +386,7 @@ else if(puzzle3GameStart == true)
         {
             alarm[2] = room_speed * 2;
         }
-        currentCommand = "rm ARCHITECTURE/unicore32/FUN_Makefile";
+        //currentCommand = "rm ARCHITECTURE/unicore32/FUN_Makefile";
         
         
     }   
@@ -390,7 +398,7 @@ else if(puzzle3GameStart == true)
         // Change puzzle level to 3
         puzzle3Level = 3;
         // Clear current command for next level.
-        //currentCommand = "";
+        currentCommand = "";
         //Update JunSeong's text box with isntructions for next level.
         obj_junSeongTextBox.message = "Great! Keep going! #The command for the next file is: #rm SECURITY/keys/FUN_key"
         // Change state of game to "in between level"
@@ -403,7 +411,7 @@ else if(puzzle3GameStart == true)
             alarm[2] = room_speed * 2;
         }
         
-        currentCommand = "rm SECURITY/keys/FUN_key";
+        //currentCommand = "rm SECURITY/keys/FUN_key";
     }
     // Level 3 condition
     else if(currentCommand == "rm SECURITY/keys/FUN_key" &amp;&amp; puzzle3Level == 3)
@@ -413,7 +421,7 @@ else if(puzzle3GameStart == true)
         // Change puzzle level to 4
         puzzle3Level = 4;
         // Clear current command for next level.
-        //currentCommand = "";
+        currentCommand = "";
         //Update JunSeong's text box with isntructions for next level.
         obj_junSeongTextBox.message = "You're getting good! Only 2 more! #The command for the next file is: #rm SECURITY/tomoyo/FUN_group"
         // Change state of game to "in between level"
@@ -426,7 +434,7 @@ else if(puzzle3GameStart == true)
             alarm[2] = room_speed * 2;
         }
         
-        currentCommand = "rm SECURITY/tomoyo/FUN_group";
+        //currentCommand = "rm SECURITY/tomoyo/FUN_group";
     }
     // Level 4 condition
     else if(currentCommand == "rm SECURITY/tomoyo/FUN_group" &amp;&amp; puzzle3Level == 4)
@@ -466,13 +474,13 @@ else if(puzzle3GameStart == true)
         instance_deactivate_all(true);
         if(alarm[0] == -1)
         {
-            alarm[0] = room_speed * 0.5;
+            alarm[0] = room_speed * 0.2;
         }
         // Clears dropping commands and resets command length to 0.
         puzzle3GameStart = false;
         if(alarm[2] == -1)
         {
-            alarm[2] = room_speed * 0.5;
+            alarm[2] = room_speed * 0.3;
         }
     }
 }
