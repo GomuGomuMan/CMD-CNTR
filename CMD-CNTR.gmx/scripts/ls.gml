@@ -1,6 +1,7 @@
 {
     var i = 0;
-    var isFoundAll = false;
+    var isFoundAll = false; 
+    var counter = 0;
     while (i < ds_list_size(file_sys) && !isFoundAll)
     {
         var current_check_dir = ds_list_find_value(file_sys, i);
@@ -16,6 +17,14 @@
             else if (string_length(file_name) > 0)
             {
                 message += file_name + "    ";
+                ++counter;
+                
+                if (counter >= 10)
+                {
+                    isFoundAll = true;
+                    message += "..";
+                }
+                    
                 //show_message(file_name);
             }
                 
