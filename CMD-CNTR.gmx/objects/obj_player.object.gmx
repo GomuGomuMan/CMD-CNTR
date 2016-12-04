@@ -544,8 +544,8 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
             <kind>1</kind>
             <string>/// Bounces player off left side if collision with left wall occurs.
 
-direction = 0;
-x += 30;
+//direction = 0;
+//x += 30;
 </string>
           </argument>
         </arguments>
@@ -570,9 +570,8 @@ x += 30;
             <kind>1</kind>
             <string>/// Bounces player off right side if collision with right wall occurs.
 
-direction = 180;
-x -= 30;
-
+//direction = 180;
+//x -= 30;
 </string>
           </argument>
         </arguments>
