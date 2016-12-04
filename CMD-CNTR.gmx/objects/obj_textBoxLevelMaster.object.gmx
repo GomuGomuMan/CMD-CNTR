@@ -254,7 +254,7 @@ if(longAnswer == false)
           <argument>
             <kind>1</kind>
             <string>draw_self();
-
+draw_set_colour(c_lime);
 if(puzzle3Level == 0)
 {
     draw_text_ext(x + 4,y,"Press 'Enter' to begin",25,400);
@@ -284,26 +284,6 @@ else if(puzzle3Level ==6)
 
 
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>524</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_color</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>13</kind>
-            <string>32768</string>
           </argument>
         </arguments>
       </action>

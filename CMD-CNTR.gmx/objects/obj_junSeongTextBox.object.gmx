@@ -96,7 +96,7 @@ ds_list_destroy(start);
             <kind>1</kind>
             <string>/// Draw the string and the box
 draw_set_alpha(.5);
-draw_roundrect_colour(x, y, x + width, y + height, c_black, c_black, false); // c_white, c_white
+draw_roundrect_colour(x, y, x + width, y + height, c_dkgray, c_dkgray, false); // c_white, c_white
 draw_set_alpha(1);
 
 draw_set_colour(c_lime);
@@ -140,10 +140,12 @@ str = string_copy(message, ds_list_find_value(start, line), count-ds_list_find_v
 
 
 // Draw the text
+draw_set_colour(c_aqua);
 draw_text(x + padding, y + padding, str);
 
 // Testing
 //draw_text(200, 0, "Textbox Length: " + string(line));
+
 
 
 </string>
