@@ -27,17 +27,18 @@
             <kind>1</kind>
             <string>/// Creates and defines all object variables
 
-// Variable for the speed in which commands drop from the dropper.
+// Variable for the speed in which commands drop from the dropper(i.e. every 3 seconds)
 dropSpeed = 3;
+
 // Variable for the frequency in which commands drop from the dropper. (i.e. drop every 2 seconds).
 dropFrequency = 2;
 
 // Flag representing if the player has collided with a x2 drop speed command.
 dropSpeedX2 = false;
+
 // Flag representing if the player has collided with a invert direction command.
 invertDirection = false;
-// Flag representing if the player has collided with a drop Frequency command.
-dropFrequencyX2 = false;
+
 
 </string>
           </argument>
@@ -61,7 +62,7 @@ dropFrequencyX2 = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets invertDirection back to normal (false) after the player has collided with an invertDirection command, and the duration of the penalty has ended.
+            <string>/// Sets invertDirection back to normal after the player has collided with an invertDirection command, and the duration of the penalty has ended.
 
 invertDirection = false;
 </string>
@@ -86,7 +87,8 @@ invertDirection = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets the dropSpeed back to 3 after a player has collided a x2 speed command and the duration of the penalty has ended.
+            <string>/// Sets the dropSpeed back to 3 after a player has collided with a x2 speed command and the duration of the penalty has ended.
+
 dropSpeed = 3;
 
 
@@ -116,33 +118,11 @@ dropSpeed = 3;
 
 // Random number generator that creates an index for the list of commands.
 randomNumber=irandom_range(0,3);
+
 // Random number generator for the x position in which the command will drop.
-randomXPosition=irandom_range(870,1100);
+randomXPosition=irandom_range(880,1100);
 
-// Command List, contains all of the commands.
-
-
-
-
-/*
-//commandList[5] = obj_command6;
-//commandList[0] = obj_command1;
-//commandList[0] = obj_command2;
-commandList[1] = obj_command3;
-commandList[2] = obj_command3;
-//commandList[3] = obj_command4;
-//commandList[4] = obj_command5;
-commandList[5] = obj_path1;
-commandList[6] = obj_path2;
-commandList[7] = obj_path3;
-commandList[8] = obj_path4;
-commandList[9] = obj_badFile1;
-commandList[10] = obj_badFile2;
-commandList[11] = obj_badFile3;
-commandList[12] = obj_badFile4;
-commandList[13] = obj_badFile1;
-*/
-
+// Lists that contain all of the commands.
 commandList1[0] = obj_command3;
 commandList1[1] = obj_command3;
 commandList1[2] = obj_command2;
@@ -192,33 +172,7 @@ else if(obj_textBoxLevelMaster.currentCommandLength == 2 || obj_textBoxLevelMast
 
 
 
-/*
-if(randomNumber&lt;=30)
-{
-    command1=instance_create(randomXPosition,0,commandList[0]);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
 
-else if(randomNumber&gt;30 &amp;&amp; randomNumber&lt;=40)
-{
-    command1=instance_create(randomXPosition,0,commandList[1]);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-else if(randomNumber&gt;80&amp;&amp; randomNumber&lt;=100)
-{
-    command1=instance_create(randomXPosition,0,commandList[2]);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-else
-{
-    command1=instance_create(randomXPosition,0,obj_invertDirection);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-*/
 </string>
           </argument>
         </arguments>
@@ -241,7 +195,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Checks if the alarm is not set. If not set then resets to 15 seconds.
+            <string>/// Handles the resetting of alarms.
 
 // Checks if the game start flag is true.
 if(obj_textBoxLevelMaster.puzzle3GameStart == true)
@@ -258,7 +212,7 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 // Checks if the dropSpeedX2 flag is true. (i.e. if a player has collided with x2 command).
 if(dropSpeedX2 == true)
 {
-    // If the dropSpeedX2 flag is true then sets the alarm that controls the duration of the penalty
+    // If the dropSpeedX2 flag is true, sets the alarm that controls the duration of the penalty
     // to 5 seconds.
     if(alarm[1] == -1)
     {

@@ -27,8 +27,13 @@
             <kind>1</kind>
             <string>/// Sets variables for object
 
+// Max player speed
 maxPlayerSpeed = 4;
+
+// Object's initial x coordinate
 initialX = x;
+
+// Object's initial y coordinate
 initialY = y;
 </string>
           </argument>
@@ -52,7 +57,7 @@ initialY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Moves player to initial position if level is starting.
+            <string>///Moves player to initial position and resets its speed if level is starting.
 
 if(obj_textBoxLevelMaster.puzzle3GameStart == false)
 {
@@ -84,7 +89,7 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == false)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command7 adds "FUN_group" command to input.
+            <string>/// Collision with obj_badFile4 adds "FUN_group" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "FUN_group";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -110,7 +115,7 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command7 adds "FUN_key" command to input.
+            <string>/// Collision with obj_badFile3 adds "FUN_key" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "FUN_key";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -136,7 +141,7 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command7 adds "FUN_Makefile" command to input.
+            <string>/// Collision with obj_badFile2 adds "FUN_Makefile" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "FUN_Makefile";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -162,7 +167,7 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command7 adds "FUN_Kconfig" command to input.
+            <string>/// Collision with obj_badFile1 adds "FUN_Kconfig" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "FUN_Kconfig";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -188,7 +193,7 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command7 adds "/SECURITY/tomoyo/" command to input.
+            <string>/// Collision with obj_path4 adds "/SECURITY/tomoyo/" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "SECURITY/tomoyo/";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -214,7 +219,7 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command7 adds "/SECURITY/keys/" command to input.
+            <string>/// Collision with obj_path3 adds "/SECURITY/keys/" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "SECURITY/keys/";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -240,7 +245,7 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command7 adds "/ARCHITECTURE/unicore32/" command to input.
+            <string>/// Collision with obj_path2 adds "/ARCHITECTURE/unicore32/" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "ARCHITECTURE/unicore32/";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -266,7 +271,7 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command7 adds "/ARCHITECTURE/s390/" command to input.
+            <string>/// Collision with obj_path1 adds "/ARCHITECTURE/s390/" command to input and incrememnts the current command length by 1.
 
 obj_textBoxLevelMaster.currentCommand += "ARCHITECTURE/s390/";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -292,13 +297,7 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command3 adds "rm" command to input.
-
-
-/*if(obj_textBoxLevelMaster.puzzle3Level == 3)
-{
-    obj_textBoxLevelMaster.puzzle3Level = 4;
-}*/
+            <string>/// Collision with obj_command3 adds "rm" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "rm ";
 obj_textBoxLevelMaster.currentCommandLength +=1;
@@ -324,49 +323,10 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Collision with obj_command2 adds "mv" command to input.
-
-/*if(obj_textBoxLevelMaster.puzzle3Level == 2)
-{
-    obj_textBoxLevelMaster.puzzle3Level = 3;
-}*/
-
+            <string>/// Collision with obj_command2 adds "mv" command to input and incrememnts the current command length by 1..
 
 obj_textBoxLevelMaster.currentCommand += "mv ";
 obj_textBoxLevelMaster.currentCommandLength +=1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_command1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Collision with obj_command1 adds "ff" command to input.
-
-/*if(obj_textBoxLevelMaster.puzzle3Level == 1)
-{
-    obj_textBoxLevelMaster.puzzle3Level = 2;
-}*/
-
-
-obj_textBoxLevelMaster.currentCommand += "ff ";
-obj_textBoxLevelMaster.currentCommandLength +=1;
-
 </string>
           </argument>
         </arguments>
@@ -389,10 +349,13 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets obj_commandDropper.dropSpeedX2 to true.
+            <string>/// Sets obj_commandDropper.dropSpeedX2 to true when the colliding with x2 object.
 
 
 obj_commandDropper.dropSpeedX2 = true;
+
+// If the current drop speed is not already being double doubled due to colliding with x2 object,
+// double the command's drop speed.
 if(obj_commandDropper.dropSpeed == 3)
 {
     obj_commandDropper.dropSpeed = obj_commandDropper.dropSpeed * 2;
@@ -421,105 +384,9 @@ if(obj_commandDropper.dropSpeed == 3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sets obj_commandDropper.invertDirection to true
+            <string>/// Sets obj_commandDropper.invertDirection to true when commanding with invertDirection object
 
 obj_commandDropper.invertDirection = true;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_command6">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Collision with obj_command6 adds "-r" command to input.
-
-
-/*if(obj_textBoxLevelMaster.puzzle3Level == 3)
-{
-    obj_textBoxLevelMaster.puzzle3Level = 4;
-}*/
-
-obj_textBoxLevelMaster.currentCommand += "-r ";
-obj_textBoxLevelMaster.currentCommandLength +=1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_command5">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Collision with obj_command5 adds "-f" command to input.
-
-
-/*if(obj_textBoxLevelMaster.puzzle3Level == 3)
-{
-    obj_textBoxLevelMaster.puzzle3Level = 4;
-}*/
-
-obj_textBoxLevelMaster.currentCommand += "-f ";
-obj_textBoxLevelMaster.currentCommandLength +=1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_command4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Collision with obj_command4 adds "-p" command to input.
-
-
-/*if(obj_textBoxLevelMaster.puzzle3Level == 3)
-{
-    obj_textBoxLevelMaster.puzzle3Level = 4;
-}*/
-
-obj_textBoxLevelMaster.currentCommand += "-p ";
-obj_textBoxLevelMaster.currentCommandLength +=1;
 </string>
           </argument>
         </arguments>
@@ -596,16 +463,19 @@ obj_textBoxLevelMaster.currentCommandLength +=1;
             <kind>1</kind>
             <string>/// Changes speed and sets movememnt direction to right.
 
+// If puzzle has started
 if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 {
+    // If the player's current speed is less than the max speed (4), increment the speed by 0.15.
     if(speed &lt; maxPlayerSpeed)
     {
         speed +=0.15;
     }
 
+    // If the player has collided with an invertDirection object reverse the movement direction.
+    // Else set movement to the right.
     if(obj_commandDropper.invertDirection == true)
     {
-        show_debug_message(obj_commandDropper.invertDirection);
         direction = 180;
     }
     else
@@ -613,9 +483,6 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
         direction = 0;  
     }
 }
-
-
-
 </string>
           </argument>
         </arguments>
@@ -639,16 +506,20 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
           <argument>
             <kind>1</kind>
             <string>/// Changes speed and sets movememnt direction to left.
+
+// If puzzle has started
 if(obj_textBoxLevelMaster.puzzle3GameStart == true)
 {
+    // If the player's current speed is less than the max speed (4), increment the speed by 0.15.
     if(speed &lt; maxPlayerSpeed)
     {
         speed += 0.15; 
     }
 
+    // If the player has collided with an invertDirection object reverse the movement direction.
+    // Else set movement to the right.
     if(obj_commandDropper.invertDirection == true)
     {
-        show_debug_message(obj_commandDropper.invertDirection);
         direction = 0;
     }
     else
@@ -656,15 +527,6 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
         direction = 180;  
     }
 }
-
-
-
-
-
-//show_debug_message(speed);
-
-
-
 </string>
           </argument>
         </arguments>
@@ -687,7 +549,8 @@ if(obj_textBoxLevelMaster.puzzle3GameStart == true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.isFinishedPuzzle3 = true;
+            <string>/// Shortcut to exit level.
+global.isFinishedPuzzle3 = true;
 global.cont = true;
 room_goto(roomMain);
 </string>

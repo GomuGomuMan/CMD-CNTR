@@ -188,12 +188,8 @@
     <sprites name="puzzle3">
       <sprite>sprites\spr_command2</sprite>
       <sprite>sprites\spr_command3</sprite>
-      <sprite>sprites\spr_command4</sprite>
       <sprite>sprites\sprr_puzzle3_x2</sprite>
-      <sprite>sprites\spr_command5</sprite>
-      <sprite>sprites\spr_command6</sprite>
       <sprite>sprites\spr_invertDirection</sprite>
-      <sprite>sprites\spr_command1</sprite>
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_terminalLeftSide</sprite>
       <sprite>sprites\spr_terminalRightSide</sprite>
@@ -376,10 +372,7 @@
     <objects name="puzzle3">
       <object>objects\obj_termialRightSide</object>
       <object>objects\obj_terminalLeftSide</object>
-      <object>objects\obj_command4</object>
       <object>objects\obj_commandDropper</object>
-      <object>objects\obj_command5</object>
-      <object>objects\obj_command6</object>
       <object>objects\obj_invertDirection</object>
       <object>objects\obj_textBoxLevelMaster</object>
       <object>objects\obj_badDropper</object>

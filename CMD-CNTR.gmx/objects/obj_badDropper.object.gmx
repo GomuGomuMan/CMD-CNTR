@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Creates and defines all object variables
-// Variable of the drop speed of commands if a user collides with x2 command.
+
+// Drop speed of commands if a user collides with x2 command.
 badDropSpeed = 4;
+
 badDropFrequency = 4;
 </string>
           </argument>
@@ -53,8 +55,12 @@ badDropFrequency = 4;
             <kind>1</kind>
             <string>///Drops a random bad command object everytime the alarm goes off.
 
-var randomNumber=irandom_range(0,1);
-var randomXPosition=irandom_range(860,1100);
+
+// Random number generator that creates an index for the list of commands.
+randomNumber=irandom_range(0,1);
+
+// Random number generator for the x position in which the command will drop.
+randomXPosition=irandom_range(860,1100);
 
 // badCommandList, contains all of the bad commands.
 badCommandList[0] = obj_invertDirection;
@@ -63,34 +69,6 @@ badCommandList[1] = obj_x2;
 var badCommand=instance_create(randomXPosition,0,badCommandList[randomNumber]);
 badCommand.speed= badDropSpeed;
 badCommand.direction=270;
-
-/*
-if(randomNumber&lt;=30)
-{
-    command1=instance_create(randomXPosition,0,obj_command1);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-
-else if(randomNumber&gt;30 &amp;&amp; randomNumber&lt;=40)
-{
-    command1=instance_create(randomXPosition,0,obj_command2);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-else if(randomNumber&gt;80&amp;&amp; randomNumber&lt;=100)
-{
-    command1=instance_create(randomXPosition,0,obj_command3);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-else
-{
-    command1=instance_create(randomXPosition,0,obj_invertDirection);
-    command1.speed= dropSpeed;
-    command1.direction=270;
-}
-*/
 </string>
           </argument>
         </arguments>
@@ -113,7 +91,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Checks if the alarm is not set. If not set then resets to 15 seconds.
+            <string>/// Checks if the alarm is not set. If not set then resets to 4 seconds.
 
 
 if(obj_textBoxLevelMaster.puzzle3GameStart == true)
