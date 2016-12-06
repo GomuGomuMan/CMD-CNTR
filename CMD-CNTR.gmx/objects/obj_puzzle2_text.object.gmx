@@ -29,6 +29,8 @@
 width = 672;
 height = 160;
 padding = 8;
+color = c_lime
+depth = -1000
 
 // Test bool
 test = false;
@@ -95,7 +97,7 @@ ds_list_destroy(start);
           <argument>
             <kind>1</kind>
             <string>// Set color and font
-draw_set_colour(c_lime);
+draw_set_colour(color);
 draw_set_font(fontCourierNew);
 
 /// Draw the string and the box

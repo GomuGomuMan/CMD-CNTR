@@ -239,9 +239,6 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <backgrounds name="puzzle2">
-      <background>background\background1</background>
-    </backgrounds>
     <backgrounds name="cli">
       <background>background\bg_solid</background>
       <background>background\bg_cli_vertical</background>
@@ -316,6 +313,7 @@
         <script>scripts\src_create_file_sys.gml</script>
         <script>scripts\src_hide_world.gml</script>
         <script>scripts\src_show_js_textbox.gml</script>
+        <script>scripts\src_set_building.gml</script>
       </scripts>
       <scripts name="utilities">
         <script>scripts\stringSplit.gml</script>
@@ -334,6 +332,9 @@
         <script>scripts\src_instr_textbox_init.gml</script>
         <script>scripts\src_instr_textbox_draw.gml</script>
       </scripts>
+    </scripts>
+    <scripts name="puzzle2">
+      <script>scripts\src_wall_collison.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
