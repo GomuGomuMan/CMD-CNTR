@@ -52,19 +52,22 @@
   </views>
   <instances>
     <instance objName="obj_cli_verticalLine" x="760" y="0" name="inst_EE97426F" locked="0" code="" scaleX="0.649999976158142" scaleY="24.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_jun_seong" x="100" y="360" name="inst_AD6755B4" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_hq" x="460" y="40" name="inst_40730388" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_shop" x="270" y="90" name="inst_5362D0F7" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_weird" x="520" y="220" name="inst_51613B0E" locked="0" code="" scaleX="-4.5" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_dome" x="520" y="420" name="inst_6528C089" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_futuristic" x="-64" y="0" name="inst_0AF24BDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall_gen" x="960" y="60" name="inst_783863FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_freeze" x="960" y="20" name="inst_E086FEA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_avatar" x="1000" y="200" name="inst_D1A0CCD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_rightcli" x="1220" y="0" name="inst_604F72D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cli_verticalLine" x="760" y="20" name="inst_1825FAAC" locked="0" code="" scaleX="0.649999976158142" scaleY="24.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_cli_verticalLine" x="760" y="-20" name="inst_B96A1596" locked="0" code="" scaleX="0.649999976158142" scaleY="24.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_cube" x="60" y="180" name="inst_D8794586" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_jun_seong" x="100" y="360" name="inst_67DC29DA" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_weird" x="520" y="220" name="inst_EA9F2F95" locked="0" code="" scaleX="-4.5" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_dome" x="520" y="420" name="inst_D365B3C6" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_shop" x="580" y="320" name="inst_5F959329" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_hq" x="540" y="100" name="inst_08D1D53A" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_futuristic" x="220" y="60" name="inst_C898CABE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_cube" x="100" y="140" name="inst_08B5895D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_cube_2" x="180" y="140" name="inst_69FF2287" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_cube_4" x="120" y="200" name="inst_612937E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_cube_3" x="40" y="200" name="inst_C8162744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

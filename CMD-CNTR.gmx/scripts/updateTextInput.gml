@@ -9,7 +9,7 @@
     print_ok = false;
     
     //userInput = string_replace_all(keyboard_string, "#", "\#")
-    if (string_width(userInput) < textHistory_width - padding - padding 
+    if (string_width(userInput) < (textHistory_width - padding - padding) / scale
         || keyboard_check_pressed(vk_backspace))
         userInput = keyboard_string;
     else

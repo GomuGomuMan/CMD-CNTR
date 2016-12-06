@@ -86,7 +86,7 @@
     textHistory_height = 640; // 640 // Testing = 30
     textHistory_X = 800;
     textHistory_Y = 32;
-    padding = 8;
+    padding = 5; // 8
     
     // scale for user input
     scale = 1;
