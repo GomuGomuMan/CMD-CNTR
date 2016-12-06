@@ -1,5 +1,5 @@
 {
-    if (argument[0] == "..")
+    if (argument[0] == ".." && string_length(current_dir) > 4) // Only executes this case when there's more than "HOME"
     {
         // Get start pos to delete
         var i = string_length(current_dir) - 1;

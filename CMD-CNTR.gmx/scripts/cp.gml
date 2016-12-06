@@ -23,8 +23,7 @@
         
         
         directory_create(dest_dir + "\" + file_name);
-        return "cp Executed";
+        
     }
-    
-    
+    return "cp Executed";
 }
