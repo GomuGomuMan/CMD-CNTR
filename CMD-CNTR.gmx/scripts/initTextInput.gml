@@ -88,6 +88,9 @@
     textHistory_Y = 32;
     padding = 8;
     
+    // scale for user input
+    scale = 1;
+    
     // Keep track of the starting line
     start = ds_list_create();
     ds_list_add(start, 0);

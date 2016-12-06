@@ -7,11 +7,12 @@
     // Test
     //draw_text(startX, startY, ". StartX: " + string(startX));
     var inputLine = "> " + userInput;
-    draw_text(startX, startY, inputLine);
+    //draw_text(startX, startY, inputLine);
+    draw_text_transformed(startX, startY, inputLine, scale, scale, 0);
     if blink
     {
-        var length = string_width(inputLine);
-        var height = string_height(inputLine);
+        var length = string_width(inputLine) * scale;
+        var height = string_height(inputLine) * scale;
         
         draw_line(startX + length, startY, startX + length, startY + height);
     }

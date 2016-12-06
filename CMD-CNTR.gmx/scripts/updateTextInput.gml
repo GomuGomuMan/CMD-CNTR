@@ -9,7 +9,11 @@
     print_ok = false;
     
     //userInput = string_replace_all(keyboard_string, "#", "\#")
-    userInput = keyboard_string;
+    if (string_width(userInput) < textHistory_width - padding - padding 
+        || keyboard_check_pressed(vk_backspace))
+        userInput = keyboard_string;
+    else
+        keyboard_string = userInput;
     
     if (userInput == "puzzle1" && keyboard_check_pressed(vk_enter))
     {

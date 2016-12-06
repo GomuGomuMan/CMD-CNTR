@@ -95,7 +95,11 @@
         case 43:
             if (objTextInput.current_dir = "HOME\LOCATION_DATABASE\NEVULA\INFRASTRUCTURE" && 
                 objTextInput.command_result == "ls Executed")
+            {
                 print_dialog();
+                objTextInput.scale = .8;
+            }
+                
             break;
             
         case 45:
@@ -106,7 +110,11 @@
         case 47:
             //test = true;
             if (objTextInput.command_result == "cp Executed")
+            {
                 print_dialog();
+                objTextInput.scale = 1;
+            }
+                
             break;
 
         case 55:

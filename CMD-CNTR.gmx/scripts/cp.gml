@@ -11,8 +11,8 @@
     
     if (ds_list_find_index(file_sys, src_dir) > -1 && ds_list_find_index(file_sys, dest_dir) > -1)
     {
-        show_message(src_dir);
-        show_message(dest_dir);
+        //show_message(src_dir);
+        //show_message(dest_dir);
         
         var file_name = src;
         if (string_pos("\", src) != 0)
