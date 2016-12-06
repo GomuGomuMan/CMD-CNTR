@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(obj_psol1.x,obj_psol1.y,obj_piece1)
+            <string>///Using the place_meeting function, a check for a collision between objects is made///
+///when all required collisions occur, then the puzzle is "solved", and press escape key to continue///
+if (place_meeting(obj_psol1.x,obj_psol1.y,obj_piece1)
 &amp;&amp; place_meeting(obj_psol2.x,obj_psol2.y,obj_piece2)
 &amp;&amp; place_meeting(obj_psol3.x,obj_psol3.y,obj_piece3)
 &amp;&amp; place_meeting(obj_psol4.x,obj_psol4.y,obj_piece4)
