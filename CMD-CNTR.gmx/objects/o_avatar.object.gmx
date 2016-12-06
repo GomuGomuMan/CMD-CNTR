@@ -122,6 +122,8 @@ virus.y = irandom_range(10, 200);
         hspeed = global.avatar_speed;
     }
     
+    if x &lt; 800 hspeed = (global.avatar_speed);
+    else if x &gt; 1200 hspeed = -(global.avatar_speed);
     image_angle -= 10 ;
 }
 
