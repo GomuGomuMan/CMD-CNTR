@@ -1,1 +1,4 @@
-//src_process_script();
+if (string_length(message))
+{
+    depth = -20;
+}

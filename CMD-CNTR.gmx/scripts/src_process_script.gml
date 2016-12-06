@@ -113,6 +113,7 @@
             {
                 print_dialog();
                 objTextInput.scale = 1;
+                src_set_building(1);
             }
                 
             break;
@@ -128,6 +129,7 @@
         case 60:
             if (global.isFinishedPuzzle3)
             {
+                src_set_building(2);
                 print_dialog();
             }   
             else
@@ -146,20 +148,21 @@
             
         case 69:
             if(ds_list_size(objTextInput.process_list) < objTextInput.process_list_size)
-                print_dialog();
+                room_goto(room_puzzle2);
             break;
         
         // Start puzzle2
-        case 72:
+        /*case 72:
             if (global.isFinishedPuzzle2)
             {
+                src_set_building(0);
                 print_dialog();
             }   
             else
                 room_goto(room_puzzle2);
-            break;
+            break;*/
             
-        case 87:
+        case 84:
             //src_clear_cli();
             //src_hide_world();
             //instance_deactivate_object(obj_cli_virus);

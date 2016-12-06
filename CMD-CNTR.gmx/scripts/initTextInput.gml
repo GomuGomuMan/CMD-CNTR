@@ -10,6 +10,11 @@
     
     enabled_keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890";
     
+    // Change state of building
+    src_set_building(1);
+    obj_building_weird.sprite_index = building_weird2;
+      
+    
     // Continue through to process script
     global.cont = false;
     

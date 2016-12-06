@@ -60,14 +60,14 @@
     <instance objName="obj_cli_verticalLine" x="760" y="-20" name="inst_B96A1596" locked="0" code="" scaleX="0.649999976158142" scaleY="24.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_jun_seong" x="100" y="360" name="inst_67DC29DA" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_weird" x="520" y="220" name="inst_EA9F2F95" locked="0" code="" scaleX="-4.5" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_dome" x="520" y="420" name="inst_D365B3C6" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_shop" x="580" y="320" name="inst_5F959329" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_hq" x="540" y="100" name="inst_08D1D53A" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_building_futuristic" x="220" y="60" name="inst_C898CABE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_cube" x="100" y="140" name="inst_08B5895D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_cube_2" x="180" y="140" name="inst_69FF2287" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_cube_4" x="120" y="200" name="inst_612937E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_building_cube_3" x="40" y="200" name="inst_C8162744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_futuristic" x="340" y="100" name="inst_04EF8012" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_building_dome" x="520" y="420" name="inst_C70D8E91" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

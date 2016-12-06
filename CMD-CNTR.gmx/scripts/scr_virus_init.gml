@@ -4,11 +4,14 @@ height = 160;
 padding = 8;
 
 // Set depth
-depth = -20;
+depth = 10;
 
 // Keep track of the starting line
 start = ds_list_create();
 ds_list_add(start, 0);
+
+// Virus text pos
+
 
 // Keep track of the last space and current position
 count = 0;

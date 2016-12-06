@@ -28,12 +28,11 @@
             <string>image_index = 0;
 image_speed = 0;
 
-destruct_1 = 4
-destruct_2 = 8
-destruct_3 = 12
-destruct_4 = 15
+destruct_1 = 5
+destruct_2 = 10
 
 jen_text2 = 15
+
 virus_text1 = 2
 virus_text2 = 5
 virus_text3 = 8
@@ -42,7 +41,11 @@ virus_text4 = 11
 jen = instance_create(50, 620, obj_puzzle2_text);
 jen.message = "This is bad.#Use your arrow keys. Don't touch the walls. More of Ztelara will be deleted every time you do.#I have to find a way to kill those processes. You focus on not touching the walls.";
 jen.color = c_aqua;
-move_text = false;
+
+virus = instance_create(50, 50, obj_puzzle2_text);
+virus.color = c_red;
+virus.height = 50;
+virus.message = "HA HA HA. YOU ACTIVATED MY TRAP CARD.#GOOD LUCK TRYING TO KILL ME NOW."
 </string>
           </argument>
         </arguments>
@@ -66,7 +69,7 @@ move_text = false;
           <argument>
             <kind>1</kind>
             <string>virus.x = irandom_range(10, 100);
-virus.y = irandom_range(10, 200);
+virus.y = irandom_range(10, 120);
 </string>
           </argument>
         </arguments>
@@ -127,7 +130,7 @@ virus.y = irandom_range(10, 200);
     image_angle -= 10 ;
 }
 
-if move_text == true and alarm[1] == -1 {
+if alarm[1] == -1 {
     alarm[1] = room_speed * 1;
 }
 
