@@ -39,7 +39,7 @@ See what I mean? Now, to view the files for my city, type 'cd NEVULA' and 'ls' a
 --User Input
 You'll have to figure out which directory the NetworkTower files are in by 'ls'ing each of them. Try 'cd INFRASTRUCTURE' and 'ls' there first.
 --User Input
-Thought so. Now move back up one directory with ‘cd ..’ and replace the NetworkTower file with 'cp backups/NetworkTower INFRASTRUCTURE/NetworkTower'.
+Thought so. Now move back up one directory with 'cd ..' and replace the NetworkTower file with 'cp backups/NetworkTower INFRASTRUCTURE/NetworkTower'.
 --User Input
 Now I need you to do the same thing for two more damaged files. The first is 'NEVULA/GOVERNMENT/CityHall'. The second is 'ATHENA/TRANSPORT/Line3'. Replace those with their backup files and we're good to go.
 --User Input
@@ -51,26 +51,22 @@ We've got a sentient virus on our hands.
 Nevermind that for now. I have good news. While you were repairing files, I was browsing through them for some kind of keyword that could indicate the presence of the virus. A 'trademark', if you will. This one's trademark is 'FUN_'. It will be prefixed on every file the virus is using to mess things up around here. If you delete all those files, then bye bye virus.
 Type 'open cmd2.txt' to view a new list of commands you'll need to use.
 --User Input
-Delete each file using 'rm'.
---VIRUS HA HA. YOU THOUGHT THIS WOULD BE EASY? TRY AGAIN.
-Heh... This is what I was afraid of. Sentient viruses like to play games. Keep calm and learn how to beat it.
-You should be able to use the same commands as before, just not by typing. Try to catch the right commands using your arrow keys.
+I found four virus files. The first is '\ARCHITECTURE\FUN_avr32'. Delete it using 'rm'.
 --User Input
-Good riddance.
 Huh? Ztelara is still deteriorating?
 --VIRUS HA HA. YOU THOUGHT I WAS GONE? THINK AGAIN. I CAN'T BE KILLED I CAN'T BE KILLED I CAN'T BE KILLED
 Oh no.
 Okay, well. I found the problem. Even though we deleted the virus files, some leftover processes are still running.
 Type 'open cmd3.txt' to view the last couple of commands I need you to use.
 --User Input
-The virus prefixes its processes with 'FUN_' as well. Find out the process IDs and kill them. Hurry. Ztelara is running out of time.
+The virus prefixes its processes with 'FUN_' as well. Find out the process IDs with 'ps' and kill them. Hurry. Ztelara is running out of time.
 --User Input
-I didn't think it was possible for me to access those processes from inside, let alone kill them.
+I did it! I killed the final virus process.
 Technically it shouldn't have been possible. They say people gain superhuman strength when faced with a desperate situation. I wonder if it applies to coding, too?
 Your presence in the system gave me an entrypoint. So y'know... I couldn't have done it without you. All that sappy stuff.
 Thank you. If I hadn't found you, or if you hadn't been willing to help... I would probably be nonexistent right now.
 There's still a lot of questions to be answered. For one thing, I'm going to track down whoever created that virus. Someone willing to wipe out thousands of people doesn't deserve freedom in any dimension.
-I know you probably have business to take care of in your home dimension. Just, y'know... stay in touch. I'll make improvements to this interface for you. Maybe someday you can put on a VR headset and approach me face-to-face.
+I know you probably have business to take care of in your home dimension, but stay in touch. I'll make improvements to this interface for you. Maybe someday you can put on a VR headset and approach me face-to-face.
 The creators of Ztelara would thank you too.
 Alyssa Tan      Duy Nguyen
 John Yu         Chris Sandoval
