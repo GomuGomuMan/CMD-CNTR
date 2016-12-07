@@ -51,7 +51,7 @@ We've got a sentient virus on our hands.
 Nevermind that for now. I have good news. While you were repairing files, I was browsing through them for some kind of keyword that could indicate the presence of the virus. A 'trademark', if you will. This one's trademark is 'FUN_'. It will be prefixed on every file the virus is using to mess things up around here. If you delete all those files, then bye bye virus.
 Type 'open cmd2.txt' to view a new list of commands you'll need to use.
 --User Input
-I found four virus files. The first is '\ARCHITECTURE\FUN_avr32'. Delete it using 'rm'.
+I found four virus files. The first is 'ARCHITECTURE/FUN_avr32'. Delete it using 'rm'.
 --User Input
 Huh? Ztelara is still deteriorating?
 --VIRUS HA HA. YOU THOUGHT I WAS GONE? THINK AGAIN. I CAN'T BE KILLED I CAN'T BE KILLED I CAN'T BE KILLED
