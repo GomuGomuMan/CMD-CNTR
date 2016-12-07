@@ -150,7 +150,12 @@
             break;
             
         case 69:
-            if(ds_list_size(objTextInput.process_list) < objTextInput.process_list_size)
+            if (global.isFinishedPuzzle2)
+            {
+                src_set_building(0);
+                print_dialog();
+            }   
+            else if(ds_list_size(objTextInput.process_list) < objTextInput.process_list_size)
                 room_goto(room_puzzle2);
             break;
         

@@ -1,8 +1,9 @@
 // updateTextInput()
 {
-    if alarm[2] == -1 {
-    alarm[2] = room_speed * 1;
-}
+    if alarm[2] == -1 
+    {
+        alarm[2] = room_speed * 1;
+    }
 
     // Check if CLI is at beginning state or beginnning of different state
     // If true print head of queue
