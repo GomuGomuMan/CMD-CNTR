@@ -1,24 +1,12 @@
 PID   TTY       CMD
  1    ??        /sbin/launchd
  51   ??        /usr/sbin/syslogd
- 53   ??        /usr/libexec/kextd
- 75   ??        /System/Library/CoreServices
- 77   ??        /usr/libexec/FUN_diskarbitrationd
- 79   ??        /usr/libexec/FUN_coreduetd
- 90   ??        /usr/sbin/securityd -i
- 92   ??        /usr/libexec/locationd
- 96   ??        /usr/sbin/blued
- 97   ??        autofsd
- 107  ??        /usr/sbin/KernelEventAgent
- 110  ??        /usr/libexec/hidd
- 112  ??        /usr/sbin/notifyd
- 114  ??        /usr/libexec/FUN_taskgated -s
- 117  ??        /usr/sbin/distnoted daemon
+ 77   ??        /usr/exec/FUN_diskarbit
+ 79   ??        /usr/exec/FUN_coreduetd
+ 114  ??        /usr/exec/FUN_taskgated
+ 117  ??        /usr/sbin/distnoted
  145  ??        FUN_aslmanager
- 149  ??        /usr/libexec/sandboxd
- 150  ??        /usr/sbin/cfprefsd daemon
- 153  ??        /System/Library/CoreServices
- 167  ??        /System/Library/Frameworks
- 168  ??        /usr/libexec/secinitd
+ 153  ??        /System/Library/Service
+ 167  ??        /System/Library/FrameW
  2344 ttys000   -bash
  2593 ttys000   ps
