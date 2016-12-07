@@ -124,27 +124,26 @@
             break;
         
         // Start puzzle3
-        case 58:
+        case 55:
             if (global.isFinishedPuzzle3)
             {
                 src_set_building(2);
                 print_dialog();
             }   
             else
-                
                 room_goto(room_puzzle3);
                 
             //print_dialog();
             break;
         
-        case 65:
+        case 61:
             if (objTextInput.userInput != "open cmd3.txt")
             {
                 print_dialog();
             }
             break;
             
-        case 67:
+        case 63:
             if (global.isFinishedPuzzle2)
             {
                 obj_cli_virus.visible = false;
@@ -166,7 +165,7 @@
                 room_goto(room_puzzle2);
             break;*/
             
-        case 82:
+        case 78:
             src_clear_cli();
             src_hide_world();
             print_dialog();
