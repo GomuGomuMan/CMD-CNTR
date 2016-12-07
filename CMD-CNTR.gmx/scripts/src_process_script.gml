@@ -1,7 +1,7 @@
 {
     // Trick: LINE_NUM + 1
     switch (objTextInput.cli_ds_line_size - ds_queue_size(cli_ds_line))
-    {
+    {    
         // Save player_name and print changed queue head
         case 4:
             player_name = userInput;
@@ -147,6 +147,7 @@
         case 67:
             if (global.isFinishedPuzzle2)
             {
+                obj_cli_virus.visible = false;
                 src_set_building(0);
                 print_dialog();
             }   
@@ -166,9 +167,8 @@
             break;*/
             
         case 82:
-            //src_clear_cli();
-            //src_hide_world();
-            //instance_deactivate_object(obj_cli_virus);
+            src_clear_cli();
+            src_hide_world();
             print_dialog();
             break;
             
