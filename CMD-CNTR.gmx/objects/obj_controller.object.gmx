@@ -36,7 +36,7 @@ if (place_meeting(obj_psol1.x,obj_psol1.y,obj_piece1)
 &amp;&amp; place_meeting(obj_psol7.x,obj_psol7.y,obj_piece7)
 &amp;&amp; place_meeting(obj_psol8.x,obj_psol8.y,obj_piece8))
 {
-    globak.isSuccess = true;
+    global.isSuccess = true;
 
     if(keyboard_check_pressed(vk_escape))
     {
