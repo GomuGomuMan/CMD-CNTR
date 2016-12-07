@@ -47,7 +47,7 @@ puzzle3GameStart = false;
 levelOver = false;
 
 // Current command variable.
-currentCommand = "rm ARCHITECTURE/s390/FUN_Kconfig";
+currentCommand = "";
 
 // Current command lenghth variable.
 currentCommandLength = 0;
@@ -382,8 +382,6 @@ else if(puzzle3GameStart == true)
         {
             alarm[2] = room_speed * 2;
         }
-        //currentCommand = "rm ARCHITECTURE/unicore32/FUN_Makefile";
-        
         
     }   
     // Level 2 condition
@@ -424,7 +422,6 @@ else if(puzzle3GameStart == true)
             alarm[2] = room_speed * 2;
         }
         
-        //currentCommand = "rm SECURITY/keys/FUN_key";
     }
     // Level 3 condition
     else if(currentCommand == "rm SECURITY/keys/FUN_key" &amp;&amp; puzzle3Level == 3)
@@ -464,7 +461,6 @@ else if(puzzle3GameStart == true)
             alarm[2] = room_speed * 2;
         }
         
-        //currentCommand = "rm SECURITY/tomoyo/FUN_group";
     }
     // Level 4 condition
     else if(currentCommand == "rm SECURITY/tomoyo/FUN_group" &amp;&amp; puzzle3Level == 4)
