@@ -42,8 +42,7 @@ line = 0;
 
 // Set the message
 //message = "This is a very long long long long long long long long long long long string and this is to check if the long long long long long long long string actually works";
-message = "--VIRUS HA HA. YOU THOUGHT THIS WOULD BE EASY? TRY AGAIN.
-Heh... This is what I was afraid of. Sentient viruses like to play games. 
+message = "Heh... This is what I was afraid of. Sentient viruses like to play games. 
 Keep calm and learn how to beat it. You should be able to use the same commands as before, just not by typing. Try to catch the right commands using your arrow keys.
 The first command you should catch is #'rm /ARCHITECTURE/s390/FUN_Kconfig'. #Then press enter to execute it just like any other command.";
 
