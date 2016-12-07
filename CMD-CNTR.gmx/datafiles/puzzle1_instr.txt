@@ -2,4 +2,4 @@ BOUNCER v2.3
 
 Command: 'ztel login'
 
-Use your arrow keys to move the blocks. Each block permutation sends a different signal to the login server. Once a successful signal has been found, press 'Esc' to exit.
+Use your arrow keys to move the blocks. Each block permutation sends a different signal to the login server. Once a successful signal has been found, press 'Enter' to exit.

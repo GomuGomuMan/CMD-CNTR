@@ -13,7 +13,11 @@
   <code>src_show_world();
 
 // bool to check when to print
-global.isSuccess = false;</code>
+global.isSuccess = false;
+
+// Change state of building
+src_set_building(1);
+obj_building_weird.sprite_index = building_weird2;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

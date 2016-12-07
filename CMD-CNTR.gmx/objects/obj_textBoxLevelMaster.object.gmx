@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Delete this after
-
-file_sys =ds_list_create();
+            <string>file_sys =ds_list_create();
 var file = file_text_open_read(working_directory + "file_system.txt")
 while(!file_text_eof(file))
 {
@@ -38,7 +36,6 @@ file_text_close(file);
 current_dir = "HOME"
 src_create_file_sys();
 
-/////////////////////////////////////////
 
 // Puzzle level variable
 puzzle3Level = 0;
@@ -50,7 +47,7 @@ puzzle3GameStart = false;
 levelOver = false;
 
 // Current command variable.
-currentCommand = "";
+currentCommand = "rm ARCHITECTURE/s390/FUN_Kconfig";
 
 // Current command lenghth variable.
 currentCommandLength = 0;
@@ -350,6 +347,7 @@ else if(puzzle3GameStart == true)
     // Level 1 condition
     if(currentCommand == "rm ARCHITECTURE/s390/FUN_Kconfig" &amp;&amp; puzzle3Level == 1)
     { 
+
         //execute command
         runCommand("rm ARCHITECTURE\s390\FUN_Kconfig");
         
@@ -359,9 +357,22 @@ else if(puzzle3GameStart == true)
         // Clear current command for next level.
         currentCommand = "";
         
-        //Update JunSeong's text box with isntructions for next level.
-        obj_junSeongTextBox.message = "Good Job! #The command for the next file is: #rm ARCHITECTURE/unicore32/FUN_Makefile";
+        // Clear the text box.
+        obj_junSeongTextBox.message = "";
+        obj_junSeongTextBox.str = "";
+        obj_junSeongTextBox.count = 0;
+        obj_junSeongTextBox.last_space = 0;
+        obj_junSeongTextBox.line = 0;
+        obj_junSeongTextBox.prev_msg_len = 0;
+        if (ds_exists(obj_junSeongTextBox.start, ds_type_list))
+        {
+            ds_list_clear(obj_junSeongTextBox.start);
+            ds_list_add(obj_junSeongTextBox.start, 0);
+        }
         
+        //Update JunSeong's text box with isntructions for next level.
+        obj_junSeongTextBox.message = "Nice! It worked!#Okay, next one:#'rm ARCHITECTURE/unicore32/FUN_Makefile'";
+     
         // Change state of game to "in between level"
         // When in this state, all commands that have dropped will be destroyed and no further 
         // command will drop for the remainder of the rest time (2 seconds). 
@@ -387,8 +398,21 @@ else if(puzzle3GameStart == true)
         // Clear current command for next level.
         currentCommand = "";
         
+        // Clear the text box.
+        obj_junSeongTextBox.message = "";
+        obj_junSeongTextBox.str = "";
+        obj_junSeongTextBox.count = 0;
+        obj_junSeongTextBox.last_space = 0;
+        obj_junSeongTextBox.line = 0;
+        obj_junSeongTextBox.prev_msg_len = 0;
+        if (ds_exists(obj_junSeongTextBox.start, ds_type_list))
+        {
+            ds_list_clear(obj_junSeongTextBox.start);
+            ds_list_add(obj_junSeongTextBox.start, 0);
+        }
+        
         //Update JunSeong's text box with isntructions for next level.
-        obj_junSeongTextBox.message = "Great! Keep going! #The command for the next file is: #rm SECURITY/keys/FUN_key"
+        obj_junSeongTextBox.message = "Great, just two more.#'rm SECURITY/keys/FUN_key'"
         
         // Change state of game to "in between level"
         // When in this state, akl commands that have dropped will be destroyed and no further 
@@ -414,8 +438,21 @@ else if(puzzle3GameStart == true)
         // Clear current command for next level.
         currentCommand = "";
         
+        // Clear the text box.
+        obj_junSeongTextBox.message = "";
+        obj_junSeongTextBox.str = "";
+        obj_junSeongTextBox.count = 0;
+        obj_junSeongTextBox.last_space = 0;
+        obj_junSeongTextBox.line = 0;
+        obj_junSeongTextBox.prev_msg_len = 0;
+        if (ds_exists(obj_junSeongTextBox.start, ds_type_list))
+        {
+            ds_list_clear(obj_junSeongTextBox.start);
+            ds_list_add(obj_junSeongTextBox.start, 0);
+        }
+        
         //Update JunSeong's text box with isntructions for next level.
-        obj_junSeongTextBox.message = "You're getting good! Only 2 more! #The command for the next file is: #rm SECURITY/tomoyo/FUN_group"
+        obj_junSeongTextBox.message = "Last one, and the virus is finished!#'rm SECURITY/tomoyo/FUN_group'"
         
         // Change state of game to "in between level"
         // When in this state, akl commands that have dropped will be destroyed and no further 
@@ -438,8 +475,21 @@ else if(puzzle3GameStart == true)
         // Clear current command
         currentCommand = "";
         
+        // Clear the text box.
+        obj_junSeongTextBox.message = "";
+        obj_junSeongTextBox.str = "";
+        obj_junSeongTextBox.count = 0;
+        obj_junSeongTextBox.last_space = 0;
+        obj_junSeongTextBox.line = 0;
+        obj_junSeongTextBox.prev_msg_len = 0;
+        if (ds_exists(obj_junSeongTextBox.start, ds_type_list))
+        {
+            ds_list_clear(obj_junSeongTextBox.start);
+            ds_list_add(obj_junSeongTextBox.start, 0);
+        }
+        
         // Update JunSeong's text box with isntructions for next level.
-        obj_junSeongTextBox.message = "Nice! Ok the next path is....#Wait you're done!";
+        obj_junSeongTextBox.message = "Good riddance.";
         
         // Change state of game to "end game"
         // When in this state, all commands that have dropped will be destroyed and no further 

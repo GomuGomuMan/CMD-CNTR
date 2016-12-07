@@ -11,7 +11,7 @@
     if (ds_exists(objTextInput.start, ds_type_list))
     {
         ds_list_clear(objTextInput.start);
-        ds_list_add(start, 0);
+        ds_list_add(objTextInput.start, 0);
     }
     
     // Clear Textbox
@@ -24,7 +24,7 @@
     if (ds_exists(obj_cli_textbox.start, ds_type_list))
     {
         ds_list_clear(obj_cli_textbox.start);
-        ds_list_add(start, 0);
+        ds_list_add(obj_cli_textbox.start, 0);
     }
     
     // Clear virus
@@ -33,9 +33,10 @@
     obj_cli_virus.count = 0;
     obj_cli_virus.last_space = 0;
     obj_cli_virus.line = 0;
+    obj_cli_virus.prev_msg_len = 0;
     if (ds_exists(obj_cli_virus.start, ds_type_list))
     {
         ds_list_clear(obj_cli_virus.start);
-        ds_list_add(start, 0);
+        ds_list_add(obj_cli_virus.start, 0);
     }
 }
