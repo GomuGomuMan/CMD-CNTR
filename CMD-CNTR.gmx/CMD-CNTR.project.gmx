@@ -205,24 +205,16 @@
       <sprite>sprites\spr_badFile4</sprite>
     </sprites>
     <sprites name="puzzle1">
-      <sprite>sprites\spr_A</sprite>
       <sprite>sprites\spr_allPieces</sprite>
-      <sprite>sprites\spr_B</sprite>
-      <sprite>sprites\spr_Blank</sprite>
       <sprite>sprites\spr_Border</sprite>
+      <sprite>sprites\spr_A</sprite>
+      <sprite>sprites\spr_B</sprite>
       <sprite>sprites\spr_C</sprite>
       <sprite>sprites\spr_D</sprite>
       <sprite>sprites\spr_E</sprite>
       <sprite>sprites\spr_F</sprite>
       <sprite>sprites\spr_G</sprite>
       <sprite>sprites\spr_H</sprite>
-      <sprite>sprites\spr_I</sprite>
-      <sprite>sprites\spr_J</sprite>
-      <sprite>sprites\spr_K</sprite>
-      <sprite>sprites\spr_L</sprite>
-      <sprite>sprites\spr_M</sprite>
-      <sprite>sprites\spr_N</sprite>
-      <sprite>sprites\spr_O</sprite>
       <sprite>sprites\spr_piece</sprite>
       <sprite>sprites\spr_psol1</sprite>
     </sprites>
@@ -403,13 +395,6 @@
       <object>objects\obj_piece6</object>
       <object>objects\obj_piece7</object>
       <object>objects\obj_piece8</object>
-      <object>objects\obj_piece9</object>
-      <object>objects\obj_piece10</object>
-      <object>objects\obj_piece11</object>
-      <object>objects\obj_piece12</object>
-      <object>objects\obj_piece13</object>
-      <object>objects\obj_piece14</object>
-      <object>objects\obj_piece15</object>
       <object>objects\obj_PieceMover</object>
       <object>objects\obj_psol1</object>
       <object>objects\obj_psol2</object>
