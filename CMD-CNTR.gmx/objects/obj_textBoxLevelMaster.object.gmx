@@ -347,10 +347,9 @@ else if(puzzle3GameStart == true)
     // Level 1 condition
     if(currentCommand == "rm ARCHITECTURE/s390/FUN_Kconfig" &amp;&amp; puzzle3Level == 1)
     { 
-        show_debug_message(currentCommand);
-        show_debug_message(obj_junSeongTextBox.message);
+
         //execute command
-        //runCommand("rm ARCHITECTURE\s390\FUN_Kconfig");
+        runCommand("rm ARCHITECTURE\s390\FUN_Kconfig");
         
         // Change puzzle level to 2
         puzzle3Level = 2;
@@ -358,10 +357,22 @@ else if(puzzle3GameStart == true)
         // Clear current command for next level.
         currentCommand = "";
         
+        // Clear the text box.
+        obj_junSeongTextBox.message = "";
+        obj_junSeongTextBox.str = "";
+        obj_junSeongTextBox.count = 0;
+        obj_junSeongTextBox.last_space = 0;
+        obj_junSeongTextBox.line = 0;
+        obj_junSeongTextBox.prev_msg_len = 0;
+        if (ds_exists(obj_junSeongTextBox.start, ds_type_list))
+        {
+            ds_list_clear(obj_junSeongTextBox.start);
+            ds_list_add(obj_junSeongTextBox.start, 0);
+        }
+        
         //Update JunSeong's text box with isntructions for next level.
         obj_junSeongTextBox.message = "Nice! It worked!#Okay, next one:#'rm ARCHITECTURE/unicore32/FUN_Makefile'";
-        show_debug_message(obj_junSeongTextBox.message);
-        
+     
         // Change state of game to "in between level"
         // When in this state, all commands that have dropped will be destroyed and no further 
         // command will drop for the remainder of the rest time (2 seconds). 
@@ -386,6 +397,19 @@ else if(puzzle3GameStart == true)
         
         // Clear current command for next level.
         currentCommand = "";
+        
+        // Clear the text box.
+        obj_junSeongTextBox.message = "";
+        obj_junSeongTextBox.str = "";
+        obj_junSeongTextBox.count = 0;
+        obj_junSeongTextBox.last_space = 0;
+        obj_junSeongTextBox.line = 0;
+        obj_junSeongTextBox.prev_msg_len = 0;
+        if (ds_exists(obj_junSeongTextBox.start, ds_type_list))
+        {
+            ds_list_clear(obj_junSeongTextBox.start);
+            ds_list_add(obj_junSeongTextBox.start, 0);
+        }
         
         //Update JunSeong's text box with isntructions for next level.
         obj_junSeongTextBox.message = "Great, just two more.#'rm SECURITY/keys/FUN_key'"
@@ -414,6 +438,19 @@ else if(puzzle3GameStart == true)
         // Clear current command for next level.
         currentCommand = "";
         
+        // Clear the text box.
+        obj_junSeongTextBox.message = "";
+        obj_junSeongTextBox.str = "";
+        obj_junSeongTextBox.count = 0;
+        obj_junSeongTextBox.last_space = 0;
+        obj_junSeongTextBox.line = 0;
+        obj_junSeongTextBox.prev_msg_len = 0;
+        if (ds_exists(obj_junSeongTextBox.start, ds_type_list))
+        {
+            ds_list_clear(obj_junSeongTextBox.start);
+            ds_list_add(obj_junSeongTextBox.start, 0);
+        }
+        
         //Update JunSeong's text box with isntructions for next level.
         obj_junSeongTextBox.message = "Last one, and the virus is finished!#'rm SECURITY/tomoyo/FUN_group'"
         
@@ -437,6 +474,19 @@ else if(puzzle3GameStart == true)
   
         // Clear current command
         currentCommand = "";
+        
+        // Clear the text box.
+        obj_junSeongTextBox.message = "";
+        obj_junSeongTextBox.str = "";
+        obj_junSeongTextBox.count = 0;
+        obj_junSeongTextBox.last_space = 0;
+        obj_junSeongTextBox.line = 0;
+        obj_junSeongTextBox.prev_msg_len = 0;
+        if (ds_exists(obj_junSeongTextBox.start, ds_type_list))
+        {
+            ds_list_clear(obj_junSeongTextBox.start);
+            ds_list_add(obj_junSeongTextBox.start, 0);
+        }
         
         // Update JunSeong's text box with isntructions for next level.
         obj_junSeongTextBox.message = "Good riddance.";
