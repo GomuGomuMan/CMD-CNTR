@@ -7,13 +7,8 @@
             player_name = userInput;
             print_dialog();
             break;
-        
-        case 8:
-            player_name = userInput;
-            print_dialog();
-            break;
             
-        case 14:
+        case 12:
             if (userInput != "open instructions.txt")
             {
                 ++numIncorrectCommand;
@@ -30,14 +25,14 @@
             }
             break;
             
-        case 16:
+        case 14:
             if (userInput == "ztel access mainframe")
             {
                 print_dialog();   
             }
             break;
         
-        case 21:
+        case 19:
             // Test
             if (objTextInput.ifDonePrinting)
             {
@@ -56,26 +51,26 @@
             print_dialog();
             break;*/
             
-        case 30:
+        case 28:
             if (global.isFinishedPuzzle1)
             {
                 print_dialog();
             }
             break;
             
-        case 35:
+        case 33:
             if (objTextInput.userInput != "open cmd1.txt")
             {
                 print_dialog();
             }
             break;
             
-        case 37:
+        case 35:
             if (objTextInput.command_result == "ls Executed")
                 print_dialog();
             break;
             
-        case 39:
+        case 37:
             if (objTextInput.current_dir = "HOME\LOCATION_DATABASE"
                 && objTextInput.command_result == "ls Executed")
             {
@@ -86,13 +81,13 @@
                 
             break;
         
-        case 41:
+        case 39:
             if (objTextInput.current_dir = "HOME\LOCATION_DATABASE\NEVULA" && 
                 objTextInput.command_result == "ls Executed")
                 print_dialog();
             break;
             
-        case 43:
+        case 41:
             if (objTextInput.current_dir = "HOME\LOCATION_DATABASE\NEVULA\INFRASTRUCTURE" && 
                 objTextInput.command_result == "ls Executed")
             {
@@ -102,12 +97,12 @@
                 
             break;
             
-        case 45:
+        case 43:
             if (objTextInput.command_result == "cp Executed")
                 print_dialog();
             break;
             
-        case 47:
+        case 45:
             //test = true;
             if (objTextInput.command_result = "cp Executed")
                 ++objTextInput.count_cp;
@@ -121,7 +116,7 @@
                 
             break;
 
-        case 55:
+        case 53:
             if (objTextInput.userInput != "open cmd2.txt")
             {
                 print_dialog();
@@ -129,7 +124,7 @@
             break;
         
         // Start puzzle3
-        case 60:
+        case 58:
             if (global.isFinishedPuzzle3)
             {
                 src_set_building(2);
@@ -142,14 +137,14 @@
             //print_dialog();
             break;
         
-        case 67:
+        case 65:
             if (objTextInput.userInput != "open cmd3.txt")
             {
                 print_dialog();
             }
             break;
             
-        case 69:
+        case 67:
             if (global.isFinishedPuzzle2)
             {
                 src_set_building(0);
@@ -170,7 +165,7 @@
                 room_goto(room_puzzle2);
             break;*/
             
-        case 84:
+        case 82:
             //src_clear_cli();
             //src_hide_world();
             //instance_deactivate_object(obj_cli_virus);

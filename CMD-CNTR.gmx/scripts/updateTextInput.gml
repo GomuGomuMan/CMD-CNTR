@@ -50,7 +50,7 @@
             src_process_script();
             
         if (ds_exists(cli_ds_line, ds_type_queue)
-            && cli_ds_line_size - ds_queue_size(cli_ds_line) >= 21
+            && cli_ds_line_size - ds_queue_size(cli_ds_line) >= 19
             && if_cli_done)
         {
             //show_message("HERE");
