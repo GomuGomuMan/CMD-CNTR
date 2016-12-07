@@ -109,7 +109,10 @@
             
         case 47:
             //test = true;
-            if (objTextInput.command_result == "cp Executed")
+            if (objTextInput.command_result = "cp Executed")
+                ++objTextInput.count_cp;
+                
+            if (objTextInput.count_cp >= 2)
             {
                 print_dialog();
                 objTextInput.scale = 1;

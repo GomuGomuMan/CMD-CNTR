@@ -13,6 +13,9 @@
     // Change state of building
     src_set_building(1);
     obj_building_weird.sprite_index = building_weird2;
+    
+    // Count cp command
+    count_cp = 0;
       
     
     // Continue through to process script

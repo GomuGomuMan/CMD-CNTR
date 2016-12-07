@@ -1,3 +1,4 @@
+--------------------------------------
 cd dest      Go to directory
 ls           List files
 cp src dest  Copy file from src to dest
@@ -5,3 +6,4 @@ rm dest      Delete file
 mv src dest  Move file from src to dest
 ps           List all processes
 kill pid     Kill a process associated with pid
+--------------------------------------
